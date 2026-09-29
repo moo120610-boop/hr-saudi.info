@@ -621,7 +621,7 @@
       const req = required/100;
       const x = (req*total - saudi) / (1-req);
       warn.style.display='block'; good.style.display='none';
-      warn.textContent = 'تحتاجين لإضافة حوالي ' + Math.ceil(x) + ' موظف سعودي للوصول للنسبة المطلوبة.';
+      warn.textContent = 'تحتاج لإضافة حوالي ' + Math.ceil(x) + ' موظف سعودي للوصول للنسبة المطلوبة.';
     } else { good.style.display='block'; warn.style.display='none'; good.textContent='المنشأة تحقق النسبة المطلوبة حالياً أو تتجاوزها.'; }
   }
   document.querySelectorAll('#panel-nitaqat input').forEach(el=>el.addEventListener('input',calcNitaqat));
