@@ -1,0 +1,969 @@
+<html lang="ar" dir="rtl" data-theme="dark" style="color-scheme: dark;"><head><!-- frame-runtime --><script>window.__FRAME_PREAMBLE={"v":1,"cred":"cookie","capabilities":{"artifact":"artifact.w_ePPE-a.js","assets":"assets.DOAjpBS9.js","comments":"comments.DrhK3r8W.js","db":"db.zFlAA4qL.js","downloads":"downloads.axDW2QAi.js","embed":"embed.DcZf-TSv.js","endpoints":"endpoints.BPfoKaE1.js","files":"files.IkpCjcgM.js","mcp":"mcp.kl0G36TA.js","network":"network.B5UA9Su4.js","permissions":"permissions.CEAme3h0.js","room":"room.Dy3vHyq9.js","sample":"sample.DLMoX3Ob.js","self":"artifact.w_ePPE-a.js","user":"user.CB0zJsP2.js"},"transforms":"_transforms.DqV5HAj2.js","comments":"_comments.DUaNQZcg.js","translate":"_translate.DqxC5ek1.js","ldx":"_ldx.B4FSryPi.js"}                                                                                                                                                                                                                                                                                          </script><script>(function(){"use strict";function fr(t){return t==="cookie"||t==="query"?t:void 0}function dr(t){return typeof t=="number"&&Number.isSafeInteger(t)&&t>0?t:void 0}var $n=3e5;function hr(t,e){try{const r=t("navigation")[0],n=[r.responseStart,r.redirectEnd-r.redirectStart,r.domContentLoadedEventStart,e(),r.connectEnd-r.domainLookupStart,r.responseStart-r.requestStart];r.requestStart>0||(n.length=4);for(let a=0;a<n.length;a++)if(n[a]>=0&&n[a]<=3e5)n[a]=n[a]|0;else{if(a<4)return;n.length=4}return n}catch{return}}var pr=["light","dark","system"],mr=/^[A-Za-z0-9_-]{1,64}$/,Mt=/^[a-zA-Z_:][a-zA-Z0-9_:.-]{0,127}$/,vr=new Set(["class","hidden","value","checked","style","title","alt","placeholder","lang","dir","role","tabindex","disabled","readonly","contenteditable","open","colspan","rowspan"]);function _r(t){const e=t.toLowerCase();return e.startsWith("data-")||e.startsWith("aria-")||vr.has(e)}var Nt="data-ldx-props";function yr(t,e){if(e.toLowerCase()===Nt)return!0;const r=t.getAttribute(Nt);if(r===null)return!1;try{const n=JSON.parse(r);if(n===null||typeof n!="object"||Array.isArray(n))return!0;const a=e.toLowerCase();return Object.keys(n).some(s=>s.toLowerCase()===a)}catch{return!0}}var Vn="http://www.w3.org/1999/xhtml",gr="http://www.w3.org/2000/svg",wr=new Set(["script","style","iframe","noscript","noframes","noembed","xmp","plaintext","template","title","textarea","object","embed"]),br=new Set(["script","style"]);function Er(t){const e=t.localName.toLowerCase();return t.namespaceURI==="http://www.w3.org/1999/xhtml"?!wr.has(e):t.namespaceURI===gr?!br.has(e):!1}function ot(t,e){return t===e||(t===160||t===32)&&(e===160||e===32)}function Sr(t,e){const r=t.length,n=e.length;let a=0;for(;a<r&&a<n&&ot(t.charCodeAt(a),e.charCodeAt(a));)a++;let s=0;for(;s<r-a&&s<n-a&&ot(t.charCodeAt(r-1-s),e.charCodeAt(n-1-s));)s++;return{p:a,s}}function Ar(t,e){const r=t.firstChild;if(t.childNodes.length!==1||r===null||r.nodeType!==Node.TEXT_NODE){t.textContent=e;return}const n=r.data,a=n.length,s=e.length,{p:l,s:u}=Sr(n,e);l===a&&u===0&&a===s||r.replaceData(l,a-l-u,e.slice(l,s-u));const R=r.data,b=t.ownerDocument.getSelection?.()??null,E=b!==null&&b.rangeCount>0&&(b.anchorNode===r||b.focusNode===r)?{anchor:b.anchorNode,anchorOffset:b.anchorOffset,focus:b.focusNode,focusOffset:b.focusOffset}:null;let m=-1,S=-1;for(let y=0;y<R.length&&y<e.length;y++){const L=R.charCodeAt(y),H=e.charCodeAt(y);L!==H&&ot(L,H)&&(m<0&&(m=y),S=y)}const T=m>=0;if(T&&r.replaceData(m,S-m+1,e.slice(m,S+1)),T&&E!==null&&E.anchor!==null&&E.focus!==null)try{b.setBaseAndExtent(E.anchor,E.anchorOffset,E.focus,E.focusOffset)}catch{}}var kr=new Set(["html","head","body","frameset"]);function Rr(t){return t.namespaceURI==="http://www.w3.org/1999/xhtml"&&kr.has(t.localName)}function Tr(t){if(t===null||typeof t!="object")return!1;const e=t;if(typeof e.target!="string"||!mr.test(e.target)||e.text!==void 0&&typeof e.text!="string")return!1;if(e.attrsSet!==void 0){if(e.attrsSet===null||typeof e.attrsSet!="object")return!1;for(const[r,n]of Object.entries(e.attrsSet))if(!Mt.test(r)||typeof n!="string")return!1}if(e.attrsRemoved!==void 0){if(!Array.isArray(e.attrsRemoved))return!1;for(const r of e.attrsRemoved)if(typeof r!="string"||!Mt.test(r))return!1}return!0}function Lr(t,e){if(t===null||typeof t!="object")return!1;const{seq:r,elements:n}=t;if(typeof r!="number"||!Number.isSafeInteger(r)||!Array.isArray(n)||n.length===0||n.length>64)return!1;for(let a=0;a<n.length;a++)if(!e(n[a]))return!1;return!0}function Or(t){return t===null||typeof t!="object"?!1:Lr(t.__frame_patch,Tr)}function Pr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_init;return e!==null&&typeof e=="object"}function Mr(t){return t!==null&&typeof t=="object"&&t.__frame_size_poke===!0}function Nr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_host_visible;return e!==null&&typeof e=="object"&&typeof e.visible=="boolean"}function Cr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_theme;if(e===null||typeof e!="object")return!1;const r=e.theme;return typeof r=="string"&&pr.includes(r)}var jr=["ok","empty","snapshot_error","snapshot_timeout","unclonable","oversize","unavailable","restore_error","withheld"],Fr=["TypeError","RangeError","ReferenceError","SyntaxError","DataCloneError","QuotaExceededError","AbortError","TimeoutError","SecurityError","Error","other"];function Ir(t){return typeof t=="string"&&Fr.includes(t)?t:"other"}var xr=Object.freeze({until:null,now:!1}),Dr="__claude_hot",Hr="__claude_hot_in",qr=/^__claude_hot(?:_in)?(?::|$)/,Ct=/^[0-9a-z]{1,32}$/,at=t=>t===void 0?Dr:"__claude_hot:"+t,Le=t=>t===void 0?Hr:"__claude_hot_in:"+t;function Br(t,e){const r=[];for(let n=0;n<t.length;n++){const a=t.key(n);a!==null&&a!==e&&qr.test(a)&&r.push(a)}for(const n of r)t.removeItem(n)}function Ur(t){let e=null;try{e=D(JSON.parse(t)?.hot)}catch{return null}return e===null||typeof e.k!="string"||!Ct.test(e.k)?null:ue(e.g)?{k:e.k,g:e.g}:{k:e.k}}var Wn=262144,Kr=3e3,Gr=5e3,jt=/^[a-z0-9._:-]{1,64}$/,zr=["none","hot-restart","hard-reload"],$r=["asset","doc","added","removed"],Vr=1500,Wr=/^[0-9a-f]{64}$/;function D(t){return t!==null&&typeof t=="object"?t:null}function ue(t){return typeof t=="number"&&Number.isInteger(t)&&t>=0&&t<2**31}function Ft(t){return t===void 0||typeof t=="number"&&Number.isFinite(t)}function Xr(t){return t===void 0||typeof t=="string"&&jt.test(t)}function It(t){const e=D(t);return e!==null&&(e.until===null||typeof e.until=="number"&&Number.isFinite(e.until))&&typeof e.now=="boolean"}function st(t){const e=D(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Ft(e.seq)&&typeof e.handoff=="string"&&jr.includes(e.handoff)&&Xr(e.note)}function xt(t){const e=D(t);return e!==null&&ue(e.gen)&&(e.phase==="final"||e.phase==="pending")&&(e.from===null||st(e.from))}function Yr(t){const e=D(t);return e!==null&&e.kv===1&&ue(e.gen)&&st(e.from)&&Object.hasOwn(e,"data")}function Jr(t){const e=D(t);return e!==null&&e.__frame_hot_snapshot===!0&&ue(e.gen)&&typeof e.timeoutMs=="number"&&e.timeoutMs>=0&&e.timeoutMs<=6e4&&(e.handoff===void 0||typeof e.handoff=="boolean")&&(e.deadline===void 0||It(e.deadline))&&Ft(e.seq)&&(e.note===void 0||typeof e.note=="string")&&(e.key===void 0||typeof e.key=="string")}function Zr(t){const e=D(t);return e!==null&&e.__frame_hot_start===!0&&ue(e.gen)&&st(e.from)}function Qr(t){return typeof t=="string"&&t.length>=1&&t.length<=128}function Dt(t){return D(t)!==null&&!Array.isArray(t)}function en(t){const e=D(t);return e!==null&&e.__frame_cap_grant===!0&&typeof e.cap=="string"&&Qr(e.ver)&&(e.grant===void 0||Dt(e.grant))&&(e.budgets===void 0||Dt(e.budgets)&&Object.values(e.budgets).every(Number.isFinite))&&(e.brokerGen===void 0||ue(e.brokerGen))}function tn(t){const e=D(t);return e!==null&&e.__frame_cap_rewired===!0&&(e.caps===void 0||Array.isArray(e.caps)&&e.caps.every(r=>typeof r=="string"))&&(e.brokerGen===void 0||ue(e.brokerGen))}function Ht(t){const e=D(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Number.isFinite(e.seq)}function qt(t){if(t==null||typeof t=="string")return!0;const e=D(t);return e!==null&&typeof e.doc=="string"&&typeof e.profile=="string"}function rn(t){const e=D(t);return e!==null&&typeof e.path=="string"&&$r.includes(e.kind)&&qt(e.from)&&qt(e.to)}function nn(t){return t===null?null:Object.freeze(t.filter(rn))}function on(t){const e=D(t);return e!==null&&e.__frame_hot_update===!0&&Number.isFinite(e.id)&&Ht(e.from)&&Ht(e.to)&&(e.changed===null||Array.isArray(e.changed))&&zr.includes(e.required)&&It(e.deadline)&&typeof e.verdictTimeoutMs=="number"&&e.verdictTimeoutMs>=0&&e.verdictTimeoutMs<=6e4&&(e.preflight===void 0||typeof e.preflight=="string"&&Wr.test(e.preflight))}var fe=/^[\w.-]+\.js$/;function an(t,e,r){return r?"inert":typeof e=="string"&&fe.test(e)?t?[e]:"inert":t?"inert":"framed"}var Bt=Object.freeze({[Symbol("claude.hot.restart")]:!0});function Ut(t,e){let r;try{r=t??sessionStorage}catch{return null}const n=at(e?.k),a=Le(e?.k);let s=null;try{s=r.getItem(n)}catch{}try{r.removeItem(n)}catch{}try{Br(r,a)}catch{}let l=null;if(s!==null&&!(e!==null&&e.g===void 0))try{const u=JSON.parse(s);Yr(u)&&(e===null||u.gen===e.g)&&(l=u)}catch{}if(l===null)try{r.removeItem(a)}catch{}return l}function Kt(){const t=/^\/_f\/([^/]{1,128})\//.exec(location.pathname);return t?t[1]:""}var sn=/^[^/\\?#]{1,128}$/,Gt=t=>sn.test(t)&&t!=="."&&t!=="..";function zt(t,e,r){const n=new URL(t),a="/_f/"+e+"/";if(!e||!n.pathname.startsWith(a)||!Gt(r))return null;const s=n.search.slice(1).split("&").filter(l=>!/^__frame_t(?:=|$)/.test(l)).join("&");return n.origin+"/_f/"+r+"/"+n.pathname.slice(a.length)+(s?"?"+s:"")+n.hash}var $e="{}";function Oe(t){if(!t)return null;const e={ver:t.ver,handoff:t.handoff};return t.seq!==void 0&&(e.seq=t.seq),t.note!==void 0&&(e.note=t.note),e}function $t(t,e){return t!==null&&t.note===void 0&&e?.note!==void 0?{...t,note:e.note}:t}function Vt(t){const e=t?.k;return e!==null&&typeof e=="object"?e:void 0}function ln(t,e,r,n=null){const a=setTimeout,s=clearTimeout,l=queueMicrotask,u=performance.now.bind(performance),R=new TextEncoder;let b=null,E=null;try{b=history,E=b.replaceState.bind(b)}catch{}const m=(...o)=>{try{console.warn(...o)}catch{}};let S=Kt(),T=null;try{T=sessionStorage}catch{}const y={storage:T,fetch:typeof fetch=="function"?fetch.bind(globalThis):null,entry:location.origin+location.pathname+location.search,ver:S,key:n?.k};let L=n?.k;const H=typeof requestAnimationFrame=="function"?requestAnimationFrame:o=>a(()=>o(u()),16);let h=e?.data??{},v=Oe(e?.from),M=e?.gen??0,q=e!==null,ee=!1,ne=!1,K=null,he=!1;const we=new AbortController;let je=null,I=null,be=null,Fe=!1,ce=()=>{};const oe=new Promise(o=>{ce=o});let pe=!1,Ie=!1,c=!1,_,p=null,C=!1,j=!1,B=!1,$=!1,V=!1,te=!1;const xe=o=>{for(const f of[at(o),Le(o)])try{T?.removeItem(f)}catch{}},x=(o,f)=>{try{f!==null&&r.post(o,f)}catch{}},Ze=()=>V||=B&&(I===null||$),X=()=>{const o={__frame_hot:!0,ready:I!==null,accept:be!==null,demand:!0};te=!V,te&&(o.booting=!0),pe&&(o.readData=!0),c&&(o.threw=!0),p?.assess&&(o.preflight=!0),x(o,K)};let De=!1,He=!1,G=!1,qe=!1;const Be=()=>{De||!he||G||(De=!0,x({__frame_reveal_hold:!0},"*"))},Ue=()=>new Promise(o=>{let f,d=0;const A=F=>{if(f===void 0)f=F;else if(F!==f||++d>=8){o();return}try{H(A)}catch{o()}};try{H(A)}catch{o()}}),Ke=()=>{G=!0,x({__frame_reveal_ready:!0},"*")},Ee=o=>{He||(He=!0,o.then(f=>{if(f===!1)return;let d=null;try{d=p?.settle?.()??null}catch{}return(d===null?Ue():new Promise(A=>{a(A,50),Promise.resolve(d).then(A,A)}).then(Ue)).then(Ke)}))},wt=()=>{if(qe||!G)return;qe=!0;const o=()=>{try{p?.afterReveal?.()}catch{}};o(),Ue().then(()=>{o(),Ke()})},Se=(o=!1)=>{if(Fe||I===null||!q||!ne)return;Fe=!0;const f=I,d=h;l(()=>{let A;try{A=f(d)}catch(U){throw ce(!1),U}let F=!1;try{F=typeof A?.then=="function"}catch{}if(!F){ce(!0);return}Promise.resolve(A).then(()=>ce(!0),U=>{ce(!1),l(()=>{throw U})})}),Ee(o?oe:r.dcl.then(()=>oe))},Y=o=>typeof o=="string"&&jt.test(o)?o:void 0,me=o=>{const f={__frame_hot_restart:!0},d=Y(o?.note);d!==void 0&&(f.note=d),o?.required==="hard-reload"&&(f.required="hard-reload"),x(f,K)},Ge=Object.freeze({get data(){return ne||(Ie=!0),!q&&!pe&&(pe=!0,ne&&X()),h},get from(){return v},get gen(){return M},signal:we.signal,snapshot(o){typeof o=="function"&&(je=o)},ready(o){typeof o!="function"||I!==null||(I=o,Be(),X(),ee&&x({__frame_hot_ready:!0,gen:M},K),Se())},accept(o){typeof o=="function"&&(be=o,X())},restart(o){const f={note:o?.note,required:o?.required};if(ne){me(f);return}const d=_;_={note:Y(d?.note)??f.note,required:d?.required==="hard-reload"||f.required==="hard-reload"?"hard-reload":void 0}}});let ve=null,i=()=>{};const w=new Promise(o=>{i=o});let g=null;const O=()=>g??=r.dcl.then(()=>{let o=!1;try{o=ve!==null&&ve.expect()}catch{}if(!o)return;const f=ve.maxMs;return new Promise(d=>{w.then(d),a(d,f)})}),J=()=>{if(!C||j||p===null)return;j=!0;const o=p;O().then(()=>{try{G||o.afterStart(Vt(e),!1)}catch{}})},Z=o=>{e!==null&&Ie&&(pe=!0),h={},v=null,M=0;try{T?.removeItem(Le(n?.k))}catch{}e!==null&&!o&&Ee(r.dcl.then(()=>I!==null?oe:void 0))},_e=()=>{C=!0,Ee(O().then(()=>I!==null?oe:void 0)),J()};try{addEventListener("error",()=>{c||I!==null||(c=!0,X())})}catch{}const lr=()=>{a(()=>{!V&&Ze()&&te&&X()},0)};try{B=document.readyState==="complete",B||addEventListener("load",()=>{B=!0,lr()},{once:!0})}catch{B=!0}Ze(),oe.then(()=>{$=!0,lr()});let ye=-1,bt,Et,ze=!0,St=!1,At,Qe=null;const kt=o=>{const f=Qe===null;Qe=ze&&o[0]!=="withheld"?o:["withheld",o[1],$e];let d=o[0];if(ze&&d!=="withheld"){const F={ver:S,handoff:d};bt!==void 0&&(F.seq=bt),Et!==void 0&&(F.note=Et);try{if(T===null)throw new Error("no storage");T.setItem(at(L),'{"kv":1,"gen":'+ye+',"from":'+JSON.stringify(F)+(At!==void 0?',"k":'+JSON.stringify(At):"")+',"data":'+(d==="ok"?o[2]:$e)+"}")}catch{d="unavailable"}}else{d="withheld",xe(L);try{p?.release?.()}catch{}}const A={__frame_hot_snapshotted:!0,gen:ye,handoff:d,bytes:o[1]};o[3]!==void 0&&(A.errName=o[3]),x(A,K),f&&(d==="snapshot_error"||d==="unclonable"||d==="oversize")&&m("claude.hot: snapshot",d,o[3])},Ae=o=>{try{return Ir(o?.name)}catch{return"other"}},ke=(o,f,d=0)=>kt(f===void 0?[o,d,$e]:[o,d,$e,Ae(f)]),Bn=o=>{if(o.gen<=ye)return;const f=ye>=0;if(ye=o.gen,bt=o.seq,Et=Y(o.note),typeof o.key=="string"&&Ct.test(o.key)&&o.key!==L&&(xe(L),L=o.key),ze&&=o.handoff!==!1,f){Qe!==null?kt(Qe):St&&x({__frame_hot_held:!0,gen:ye},K);return}we.abort();const d=Object.freeze({handoff:ze,timeoutMs:o.timeoutMs,deadline:o.deadline??xr}),A=je,F=()=>{if(ze)try{At=p?.capture()}catch{}if(A===null){ke("empty");return}let P=!1;const z=a(()=>{P||(P=!0,ke("snapshot_timeout"))},Math.max(0,d.timeoutMs));Promise.resolve().then(()=>A(d)).then(Re=>{if(P)return;P=!0,s(z);let ae;try{ae=JSON.stringify(Re)}catch(Rt){ke("unclonable",Rt);return}if(typeof ae!="string"){ke("unclonable");return}let se=ae.length;try{se=R.encode(ae).length}catch{}if(se>262144){ke("oversize",void 0,se);return}kt(["ok",se,ae])},Re=>{P||(P=!0,s(z),ke("snapshot_error",Re))})};let U=null;try{U=p?.holdForIme()??null}catch{}if(U===null)F();else{St=!0,x({__frame_hot_held:!0,gen:ye},K);const P=()=>{St=!1,F()};U.then(P,P)}},Un=o=>{if(!ee||q||I===null||o.gen!==M)return;let f=null;try{f=Ut(T,n&&{k:n.k,g:o.gen})}catch{}if(f!==null&&f.gen!==o.gen){f=null;try{T?.removeItem(Le(n?.k))}catch{}}h=f?.data??{},v=$t(Oe(f?.from??o.from),Oe(o.from)),f!==null&&(M=f.gen),q=!0,ee=!1;const d=Vt(f);oe.then(A=>{try{A&&p?.afterStart(d,!0)}catch{}}),Se(!0)};let et=0;const Kn=o=>{const f=be;if(f===null||o.id<=et)return;et=o.id;const d=p?.assess;if(o.preflight===void 0||d===void 0){cr(o,f);return}let A=!1;const F=z=>{A||(A=!0,s(P),o.id===et&&cr(o,f,z))},U=()=>F(d.timeout(o)),P=a(U,Vr+100);d.run(o,window).then(F,U)},cr=(o,f,d)=>{let A,F=!1,U=!1,P,z,Re=null;const ae=k=>{if(U)return!1;if(P!==void 0&&P!==k)return m(`claude.hot: u.${k}() ignored - u.${P}() was called first`),!1;const re=P===void 0;return P=k,re},se=k=>{P="restart",m(`claude.hot: ${k} - restarting`)},Rt=()=>{if(!ae("adopt")||o.id!==et)return;const k=o.to.ver;if(tt.required!=="none"){se(`u.adopt() needs required 'none', it is '${tt.required}'`);return}if(!Gt(k)){se("u.adopt() cannot address this version");return}if(!S||k===S)return;const re=S,Q=y.entry;let rt="",Lt,Te=null,nt;try{rt=location.href,Lt=b.state,Te=zt(rt,re,k),Te!==null&&(E(Lt,"",Te),location.pathname.startsWith("/_f/"+k+"/")?Te=location.href:nt="navigate event canceled")}catch(Pt){nt=Ae(Pt)}if(nt!==void 0){z="adopt_failed",se(`adopt_failed ${nt}; URL not changed`);return}Te===null?(z="adopt_skipped",m(`claude.hot: adopt_skipped - page already left /_f/${re}/; URL not changed, update still applied`)):z="adopted",S=y.ver=k;try{y.entry=zt(Q,re,k)??Q}catch{}const Ot=Te;Re=()=>{if(S===k){if(Ot!==null)try{if(location.href!==Ot)m("claude.hot: adopt_revert_skipped - update not applied; URL left where the page navigated");else{if(E(Lt,"",rt),location.href!==rt){m("claude.hot: adopt_revert_failed navigate event canceled - URL still at the new version");return}z="adopt_reverted",m("claude.hot: adopt_reverted - adopt() was called but the handler threw; URL restored")}}catch(Pt){m(`claude.hot: adopt_revert_failed ${Ae(Pt)} - URL still at the new version`);return}S=y.ver=re,y.entry=Q,Ot===null&&(z=void 0)}}},tt=Object.freeze({from:{ver:o.from.ver,seq:o.from.seq},to:{ver:o.to.ver,seq:o.to.seq},changed:nn(o.changed),required:o.required,deadline:o.deadline,adopt:Rt,defer(){return ae("defer")&&tt.deadline.now&&se("u.defer() past the deadline"),Bt},restart(k){return ae("restart"),P==="restart"&&!U&&(A??=Y(k?.note),F||=k?.required==="hard-reload"),Bt},...d?.update}),Gn=(k,re)=>{U=!0,k==="threw"?(Re?.(),A??=Ae(re).toLowerCase()):P===void 0&&m(k==="timeout"?"claude.hot: accept handler did not answer in time - restarting":"claude.hot: accept handler settled without defer/restart/adopt - restarting");const Q={__frame_hot_verdict:!0,id:o.id};Q.verdict=k==="threw"||P===void 0||P==="restart"?"restart":P==="adopt"?"applied":"deferred",Q.verdict==="restart"&&(F&&(Q.required="hard-reload"),A!==void 0&&(Q.note=A)),z!==void 0&&(Q.verdict==="applied"||z!=="adopted")&&(Q.adopt=z),x(Object.assign(Q,d?.verdict),K)};let ur=!1;const Tt=(k,re)=>ur?!1:(ur=!0,s(zn),Gn(k,re),!0),zn=a(()=>Tt("timeout"),o.verdictTimeoutMs);Promise.resolve().then(()=>f(tt)).then(()=>Tt("settled"),k=>{!Tt("threw",k)&&P==="adopt"&&me({note:Ae(k).toLowerCase()}),m("claude.hot: accept",Ae(k))})};try{t.hot===void 0&&Object.defineProperty(t,"hot",{value:Ge,writable:!1,configurable:!1,enumerable:!1})}catch{}return{hot:Ge,boot:y,afterConnect(){he=!0,(e!==null||I!==null)&&Be()},onInit(o,f){K=f,ne=!0;const d=xt(o)?o:null;d?.phase==="final"&&e!==null&&e.gen===d.gen?(q=!0,v=$t(v,Oe(d.from)),_e()):(ee=d?.phase==="pending",Z(ee),q=!ee,M=d?.gen??0,v=Oe(d?.from)),X(),te&&a(()=>{V||(V=!0,X())},Gr),ee&&I!==null&&x({__frame_hot_ready:!0,gen:M},f),_!==void 0&&(me(_),_=void 0),Se()},onNoInit(){ne=!0,Z(!1),q=!0,Se()},onShell(o){return o?.__frame_revealed===!0?(wt(),!1):Jr(o)?(Bn(o),!0):Zr(o)?(Un(o),!0):on(o)?(Kn(o),!0):!1},attachExtras(o){p=o,J(),o.assess&&X()},inSlot:()=>Le(L),hydration(o,f){ve??={expect:o,maxMs:f}},hydrated(){i()},carried(){return q?h:{}},presented:()=>G}}var Xn="frame_ldx_runtime",cn="frame_ldx_build",Yn="script#an-form",un=256;function Wt(t,e,r){for(const n of t)r(n)&&t.delete(n);t.size>=un&&!t.has(e)&&t.delete(t.values().next().value),t.add(e)}function Pe(t,e,r,n){try{const a=t[e];if(typeof a!="function")return;t[e]=function(...s){if(n){let u;try{u=n(this)}catch{}if(u!==void 0)return u}const l=a.apply(this,s);try{r?.(this)}catch{}return l}}catch{}}var it;function fn(){if(it)return it;const t={media:new Set,contexts:new Set,gate:null,onStart:null,onStop:null};it=t;const e=l=>t.gate?.(l),r=l=>{t.onStop?.(l)},n=window.HTMLMediaElement?.prototype;n&&(Pe(n,"play",l=>{Wt(t.media,l,u=>u.paused),t.onStart?.(l)},e),Pe(n,"pause",r));const a=window.AudioContext,s=window.AudioNode?.prototype;return a&&s&&(Pe(s,"connect",l=>{const u=l.context;u instanceof a&&(Wt(t.contexts,u,R=>R.state==="closed"),t.onStart?.(u))}),Pe(a.prototype,"resume",void 0,e),Pe(a.prototype,"suspend",r)),t}function dn(t){let e=window;for(let r=0;e.parent&&e.parent!==e&&r<8;r++)if(e=e.parent,t(e))return!0;return!1}function hn(){let t=null;const e=()=>t??parent,r=n=>t?n===t:dn(a=>a===n);return{post(n,a){if(t){e().postMessage(n,a);return}let s=parent;for(let l=0;l<8&&(s.postMessage(n,a),!(!s.parent||s.parent===s));l++)s=s.parent},on(n){const a=s=>{const l=s.source;r(l)&&n(s.data,s.origin,s.isTrusted,()=>{t??=l})};return addEventListener("message",a),()=>removeEventListener("message",a)},port:n=>({post(a,s){if(s?.activation){e().postMessage(a,{targetOrigin:n,includeUserActivation:!0});return}if(s?.transfer){e().postMessage(a,n,s.transfer);return}e().postMessage(a,n)},on(a,s){const l=u=>{r(u.source)&&u.origin===n&&a(u.data,u)};return addEventListener("message",l,s),()=>removeEventListener("message",l,s)}})}}function pn(){const t={post:()=>{},on:()=>()=>{}};return{...t,port:()=>t}}var mn=500,vn=2e4,_n="data-token-reads",yn="data-frame-refused-watch",gn="data-frame-unsupported",wn=/(?:^|\s)stylesheet(?:\s|$)/i;function bn(t,e){let r="";if(t instanceof HTMLScriptElement?r=t.src:t instanceof HTMLLinkElement&&wn.test(t.rel)&&(r=t.href),!r)return null;try{const n=new URL(r);return n.origin===location.origin&&n.pathname.startsWith(e)?n.origin+n.pathname:null}catch{return null}}function En(t,e,r){if(!t||e!=="query")return;const n="/_f/"+t+"/";document.documentElement.setAttribute(yn,"");const a=location.href,s=fetch,l=setTimeout,u={method:"HEAD",cache:"no-store",credentials:"same-origin"},R=y=>y.ok||y.status===304;let b=!1,E=!1;const m=()=>removeEventListener("error",T,!0),S=async y=>{const L=await s(y,u);if(R(L))E=!0;else if(L.status===403){const H=await s(a,u);if(R(H)){const h=(await s(y,u)).status;h===403?(E=!0,document.documentElement.setAttribute(gn,""),r()):h<500&&(E=!0)}else H.status>=400&&H.status<500&&(E=!0)}},T=y=>{if(E||b)return;if(document.documentElement.hasAttribute(_n)){E=!0,m();return}const L=bn(y.target,n);L&&(b=!0,l(()=>{S(L).catch(()=>{}).finally(()=>{b=!1,E&&m()})},mn))};addEventListener("error",T,!0),addEventListener("load",m,{once:!0}),l(m,vn)}var lt="__frame_scroll",Sn=150,An=310,kn=160,Rn=3e4;function Tn(){let t=0,e=!1,r=!1,n=!1,a=0,s=null;const l=h=>{try{sessionStorage.setItem(lt,JSON.stringify({y:h}))}catch{}},u=()=>{if(clearTimeout(t),s===null)return;const h=s;s=null,l(h)},R=()=>{if(e){e=!1;return}r=!0,s=scrollY,clearTimeout(t),t=setTimeout(u,Sn)};try{addEventListener("scroll",R,{passive:!0}),addEventListener("pagehide",u)}catch{}const b=()=>{let h;try{h=sessionStorage.getItem(lt)}catch{return null}if(h===null)return null;let v;try{v=JSON.parse(h)}catch{v=null}const M=v?.y;if(!(typeof M=="number"&&Number.isFinite(M)&&M>=0)){try{sessionStorage.removeItem(lt)}catch{}return null}return M};let E=!1;const m=h=>{try{const v=scrollY;scrollTo({top:h,left:0,behavior:"instant"}),a=h,n=!0,clearTimeout(t),s=null,l(h);const M=scrollY;M!==v&&(e=!0),M!==h&&!E&&(E=!0,addEventListener("load",()=>{try{if(scrollY===M){const q=b();m(q!==null?q:a)}}catch{}},{once:!0}))}catch{}},S=()=>{try{return!!location.hash}catch{return!0}};let T=!1;const y=()=>{try{if(T||innerWidth>An||innerHeight>kn)return;T=!0;const h=Date.now(),v=()=>{try{removeEventListener("resize",v)}catch{}if(Date.now()-h>Rn||r||S())return;const M=b();m(M!==null?M:a)};addEventListener("resize",v)}catch{}};let L=!1,H=!1;return{restore(){if(L||(L=!0,S()))return;const h=b();h!==null&&(m(h),y())},promoted(){if(H||(H=!0,S()))return;const h=b();h!==null?(m(h),y()):n&&m(a)}}}function Ln(t,e,r,n){let a=null;try{a=window.trustedTypes?.createPolicy("frame-runtime",{createScriptURL:R=>R})??null}catch{}const s=window.Worker,l=s?.prototype,u=Object.freeze({Worker:s,workerOn:l?.addEventListener,workerPost:l?.postMessage,workerTerminate:l?.terminate,fetch:window.fetch.bind(window),preventDefault:Event.prototype.preventDefault,now:Date.now,policy:a,origins:e});r(t).then(R=>R?.bootTopLevel?R.bootTopLevel(u,n):n.settle()).catch(()=>n.settle())}var Jn="modulepreload",Zn=function(t){return"/"+t},Qn={},On=function(e,r,n){let a=Promise.resolve();function s(l){const u=new Event("vite:preloadError",{cancelable:!0});if(u.payload=l,window.dispatchEvent(u),!u.defaultPrevented)throw l}return a.then(l=>{for(const u of l||[])u.status==="rejected"&&s(u.reason);return e().catch(s)})},Pn=window===top,Xt=Object.getOwnPropertyDescriptor(window,"claude"),Ve=an(Pn,window.__FRAME_PREAMBLE?.topLevel,Xt?.writable===!1),ct=typeof Ve=="object"&&Ve[0],N=ct?pn():hn();(function(){const t=Object.defineProperty,e=globalThis,r=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let n=0;for(let a=0;a<r.length;a++){const s=r[a];try{t(e,s,{value:void 0,writable:!1,configurable:!1})}catch{try{delete e[s]}catch{}try{t(e,s,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof e[s]=="function"&&n++}if(n&&Ve==="framed")try{N.post({__frame_rtc_lockdown_failed:n},"*")}catch{}})();var Yt=1e4,Mn=2e3,ut=2e3,ft=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function Jt(t){for(const e of ft)if(e.endsWith(":*"))try{const r=new URL(t);if(`${r.protocol}//${r.hostname}:*`===e)return!0}catch{}else if(t===e)return!0;return!1}var Me=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),Ne=window.__FRAME_PREAMBLE?.transforms,dt=window.__FRAME_PREAMBLE?.comments,ht=window.__FRAME_PREAMBLE?.translate,de=window.__FRAME_PREAMBLE?.ldx,We=fr(window.__FRAME_PREAMBLE?.cred),Zt=(()=>{try{const[t]=performance.getEntriesByType("navigation"),e=t?.serverTiming?.find(r=>r.name==="frame-cred-exp");return e!==void 0&&/^\d{1,15}$/.test(e.description)?dr(Number(e.description)):void 0}catch{return}})();function Qt(t){return On(()=>import("/_runtime/"+t),void 0)}var Ce=new Set,er=setTimeout,Nn=fetch,Cn=AbortController,jn=800+800*Math.random(),Fn=3e3,Xe=null,tr=new Map;function In(t,e){let r=tr.get(t);return r||tr.set(t,r=xn(t,e)),r}function xn(t,e){if(Xe?.has(t))return Promise.resolve("csp");if(navigator.onLine===!1)return Promise.resolve("offline");const r=new Cn;let n=!1;return er(()=>{n=!0,r.abort()},Fn),Nn("/_runtime/"+t,{signal:r.signal}).then(a=>(r.abort(),a.ok?/javascript/i.test(a.headers.get("content-type")??"")?e instanceof Error&&/:\d+:\d+\)?$/m.test(e.stack??"")?"eval":"served":"mime":"http"),()=>n?"timeout":Xe?.has(t)?"csp":"net")}function ie(t){if(!Xe){const e=Xe=new Set;try{document.addEventListener("securitypolicyviolation",r=>{const n=/\/_runtime\/([^/?#]+)/.exec(r.blockedURI);n&&r.disposition!=="report"&&e.add(n[1])})}catch{}}return Qt(t).catch(()=>new Promise(e=>er(e,jn)).then(()=>Qt(t+"?r=1")).then(e=>(e!==void 0&&Ce.add(t),e)))}function rr(t,e,r){return{contract:t.contract,changes:new Set(t.changes??[]),flags:new Set(t.flags??[]),capabilities:t.capabilities??{},capBudgets:t.capBudgets??{},brokerGen:t.brokerGen,transforms:new Map,shellOrigin:e,shell:r,mount:gt,hooks:Ye,pipe:()=>({wrap:(n,a)=>(...s)=>{try{return a(...s)}catch(l){return Promise.reject(l)}}})}}var ge=null,W=null;function nr(t,e,r){try{Object.defineProperty(t,e,{value:r,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(t,e,{value:r,writable:!1,configurable:!0,enumerable:!0})}catch{}}}var pt=!1,Ye={editBefore:null,edit:null};function Dn(t,e,r=!1){const n=[];let a;if(r)try{Ye.editBefore?.(t)}catch{}for(const s of t.elements){const l=document.querySelector(`[data-id="${s.target}"]`);if(!l){a=s.target;break}if([...Object.keys(s.attrsSet??{}),...s.attrsRemoved??[]].some(u=>!_r(u)||yr(l,u))){a=s.target;break}if(s.text!==void 0&&(!Er(l)||Rr(l))){a=s.target;break}for(const[u,R]of Object.entries(s.attrsSet??{}))if(!ar(l,u)){try{l.setAttribute(u,R)}catch{}or(l,u,R)}for(const u of s.attrsRemoved??[])ar(l,u)||(l.removeAttribute(u),or(l,u,null));typeof s.text=="string"&&Ar(l,s.text),n.push(s.target)}if(r)try{Ye.edit?.(t.seq,n,a)}catch{}if(a!==void 0){N.post({__frame_patch_miss:{seq:t.seq}},e);return}try{document.dispatchEvent(new CustomEvent("claude:edit",{detail:{seq:t.seq,targets:n}}))}catch{}}function or(t,e,r){if(!(t instanceof HTMLInputElement))return;const n=e.toLowerCase();n==="checked"?t.checked=r!==null:n==="value"&&t.type!=="file"&&(t.value=r??"")}function ar(t,e){const r=e.toLowerCase(),n=t;return r==="data-id"||(r==="value"||r==="checked")&&(n.__artifactSecret===!0||/^(password|hidden|file)$/.test(n.type??"")||/(^|\s)(cc-|one-time-code|current-password|new-password)/i.test(`${t.getAttribute("autocomplete")??""} ${n.autocomplete??""}`))}function sr(t){const e=document.documentElement;t==="light"||t==="dark"?(e.dataset.theme=t,e.style.colorScheme=t,pt=!0):pt&&(delete e.dataset.theme,e.style.colorScheme="",pt=!1)}var le=new Map,mt=null;function vt(){let t;const e={u:new Promise(r=>{t=r}),r:r=>{e.done=!0,t(r)},done:!1,nulled:!1};return e}function Je(t,e){t.nulled=!0,t.ver=e,t.r(null)}function _t(t,e){for(const[r,n]of le)n.done||(e&&n.asked?e(r,n):Je(n,t))}function Hn(){for(const t of le.values())if(t.asked&&!t.done)return!0;return!1}var qn=Object.freeze(Object.assign(Object.create(null),{call:Function.prototype.call,apply:Function.prototype.apply,bind:Function.prototype.bind})),yt=!1,gt=(t,e)=>{let r=le.get(t);if(r?.nulled&&yt)r=vt(),le.set(t,r);else if(!r||r.done){r?.nulled&&W&&N.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:t,phase:"install"}},W);return}const n=typeof e=="function"?Object.setPrototypeOf(e,qn):Object.assign(Object.create(null),e);typeof n.then=="function"&&delete n.then,r.want=void 0,r.r(Object.freeze(n))};function ir(){const t=Xt?.value??{};nr(window,"claude",t);for(const e of Object.keys(Me)){if(t[e]!==void 0){nr(t,e,t[e]);continue}le.set(e,vt())}if(t.use===void 0){const e=r=>{if(typeof r!="string"||!Object.hasOwn(Me,r))return Promise.resolve(null);let n=le.get(r);return n?(mt&&(n.nulled||n.want!==void 0)&&(n=mt(r,n)),n.asked=!0,n.u):Promise.resolve(t[r]??null)};try{Object.defineProperty(t,"use",{value:e,writable:!0,configurable:!0,enumerable:!1})}catch{}}return t}if(Ve==="framed"){let t;const e=Ne&&fe.test(Ne)?ie(Ne).catch(c=>{t={f:Ne,e:c}}):Promise.resolve(void 0),r=c=>{if(c.type==="auxclick"&&c.button!==1)return;const _=c.target,p=_&&_.closest?_.closest("a[href],area[href]"):null;if(!p)return;const C=p.getAttribute("href");if(!C)return;let j;try{j=new URL(C,document.baseURI)}catch{return}if((j.protocol==="http:"||j.protocol==="https:")&&j.origin!==location.origin){c.preventDefault();const B=(p.getAttribute("target")??"").toLowerCase(),$=c.type==="auxclick"||c.metaKey||c.ctrlKey||c.shiftKey||c.altKey||!["","_self","_top","_parent"].includes(B);N.post({__frame_nav:!0,url:j.href,newTab:$},"*")}};addEventListener("click",r,!0),addEventListener("auxclick",r,!0);const n={},a=c=>{c.isTrusted&&(n.pointer=!0)},s=c=>{c.isTrusted&&(n.click=!0)};addEventListener("pointermove",a,{capture:!0,passive:!0}),addEventListener("click",s,{capture:!0,passive:!0});const l={cb:null};addEventListener("keydown",c=>l.cb?.(c),!0);const u={cb:null};addEventListener("keydown",c=>u.cb?.(c));const R=fn();e.then(c=>c?.installEscapeForward?.(l,_=>{W&&N.post(_,W)})),e.then(c=>{try{c?.installFocusKeep?.()}catch{}}),e.then(c=>{if(!c?.wireNav)return;const _=N.port("*");c.wireNav(_),removeEventListener("click",r,!0),removeEventListener("auxclick",r,!0),removeEventListener("pointermove",a,!0),removeEventListener("click",s,!0),c.wireEngagement?.(n,_,R)});let b=null,E=!1;try{b=Tn()}catch{}const m=document.readyState==="loading"?new Promise(c=>document.addEventListener("DOMContentLoaded",()=>c(),{once:!0})):Promise.resolve();let S="dcl",T=!1;m.then(()=>{T=!0});let y=null,L=null;try{L=Ur(window.name),y=Ut(null,L)}catch{}const H=ir();let h=null;try{h=ln(H,y,{post:(c,_)=>N.post(c,_),dcl:m},L)}catch{}e.then(c=>{try{h&&c?.installHotExtras?.(h)}catch{}});let v=null;const M=()=>Array.isArray(v?.flags)&&v.flags.includes("frame_ldx_runtime")&&!!de&&fe.test(de)&&document.querySelector("script#an-form")!==null;try{h?.hydration(M,Kr)}catch{}let q=null,ee=0;const ne=N.on((c,_,p,C)=>{Jt(_)&&Pr(c)&&(C(),v=c.__frame_init,W=_,ne(),clearTimeout(ee),q?.())});if(We){const c=Zt===void 0?{__frame_cred:We}:{__frame_cred:We,exp:Zt};for(const _ of ft)try{_.endsWith(":*")||N.post(c,_)}catch{}}N.post({__frame_connect:!0},"*");try{h?.afterConnect()}catch{}const K=setTimeout,he=clearTimeout;let we=()=>NaN,je=()=>[];try{we=performance.now.bind(performance),je=performance.getEntriesByType.bind(performance)}catch{}let I=0;const be=()=>{try{N.post({__frame_alive:!0},"*")}catch{}I=K(be,Mn)},Fe=()=>he(I);be(),addEventListener("load",Fe,{once:!0});const ce=new Promise(c=>{q=c,ee=setTimeout(()=>{ne(),c()},Yt)}),oe=new WeakSet;addEventListener("error",c=>{c.target&&oe.add(c.target)},!0);try{En(Kt(),We,()=>{e.then(c=>{try{c?.drawRefusedNotice?.()}catch{}})})}catch{}const pe=()=>{let c=[];try{c=[...document.querySelectorAll("link[rel~=stylesheet]:not([rel~=alternate])")].filter(p=>!p.sheet&&!p.disabled&&!oe.has(p)&&p.getAttribute("href")&&URL.canParse(p.href)&&(!p.media||matchMedia(p.media).matches))}catch{}let _=c.length;return _===0?Promise.resolve():new Promise(p=>{try{const C=ut-we();C>0&&T&&(S="sheets");const j=K(p,C>0?C<ut?C:ut:0),B=()=>{--_===0&&(he(j),p())};for(const $ of c)$.addEventListener("load",B,{once:!0}),$.addEventListener("error",B,{once:!0})}catch{p()}})};m.then(()=>{try{E||b?.restore()}catch{}}),Promise.all([ce,m,e]).then(([,,c])=>{if(v?.hostOverlays!==!0||!W)return;let _=!1;try{_=c?.declaresCover?.()===!0}catch{}N.post({__frame_layout:{cover:_}},W)});const Ie={cb:null};N.on((c,_)=>{if(Jt(_)&&Mr(c)){try{b?.promoted()}catch{}Ie.cb?.()}}),ce.then(async()=>{if(!v||!W){_t();try{h?.onNoInit()}catch{}return}if(sr(v.theme),v.hostVisible===!1&&e.then(i=>i?.applyHostVisible?.(!1,R)),v.hostKeys!==void 0){const i=W,w=v.hostKeys;e.then(g=>g?.installHostKeyForward?.(u,w,O=>N.post(O,i)))}try{h?.onInit(v.hot,W)}catch{}let c;const _=()=>{try{!c&&de&&M()&&(c=ie(de),c.then(i=>i?.prefetch?.()).catch(()=>{}))}catch{}};_(),m.then(_);const p=W,C=N.port(p),j=(i,w)=>N.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:i,phase:w}},p),B=(i,w,g)=>{new Promise(O=>O(In(w,g))).then(O=>j(i,O),()=>j(i))},$=i=>N.post({__frame_cap_recovered:{cap:i}},p);let V=v.brokerGen;const te=()=>h?.boot.ver??"",xe=te(),x=(i,w)=>{const g=te();he(w.t),w.want=g,w.t=K(()=>{w.done||Je(w,g)},Yt),N.post({__frame_cap_want:!0,cap:i,ver:g},p)},Ze=(i,w)=>{const g=le.get(i.cap),O=Me[i.cap];if(!w||!g||g.done||g.want!==i.ver||!fe.test(O))return;if(he(g.t),g.want=void 0,V=i.brokerGen??V,i.ver!==te()){x(i.cap,g);return}if(!i.grant||i.cap==="network"){Je(g,i.ver);return}const J=ge,Z=ge={...J,capabilities:{...J.capabilities,[i.cap]:i.grant},capBudgets:{...J.capBudgets,[i.cap]:{...J.capBudgets[i.cap],...i.budgets}}};ie(O).then(_e=>{Ce.has(O)&&$(i.cap),Z.brokerGen=V,yt=!0;try{_e?.install?.(Z)}catch{j(i.cap,"install")}finally{yt=!1}},_e=>B(i.cap,O,_e)).then(()=>{g.done||Je(g,i.ver)})};let X=!1,De=!1;N.on((i,w,g)=>{if(w!==p)return;try{if(h?.onShell(i))return}catch{}if(Cr(i)&&sr(i.__frame_theme.theme),en(i)&&Ze(i,g),g&&tn(i)&&(V=i.brokerGen??V),Nr(i)){const Z=i.__frame_host_visible.visible;e.then(_e=>_e?.applyHostVisible?.(Z,R))}Or(i)&&Dn(i.__frame_patch,p,g);const O=i?.__fc_mode;O&&typeof O=="object"&&!X&&dt&&fe.test(dt)&&(X=!0,ie(dt).then(Z=>Z.install?.(p,O.on===!0,C)).catch(()=>{}));const J=i?.__ft_cmd;J&&typeof J=="object"&&!De&&ht&&fe.test(ht)&&(De=!0,ie(ht).then(Z=>Z.install?.(p,J,C)).catch(()=>{}))});const He=Object.keys(v.capabilities??{}).filter(i=>Object.hasOwn(Me,i)).map(i=>[i,Me[i]]).filter(i=>typeof i[1]=="string"&&fe.test(i[1])),G=p;let qe=!1,Be=()=>{};const Ue=new Promise(i=>{Be=()=>{qe=!0,i()}}),Ke=()=>(qe||(S="caps"),Ue),Ee=y!==null||xt(v.hot)||v.hostVisible===!1||v.hostOverlays===!0;T&&(S="init");const wt=m.then(()=>Ee?Ke():new Promise(i=>K(i,0))).then(pe).then(()=>{let i=!0;try{i=Ee||Hn()}catch{}return i?Ke():void 0}).then(()=>{Fe();const i=hr(je,we);N.post(i?{__frame_ready:!0,nav:i,gate:S}:{__frame_ready:!0,gate:S},G),e.then(w=>{w?.installSizeReporter?.(G,Ie,C),w?.installPaintReporter?.(C)})}),Se=await Promise.allSettled(He.map(([,i])=>ie(i))),Y=await e;if(Y?.buildBoot||(t?B("_transforms",t.f,t.e):j("_transforms")),Y?.buildBoot)try{ge=Y.buildBoot(v,Y.TRANSFORMS??{},{shellOrigin:G,mount:gt,hooks:Ye,shell:C},i=>N.post({__frame_cap_telemetry:i},G))}catch{j("_transforms","install"),ge=rr(v,G,C)}else ge=rr(v,G,C);Y?.buildBoot&&Ce.has(Ne??"")&&$("_transforms");const me=ge;me.brokerGen=V,Se.forEach((i,w)=>{const[g,O]=He[w];if(i.status!=="fulfilled"){B(g,O,i.reason);return}Ce.has(O)&&$(g);try{i.value?.install?.(me)}catch{j(g,"install")}});const Ge=v.capWants===!0;Ge&&(mt=(i,w)=>{const g=te();if(!g)return w;if(!w.nulled)return w.want!==g&&x(i,w),w;if(g===w.ver)return w;const O=vt();return le.set(i,O),x(i,O),O}),_t(xe,Ge&&te()!==xe?x:void 0);try{Y?.watchFirstScreen?.(v,pe,()=>{E=!0,N.post({__frame_first_screen:!0},G)})}catch{}Be(),await wt;let ve=!1;try{ve=M()}catch{}de&&ve?(c??ie(de)).then(i=>i?.boot?.({shellOrigin:p,build:me.flags.has(cn),hot:h?.hot??null,carried:h?.carried(),presented:()=>h?.presented()??!0})).catch(()=>!1).then(i=>{h?.hydrated(),i!==!0?j("_ldx"):Ce.has(de)&&$("_ldx")}):h?.hydrated()})}else ct&&(ir(),Ln(ct,ft,ie,{settle:_t,mount:gt}))})();</script><!-- /frame-runtime -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مِعيار | أدوات الموارد البشرية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#122622; --ink-soft:#3c534d; --paper:#F6F3EC; --paper-raised:#FFFFFF;
+    --line:#D9D2C2; --pine:#16413A; --pine-deep:#0D2B26; --gold:#A9822C; --gold-soft:#E7D9B0;
+    --danger:#8C3B2E; --radius:4px;
+    padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#EDE8DA; --ink-soft:#B9B2A0; --paper:#10201C; --paper-raised:#152F29;
+      --line:#2A423B; --pine:#3E8C77; --pine-deep:#1B4A40; --gold:#D8B85B; --gold-soft:#3A331E;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#EDE8DA; --ink-soft:#B9B2A0; --paper:#10201C; --paper-raised:#152F29;
+    --line:#2A423B; --pine:#3E8C77; --pine-deep:#1B4A40; --gold:#D8B85B; --gold-soft:#3A331E;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--paper);color:var(--ink);}
+  body{font-family:'Tajawal',system-ui,sans-serif;font-weight:400;line-height:1.65;-webkit-font-smoothing:antialiased;}
+  a{color:var(--pine);}
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px;}
+
+  header.top{border-bottom:1px solid var(--line);padding:20px 0 0;background:var(--paper);position:sticky;top:0;z-index:20;}
+  .brandrow{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-bottom:14px;flex-wrap:wrap;}
+  .brand{display:flex;align-items:baseline;gap:10px;}
+  .brand .mark{font-weight:900;font-size:1.4rem;color:var(--pine);letter-spacing:0.5px;}
+  .brand .sub{font-size:.8rem;color:var(--ink-soft);font-weight:400;}
+  .searchbox{position:relative;flex:1;min-width:180px;max-width:320px;}
+  .searchbox input{width:100%;padding:9px 38px 9px 12px;border:1px solid var(--line);border-radius:100px;background:var(--paper-raised);color:var(--ink);font-family:inherit;font-size:.85rem;}
+  .searchbox input:focus{outline:2px solid var(--pine);outline-offset:1px;}
+  .searchbox .ic{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--ink-soft);font-size:.85rem;pointer-events:none;}
+
+  nav.tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;}
+  nav.tabs::-webkit-scrollbar{display:none;}
+  .tab{padding:11px 14px;font-size:.87rem;white-space:nowrap;color:var(--ink-soft);border-bottom:2px solid transparent;cursor:pointer;font-weight:500;}
+  .tab.active{color:var(--pine);border-bottom-color:var(--gold);font-weight:700;}
+
+  main{padding:30px 0 70px;}
+  section.panel{display:none;}
+  section.panel.active{display:block;}
+
+  h1.hero{font-size:clamp(1.35rem,3vw,1.9rem);font-weight:900;color:var(--pine-deep);margin:0 0 8px;line-height:1.35;}
+  p.lede{color:var(--ink-soft);font-size:.96rem;max-width:66ch;margin:0 0 26px;}
+
+  .grid{display:grid;grid-template-columns:1.15fr 1fr;gap:20px;align-items:start;}
+  @media (max-width:760px){.grid{grid-template-columns:1fr;}}
+
+  .card{background:var(--paper-raised);border:1px solid var(--line);border-radius:var(--radius);padding:22px;}
+  .card h2{font-size:1rem;margin:0 0 16px;color:var(--pine-deep);font-weight:700;}
+
+  .field{margin-bottom:15px;}
+  .field label{display:block;font-size:.82rem;color:var(--ink-soft);margin-bottom:6px;}
+  .field .hint{font-size:.71rem;color:var(--ink-soft);opacity:.8;margin-top:4px;}
+  .inputrow{position:relative;}
+  input[type=number],input[type=text]{
+    width:100%;padding:10px 13px;border:1px solid var(--line);border-radius:var(--radius);
+    background:var(--paper);color:var(--ink);font-family:inherit;font-size:.95rem;-moz-appearance:textfield;
+  }
+  input[type=number]{padding-left:44px;}
+  input:focus,select:focus{outline:2px solid var(--pine);outline-offset:1px;border-color:var(--pine);}
+  input[type=number]::-webkit-outer-spin-button,input[type=number]::-webkit-inner-spin-button{margin:0;}
+  .unit{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:.75rem;color:var(--ink-soft);pointer-events:none;}
+  select{width:100%;padding:10px 13px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);color:var(--ink);font-family:inherit;font-size:.9rem;}
+
+  .three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  @media (max-width:480px){.three{grid-template-columns:1fr 1fr 1fr;}.twocol{grid-template-columns:1fr;}}
+
+  details.adv{margin-top:6px;border-top:1px solid var(--line);padding-top:14px;}
+  details.adv summary{cursor:pointer;font-size:.85rem;color:var(--pine);font-weight:500;list-style:none;}
+  details.adv summary::-webkit-details-marker{display:none;}
+  details.adv summary:before{content:"▸ ";}
+  details.adv[open] summary:before{content:"▾ ";}
+  details.adv .field{margin-top:16px;}
+
+  .result{background:var(--pine-deep);color:#F3EFE2;border-radius:var(--radius);padding:22px;position:sticky;top:90px;}
+  .result h2{font-size:.86rem;font-weight:500;color:#BFD6CC;margin:0 0 4px;}
+  .result .big{font-size:clamp(1.8rem,4.4vw,2.4rem);font-weight:900;color:var(--gold-soft);margin:4px 0 2px;direction:ltr;text-align:right;font-variant-numeric:tabular-nums;}
+  .result .bigunit{font-size:.9rem;color:#BFD6CC;font-weight:400;}
+  .breakdown{margin-top:16px;border-top:1px solid rgba(255,255,255,.15);padding-top:14px;}
+  .brow{display:flex;justify-content:space-between;font-size:.83rem;padding:6px 0;color:#D9E5DF;}
+  .brow span:last-child{font-variant-numeric:tabular-nums;color:#F3EFE2;font-weight:500;}
+  .warn{margin-top:14px;font-size:.76rem;color:#E7D9B0;background:rgba(169,130,44,.15);border:1px solid rgba(169,130,44,.35);padding:10px 12px;border-radius:var(--radius);}
+  .good{margin-top:14px;font-size:.76rem;color:#CFE8DC;background:rgba(62,140,119,.18);border:1px solid rgba(62,140,119,.4);padding:10px 12px;border-radius:var(--radius);}
+
+  .legal{margin-top:26px;}
+  .legal h3{font-size:.88rem;color:var(--pine-deep);margin:0 0 8px;}
+  .legal p{font-size:.83rem;color:var(--ink-soft);margin:0 0 10px;}
+  .legal .art{border-right:3px solid var(--gold);padding:4px 16px;margin:12px 0;font-size:.86rem;color:var(--ink);background:var(--paper-raised);border-radius:0 var(--radius) var(--radius) 0;}
+
+  .rulelist{list-style:none;margin:0;padding:0;}
+  .rulelist li{padding:12px 0;border-bottom:1px solid var(--line);font-size:.87rem;display:flex;gap:12px;}
+  .rulelist li:last-child{border-bottom:none;}
+  .rulelist .num{color:var(--gold);font-weight:900;flex:0 0 auto;}
+
+  .stepbar{display:flex;justify-content:space-between;font-size:.7rem;color:var(--ink-soft);margin:10px 0 6px;}
+  .barwrap{height:8px;background:var(--line);border-radius:100px;overflow:hidden;}
+  .barfill{height:100%;background:var(--gold);border-radius:100px;transition:width .25s;}
+
+  .searchresults{display:none;}
+  .searchresults.active{display:block;}
+  .sresult{background:var(--paper-raised);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;margin-bottom:12px;cursor:pointer;}
+  .sresult:hover{border-color:var(--pine);}
+  .sresult .q{font-weight:700;color:var(--pine-deep);font-size:.9rem;margin-bottom:5px;}
+  .sresult .a{font-size:.83rem;color:var(--ink-soft);}
+  .sresult .go{font-size:.71rem;color:var(--gold);margin-top:6px;}
+  .noresults{color:var(--ink-soft);font-size:.87rem;padding:20px 0;}
+
+  /* decision cards */
+  .deccard{background:var(--paper-raised);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;margin-bottom:16px;}
+  .deccard .top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap;margin-bottom:10px;}
+  .deccard h3{margin:0;font-size:1.02rem;color:var(--pine-deep);}
+  .decpct{background:var(--gold-soft);color:var(--gold);font-weight:900;font-size:.95rem;padding:4px 14px;border-radius:100px;white-space:nowrap;}
+  .decpct.tbd{background:var(--line);color:var(--ink-soft);font-size:.75rem;font-weight:700;}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0;}
+  .chip{background:var(--paper);border:1px solid var(--line);border-radius:100px;padding:4px 12px;font-size:.76rem;color:var(--ink-soft);}
+  .decmeta{font-size:.78rem;color:var(--ink-soft);display:flex;gap:16px;flex-wrap:wrap;margin-top:10px;}
+  .decmeta a{color:var(--pine);font-weight:600;}
+
+  /* penalty engine */
+  .ptable{width:100%;border-collapse:collapse;font-size:.84rem;margin-top:6px;}
+  .ptable th{text-align:right;color:var(--ink-soft);font-weight:500;padding:8px 6px;border-bottom:1px solid var(--line);font-size:.76rem;}
+  .ptable td{padding:8px 6px;border-bottom:1px solid var(--line);}
+  .ptable input{padding:6px 8px;font-size:.82rem;}
+  .miniBtn{background:none;border:1px solid var(--line);border-radius:var(--radius);padding:6px 10px;font-size:.78rem;color:var(--ink-soft);cursor:pointer;font-family:inherit;}
+  .miniBtn:hover{border-color:var(--pine);color:var(--pine);}
+  .primaryBtn{background:var(--pine);color:#fff;border:none;border-radius:var(--radius);padding:10px 18px;font-size:.86rem;cursor:pointer;font-family:inherit;font-weight:700;}
+  .primaryBtn:hover{background:var(--pine-deep);}
+  .delBtn{background:none;border:none;color:var(--danger);cursor:pointer;font-size:.9rem;}
+
+  .comingsoon{text-align:center;padding:60px 20px;color:var(--ink-soft);}
+  .comingsoon .icon{font-size:2.2rem;margin-bottom:14px;}
+  .comingsoon h2{color:var(--pine-deep);font-size:1.15rem;margin:0 0 8px;}
+
+  footer{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--ink-soft);font-size:.78rem;text-align:center;}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brandrow">
+      <div class="brand"><span class="mark">مِعيار</span><span class="sub">أدوات مرجعية لمختصي الموارد البشرية</span></div>
+      <div class="searchbox"><input type="text" id="globalSearch" placeholder="ابحث: نهاية الخدمة، توطين المحاسبة، تأخير…" fdprocessedid="dkdtaj"><span class="ic">🔍</span></div>
+    </div>
+    <nav class="tabs" id="tabs">
+      <div class="tab active" data-tab="overtime">الأوفر تايم</div>
+      <div class="tab" data-tab="eos">نهاية الخدمة</div>
+      <div class="tab" data-tab="leave">راتب الإجازة</div>
+      <div class="tab" data-tab="professions">قرارات توطين المهن</div>
+      <div class="tab" data-tab="nitaqat">فجوة النطاق</div>
+      <div class="tab" data-tab="penalties">الجزاءات</div>
+      <div class="tab" data-tab="lawref">نظام العمل</div>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="searchresults" id="searchResults"></div>
+  <div id="allPanels">
+
+  <!-- ===== الأوفر تايم ===== -->
+  <section class="panel active" id="panel-overtime">
+    <h1 class="hero">حاسبة الأجر الإضافي (الأوفر تايم)</h1>
+    <p class="lede">احتساب مستحقات ساعات العمل الإضافية وفق المادة (107) من نظام العمل السعودي.</p>
+    <div class="grid">
+      <div class="card">
+        <h2>بيانات الموظف</h2>
+        <div class="field"><label for="basic">الراتب الأساسي الشهري</label>
+          <div class="inputrow"><input type="number" id="basic" value="6000" min="0" step="50" fdprocessedid="bohnhk"><span class="unit">ريال</span></div></div>
+        <div class="field"><label for="hours">عدد ساعات العمل الإضافي</label>
+          <div class="inputrow"><input type="number" id="hours" value="10" min="0" step="0.5" fdprocessedid="vrs27r"><span class="unit">ساعة</span></div>
+          <div class="hint">للفترة التي تريدين احتسابها</div></div>
+        <details class="adv"><summary>إعدادات متقدمة</summary>
+          <div class="twocol">
+            <div class="field"><label for="daysmonth">أيام الشهر المعتمدة</label>
+              <div class="inputrow"><input type="number" id="daysmonth" value="30" min="28" max="31" fdprocessedid="q6lq9t"><span class="unit">يوم</span></div></div>
+            <div class="field"><label for="dailyhours">ساعات العمل اليومية</label>
+              <div class="inputrow"><input type="number" id="dailyhours" value="8" min="1" max="12" fdprocessedid="qyi4fd"><span class="unit">ساعة</span></div></div>
+          </div>
+          <div class="field"><label for="rate">نسبة الأجر الإضافي</label>
+            <div class="inputrow"><input type="number" id="rate" value="150" min="100" step="5" fdprocessedid="gu1k4"><span class="unit">%</span></div>
+            <div class="hint">النظام يحدد 150% كحد أدنى.</div></div>
+        </details>
+      </div>
+      <div class="result">
+        <h2>إجمالي المستحق</h2>
+        <div class="big"><span id="totalOut">375.00</span></div>
+        <div class="bigunit">ريال سعودي</div>
+        <div class="breakdown">
+          <div class="brow"><span>أجر الساعة العادية</span><span id="hourlyOut">25.00 ريال</span></div>
+          <div class="brow"><span>أجر الساعة الإضافية (<span id="rateOut">150</span>%)</span><span id="ohourlyOut">37.50 ريال</span></div>
+          <div class="brow"><span>عدد الساعات</span><span id="hoursOut">١٠</span></div>
+        </div>
+        <div class="warn" id="capWarn" style="display:none;">النظام يحدد حداً أقصى 720 ساعة سنوياً (المادة 22 من اللائحة التنفيذية) إلا بموافقة العامل.</div>
+      </div>
+    </div>
+    <div class="legal"><h3>السند النظامي</h3>
+      <div class="art">المادة (107): «يدفع صاحب العمل للعامل أجراً إضافياً عن ساعات العمل الإضافية يوازي أجر الساعة مضافاً إليه (50%) من أجره الأساسي.»</div>
+    </div>
+  </section>
+
+  <!-- ===== نهاية الخدمة ===== -->
+  <section class="panel" id="panel-eos">
+    <h1 class="hero">حاسبة مكافأة نهاية الخدمة</h1>
+    <p class="lede">وفق المادتين (84) و(85)، بدقة على مستوى السنوات والأشهر والأيام.</p>
+    <div class="grid">
+      <div class="card">
+        <h2>بيانات الموظف</h2>
+        <div class="field"><label for="eosWage">الأجر الشامل الأخير (شهري)</label>
+          <div class="inputrow"><input type="number" id="eosWage" value="8000" min="0" step="50"><span class="unit">ريال</span></div>
+          <div class="hint">الأساسي + جميع البدلات النظامية الثابتة</div></div>
+        <div class="field"><label>مدة الخدمة</label>
+          <div class="three">
+            <div class="inputrow"><input type="number" id="eosY" value="6" min="0" step="1" style="padding-left:13px;text-align:center;"></div>
+            <div class="inputrow"><input type="number" id="eosM" value="0" min="0" max="11" step="1" style="padding-left:13px;text-align:center;"></div>
+            <div class="inputrow"><input type="number" id="eosD" value="0" min="0" max="30" step="1" style="padding-left:13px;text-align:center;"></div>
+          </div>
+          <div class="stepbar"><span>سنوات</span><span>أشهر</span><span>أيام</span></div>
+        </div>
+        <div class="field"><label for="eosType">سبب انتهاء علاقة العمل</label>
+          <select id="eosType">
+            <option value="employer">إنهاء من صاحب العمل / انتهاء مدة العقد (المادة 84)</option>
+            <option value="resign">استقالة العامل (المادة 85)</option>
+          </select>
+        </div>
+      </div>
+      <div class="result">
+        <h2>مكافأة نهاية الخدمة المستحقة</h2>
+        <div class="big"><span id="eosTotalOut">28,000.00</span></div>
+        <div class="bigunit">ريال سعودي</div>
+        <div class="breakdown">
+          <div class="brow"><span>مدة الخدمة الفعلية</span><span id="eosYearsOut">٦ سنة</span></div>
+          <div class="brow"><span>المكافأة الكاملة (المادة 84)</span><span id="eosBaseOut">28,000.00 ريال</span></div>
+          <div class="brow"><span>نسبة الاستحقاق المطبّقة</span><span id="eosPctOut">١٠٠%</span></div>
+        </div>
+        <div class="good" id="eosNote" style="display: block;">إنهاء العقد من صاحب العمل أو انتهاء مدته: تُصرف المكافأة كاملة وفق المادة (84).</div>
+      </div>
+    </div>
+    <div class="legal"><h3>السند النظامي</h3>
+      <div class="art">المادة (84): نصف أجر شهر عن كل سنة من السنوات الخمس الأولى، وأجر شهر كامل عن كل سنة تالية، وتُحسب كسور السنة بنسبة ما قضاه منها.</div>
+      <div class="art">المادة (85) عند الاستقالة: لا استحقاق قبل سنتين، ثُلث المكافأة من سنتين إلى أقل من 5 سنوات، ثُلثاها من 5 إلى أقل من 10 سنوات، وكاملة بعد 10 سنوات فأكثر.</div>
+      <p>لا تشمل هذه الحاسبة حالات الحرمان (المادة 80) ولا استثناءات المرأة العاملة (المادة 87).</p>
+    </div>
+  </section>
+
+  <!-- ===== راتب الإجازة ===== -->
+  <section class="panel" id="panel-leave">
+    <h1 class="hero">حاسبة راتب الإجازة السنوية</h1>
+    <p class="lede">وفق المادة (109): 21 يوماً كحد أدنى، وتصبح 30 يوماً بعد 5 سنوات خدمة متصلة لدى نفس صاحب العمل.</p>
+    <div class="grid">
+      <div class="card">
+        <h2>بيانات الموظف</h2>
+        <div class="field"><label for="leaveWage">الأجر الشامل الشهري</label>
+          <div class="inputrow"><input type="number" id="leaveWage" value="7000" min="0" step="50"><span class="unit">ريال</span></div></div>
+        <div class="field"><label for="leaveYears">سنوات الخدمة المتصلة</label>
+          <div class="inputrow"><input type="number" id="leaveYears" value="3" min="0" step="0.5"><span class="unit">سنة</span></div>
+          <div class="hint">تحدد استحقاق 21 أو 30 يوماً تلقائياً</div></div>
+        <div class="field"><label for="leaveDays">عدد أيام الإجازة المطلوب احتسابها</label>
+          <div class="inputrow"><input type="number" id="leaveDays" value="21" min="0" step="1"><span class="unit">يوم</span></div>
+          <div class="hint">يتحدث تلقائياً حسب سنوات الخدمة، ويمكن تعديله لحالة جزئية</div></div>
+      </div>
+      <div class="result">
+        <h2>راتب الإجازة المستحق</h2>
+        <div class="big"><span id="leaveTotalOut">4,900.00</span></div>
+        <div class="bigunit">ريال سعودي</div>
+        <div class="breakdown">
+          <div class="brow"><span>أجر اليوم الواحد</span><span id="leaveDailyOut">233.33 ريال</span></div>
+          <div class="brow"><span>رصيد الإجازة النظامي</span><span id="leaveEntitleOut">21 يوماً</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="legal"><h3>السند النظامي</h3>
+      <div class="art">المادة (109): «للعامل الحق في إجازة سنوية لا تقل مدتها عن 21 يوماً، تصبح 30 يوماً إذا أمضى 5 سنوات متصلة لدى صاحب العمل نفسه، وتكون بأجر يُدفع مقدماً.»</div>
+    </div>
+  </section>
+
+  <!-- ===== قرارات توطين المهن ===== -->
+  <section class="panel" id="panel-professions">
+    <h1 class="hero">قرارات توطين المهن</h1>
+    <p class="lede">قرارات نوعية تستهدف مهناً محددة بنسبة توطين خاصة بها، منفصلة عن نظام نطاقات العام. قاعدة تتوسّع تدريجياً — كل قرار جديد يُضاف فور صدوره وتوثيقه.</p>
+
+    <div class="deccard">
+      <div class="top"><h3>توطين مهن التسويق والمبيعات</h3><span class="decpct">60%</span></div>
+      <div class="chips">
+        <span class="chip">مدير تسويق</span><span class="chip">أخصائي تسويق</span><span class="chip">مصمم جرافيك</span>
+        <span class="chip">أخصائي علاقات عامة</span><span class="chip">مدير مبيعات</span><span class="chip">مندوب مبيعات</span>
+        <span class="chip">أخصائي مبيعات</span><span class="chip">وسيط سلع</span>
+      </div>
+      <p style="font-size:.85rem;color:var(--ink-soft);margin:10px 0;">يُطبَّق على المنشآت التي يعمل بها 3 عاملين فأكثر في هذه المهن، بحد أدنى للأجر قدره 5,500 ريال لاحتساب السعودي ضمن النسبة.</p>
+      <div class="decmeta">
+        <span>تاريخ الإعلان: 19/1/2026</span><span>حيّز التنفيذ: 19/4/2026</span>
+        <a href="https://www.hrsd.gov.sa/media-center/news/%D8%A7%D9%84%D8%AA%D9%88%D8%B7%D9%8A%D9%86-%D9%81%D9%8A-%D9%85%D9%87%D9%86-%D8%A7%D9%84%D8%AA%D8%B3%D9%88%D9%8A%D9%82-%D9%88%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA" target="_blank" rel="noopener">المصدر الرسمي (وزارة الموارد البشرية) ↗</a>
+      </div>
+    </div>
+
+    <div class="deccard">
+      <div class="top"><h3>توطين المهن الهندسية</h3><span class="decpct">30%</span></div>
+      <div class="chips">
+        <span class="chip">مهندس معماري</span><span class="chip">مهندس صناعي</span><span class="chip">مهندس إلكترونيات</span>
+        <span class="chip">مهندس مركبات</span><span class="chip">مهندس نفط وغاز</span><span class="chip">مهندس طيران</span>
+        <span class="chip">+40 مهنة أخرى</span>
+      </div>
+      <p style="font-size:.85rem;color:var(--ink-soft);margin:10px 0;">يستهدف القرار 46 مهنة هندسية، على المنشآت التي يعمل بها 5 مهندسين فأكثر، بحد أدنى أجر 8,000 ريال، مع اشتراط الاعتماد المهني من الهيئة السعودية للمهندسين.</p>
+      <div class="decmeta">
+        <span>القرار رقم 93483 — 31/12/2025</span><span>حيّز التنفيذ: 30/6/2026</span>
+        <a href="https://www.hrsd.gov.sa/media-center/news/%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D8%B1%D9%81%D8%B9-%D9%86%D8%B3%D8%A8%D8%A9-%D8%A7%D9%84%D8%AA%D9%88%D8%B7%D9%8A%D9%86-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%87%D9%86-%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D9%8A%D8%A9" target="_blank" rel="noopener">المصدر الرسمي (وزارة الموارد البشرية) ↗</a>
+      </div>
+    </div>
+
+    <div class="deccard">
+      <div class="top"><h3>توطين مهن إدارة المشاريع</h3><span class="decpct">70%</span></div>
+      <div class="chips"><span class="chip">مدير مشروع</span><span class="chip">منسق مشاريع</span><span class="chip">مراقب مشروع</span></div>
+      <div class="decmeta"><span>حيّز التنفيذ: 14 فبراير 2027</span>
+        <a href="https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%A5%D8%AC%D8%B1%D8%A7%D8%A6%D9%8A-%D9%84%D8%AA%D9%88%D8%B7%D9%8A%D9%86-%D9%85%D9%87%D9%86-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9" target="_blank" rel="noopener">المصدر الرسمي ↗</a>
+      </div>
+    </div>
+
+    <div class="deccard">
+      <div class="top"><h3>توطين مهنة طب الأسنان</h3><span class="decpct">45% ← 55%</span></div>
+      <div class="chips"><span class="chip">طبيب أسنان</span></div>
+      <p style="font-size:.85rem;color:var(--ink-soft);margin:10px 0;">القرار يرفع النسبة على مرحلتين (45% ثم 55%) مع حد أدنى للأجور.</p>
+      <div class="decmeta"><span>تاريخ الإعلان: 27/1/2026</span>
+        <a href="https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%A5%D8%AC%D8%B1%D8%A7%D8%A6%D9%8A-%D9%84%D9%82%D8%B1%D8%A7%D8%B1-%D8%AA%D9%88%D8%B7%D9%8A%D9%86-%D9%85%D9%87%D9%86%D8%A9-%D8%B7%D8%A8-%D8%A7%D9%84%D8%A3%D8%B3%D9%86%D8%A7%D9%86" target="_blank" rel="noopener">المصدر الرسمي ↗</a>
+      </div>
+    </div>
+
+    <div class="deccard">
+      <div class="top"><h3>توطين المهن الإدارية المساندة</h3><span class="decpct tbd">يُرجى مراجعة الدليل الإجرائي</span></div>
+      <div class="chips"><span class="chip">سكرتارية</span><span class="chip">أعمال إدارية ومساندة</span></div>
+      <div class="decmeta"><span>تاريخ النشر: 5/4/2026</span>
+        <a href="https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%A5%D8%AC%D8%B1%D8%A7%D8%A6%D9%8A-%D9%84%D9%82%D8%B1%D8%A7%D8%B1-%D8%AA%D9%88%D8%B7%D9%8A%D9%86-%D8%A7%D9%84%D9%85%D9%87%D9%86-%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D9%86%D8%AF%D8%A9" target="_blank" rel="noopener">المصدر الرسمي ↗</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🔍 البحث عن قرار مهنة معينة</h2>
+      <p style="font-size:.83rem;color:var(--ink-soft);margin:-6px 0 14px;">يُكتب اسم المهنة (مثلاً: محاسب، أخصائي مشتريات) ليُفتح بحث مباشر داخل موقع الوزارة في تبويب جديد.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <input type="text" id="profSearchInput" placeholder="اسم المهنة…" style="flex:1;min-width:200px;">
+        <button class="primaryBtn" id="profSearchBtn">ابحث في موقع الوزارة ↗</button>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:20px;">
+      <h2>حاسبة فجوة المهنة</h2>
+      <p style="font-size:.83rem;color:var(--ink-soft);margin:-6px 0 14px;">اختيار قرار موثّق، وإدخال عدد الموظفين في هذي المهنة لمعرفة الفجوة وعدد السعوديين المطلوبين.</p>
+      <div class="twocol">
+        <div class="field"><label for="profSelect">القرار</label>
+          <select id="profSelect">
+            <option value="60">توطين التسويق والمبيعات (60%)</option>
+            <option value="70">توطين إدارة المشاريع (70%)</option>
+            <option value="45">توطين طب الأسنان — المرحلة الأولى (45%)</option>
+            <option value="55">توطين طب الأسنان — المرحلة الثانية (55%)</option>
+            <option value="40">توطين المحاسبة — المرحلة الحالية (40%)</option>
+            <option value="70">توطين المحاسبة — الهدف النهائي (70%)</option>
+            <option value="70">توطين المشتريات (70%)</option>
+            <option value="30">توطين المهن الفنية الهندسية (30%)</option>
+          </select>
+        </div>
+        <div class="field"><label for="profTotal">إجمالي موظفي هذي المهنة</label>
+          <div class="inputrow"><input type="number" id="profTotal" value="8" min="1" step="1"><span class="unit">موظف</span></div></div>
+      </div>
+      <div class="field"><label for="profSaudi">عدد السعوديين منهم حالياً</label>
+        <div class="inputrow"><input type="number" id="profSaudi" value="2" min="0" step="1"><span class="unit">موظف</span></div></div>
+      <div class="good" id="profResult" style="color:var(--pine-deep);background:var(--gold-soft);border-color:var(--gold);">نسبتكم الحالية ٢٥% — تحتاجين لإضافة حوالي 7 موظف سعودي بهذي المهنة للوصول لـ60%.</div>
+    </div>
+
+    <div class="deccard">
+      <div class="top"><h3>توطين المهن المحاسبية</h3><span class="decpct">40% ← 70%</span></div>
+      <div class="chips">
+        <span class="chip">محاسب</span><span class="chip">محاسب تكاليف</span><span class="chip">محاسب قانوني</span>
+        <span class="chip">مدير مالي</span><span class="chip">مدير حسابات</span><span class="chip">مراقب مالي</span>
+        <span class="chip">مراجع مالي أول</span><span class="chip">مدير مراجعة</span><span class="chip">+36 مهنة أخرى</span>
+      </div>
+      <p style="font-size:.85rem;color:var(--ink-soft);margin:10px 0;">يشمل 44 مهنة محاسبية. يُطبَّق على المنشآت التي يعمل بها 5 محاسبين فأكثر، بحد أدنى أجر 6,000 ريال لحملة البكالوريوس. يرتفع تدريجياً من 40% إلى 70% على 5 مراحل خلال 5 سنوات (قرار وزاري رقم 103108).</p>
+      <div class="decmeta">
+        <span>تاريخ الإعلان: 26/1/2025</span><span>بدء التطبيق: 27/10/2025</span>
+        <a href="https://www.hrsd.gov.sa/sites/default/files/2026-04/aldlyl-alajrayy-lqrar-twtyn-almhn-almhasbyt.pdf" target="_blank" rel="noopener">الدليل الإجرائي الرسمي (PDF) ↗</a>
+      </div>
+    </div>
+
+    <div class="deccard">
+      <div class="top"><h3>توطين مهن المشتريات</h3><span class="decpct">70%</span></div>
+      <div class="chips">
+        <span class="chip">مدير مشتريات</span><span class="chip">مندوب مشتريات</span><span class="chip">مدير عقود</span>
+        <span class="chip">أخصائي مناقصات</span><span class="chip">أخصائي مشتريات</span><span class="chip">أمين مستودع</span>
+        <span class="chip">مدير مستودع</span><span class="chip">+5 مهن أخرى</span>
+      </div>
+      <p style="font-size:.85rem;color:var(--ink-soft);margin:10px 0;">يشمل 12 مهنة. يُطبَّق على المنشآت التي يعمل بها 3 عاملين فأكثر من المهن المشمولة وفق التصنيف السعودي الموحد للمهن.</p>
+      <div class="decmeta">
+        <span>حيّز التنفيذ: 31/5/2026</span>
+        <a href="https://www.hrsd.gov.sa/media-center/news/%D8%B1%D9%81%D8%B9-%D9%86%D8%B3%D8%A8%D8%A9-%D8%A7%D9%84%D8%AA%D9%88%D8%B7%D9%8A%D9%86-%D9%81%D9%8A-%D9%85%D9%87%D9%86-%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B1%D9%8A%D8%A7%D8%AA" target="_blank" rel="noopener">المصدر الرسمي ↗</a>
+      </div>
+    </div>
+
+    <div class="deccard">
+      <div class="top"><h3>توطين المهن الفنية الهندسية</h3><span class="decpct">30%</span></div>
+      <div class="chips">
+        <span class="chip">فني تكييف وتهوية وتدفئة</span><span class="chip">ميكانيكي تبريد</span><span class="chip">فني كهربائي</span>
+        <span class="chip">فني ميكانيكي صيانة</span><span class="chip">مساح</span><span class="chip">رسام معماري</span>
+        <span class="chip">فني سلامة / إطفاء</span><span class="chip">فني إلكترونيات</span><span class="chip">+80 مهنة أخرى</span>
+      </div>
+      <p style="font-size:.85rem;color:var(--ink-soft);margin:10px 0;">يشمل نحو 90 مهنة فنية هندسية (تشغيل وصيانة، لا تصميم). يُطبَّق على المنشآت التي يعمل بها 5 فنيين فأكثر، بحد أدنى أجر 5,000 ريال، ويشترط الاعتماد المهني من الهيئة السعودية للمهندسين للفنيين أيضاً.</p>
+      <div class="decmeta">
+        <span>القرار رقم 103105 — 26/1/2025</span><span>بدء التطبيق: 27/7/2025</span>
+        <a href="https://www.hrsd.gov.sa/sites/default/files/2026-01/aldlyl-alajrayy-lqrar-twtyn-mhn-alfnyt-alhndsyt.pdf" target="_blank" rel="noopener">الدليل الإجرائي الرسمي (PDF) ↗</a>
+      </div>
+    </div>
+
+    <div class="legal">
+      <h3>تكبير هذي القائمة؟</h3>
+      <p>إرسال رابط القرار الرسمي أو الدليل الإجرائي لأي مهنة أخرى، ليُضاف هنا موثّقاً بنفس الطريقة — بالنسبة والمهن المستهدفة والمصدر. هذا أدق من اختراع أرقام قد تتغيّر أو تكون غير صحيحة.</p>
+    </div>
+  </section>
+
+  <!-- ===== فجوة النطاق ===== -->
+  <section class="panel" id="panel-nitaqat">
+    <h1 class="hero">حاسبة فجوة التوطين (نطاقات)</h1>
+    <p class="lede">احتساب نسبة التوطين الحالية والفجوة حتى النسبة المطلوبة للنشاط في نطاقات.</p>
+    <div class="grid">
+      <div class="card">
+        <h2>بيانات المنشأة</h2>
+        <div class="field"><label for="nitTotal">إجمالي عدد الموظفين</label>
+          <div class="inputrow"><input type="number" id="nitTotal" value="50" min="1" step="1"><span class="unit">موظف</span></div></div>
+        <div class="field"><label for="nitSaudi">عدد الموظفين السعوديين حالياً</label>
+          <div class="inputrow"><input type="number" id="nitSaudi" value="10" min="0" step="1"><span class="unit">موظف</span></div></div>
+        <div class="field"><label for="nitRequired">النسبة المطلوبة للنشاط</label>
+          <div class="inputrow"><input type="number" id="nitRequired" value="25" min="0" max="100" step="0.5"><span class="unit">%</span></div>
+          <div class="hint">من منصة نطاقات/قوى — تختلف حسب النشاط وحجم المنشأة</div></div>
+      </div>
+      <div class="result">
+        <h2>نسبة التوطين الحالية</h2>
+        <div class="big"><span id="nitCurrentOut">٢٠</span></div>
+        <div class="bigunit">بالمئة (%)</div>
+        <div class="stepbar"><span>0%</span><span id="nitReqLabel">المطلوب 25%</span><span>100%</span></div>
+        <div class="barwrap"><div class="barfill" id="nitBar" style="width:20%;"></div></div>
+        <div class="breakdown"><div class="brow"><span>الفجوة عن النسبة المطلوبة</span><span id="nitGapOut">٥%</span></div></div>
+        <div class="warn" id="nitWarn" style="display: block;">تحتاجين لإضافة حوالي 4 موظف سعودي للوصول للنسبة المطلوبة.</div>
+        <div class="good" id="nitGood" style="display:none;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== الجزاءات ===== -->
+  <section class="panel" id="panel-penalties">
+    <h1 class="hero">محرك الجزاءات التأديبية</h1>
+    <p class="lede">يُجهَّز جدول لائحة المنشأة مرة واحدة، وبعدها يُحتسب الجزاء المناسب فوراً — بدون رجوع يدوي للائحة. الجدول يُحفظ في المتصفح فقط.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h2>احتساب جزاء</h2>
+        <div class="field"><label for="pViolation">نوع المخالفة</label><select id="pViolation"><optgroup label="مواعيد العمل"><option value="0">تأخر حتى 15 دقيقة (بدون تعطيل عمال آخرين)</option><option value="1">تأخر حتى 15 دقيقة (مع تعطيل عمال آخرين)</option><option value="2">تأخر 15-30 دقيقة (بدون تعطيل)</option><option value="3">تأخر 15-30 دقيقة (مع تعطيل)</option><option value="4">تأخر 30-60 دقيقة (بدون تعطيل)</option><option value="5">تأخر 30-60 دقيقة (مع تعطيل + حسم دقائق التأخر)</option><option value="6">تأخر أكثر من ساعة (+ حسم أجر ساعات التأخر)</option><option value="7">ترك العمل قبل الانصراف ≤15 دقيقة (+ حسم المدة)</option><option value="8">ترك العمل قبل الانصراف &gt;15 دقيقة (+ حسم المدة)</option><option value="9">البقاء بمكان العمل بعد الدوام دون إذن مسبق</option><option value="10">غياب بدون إذن يوم واحد خلال السنة العقدية</option><option value="11">غياب متصل 2-6 أيام (+ حسم أجر الغياب)</option><option value="12">غياب متصل 7-10 أيام (+ حسم أجر الغياب)</option><option value="13">غياب متصل 11-14 يوم (+ حسم أجر الغياب)</option></optgroup><optgroup label="تنظيم العمل"><option value="14">التواجد دون مبرر خارج مكان العمل المخصص</option><option value="15">استقبال زائرين لغير أعمال المنشأة دون إذن</option><option value="16">استعمال آلات/أدوات المنشأة لأغراض خاصة دون إذن</option><option value="17">التدخل في عمل ليس من اختصاصه دون تكليف</option><option value="18">الخروج أو الدخول من غير الأماكن المخصصة</option><option value="19">الإهمال في تنظيف/صيانة الآلات أو عدم التبليغ عن خلل</option><option value="20">عدم إعادة أدوات الإصلاح والصيانة لمكانها</option><option value="21">تمزيق أو إتلاف إعلانات/بلاغات إدارة المنشأة</option><option value="22">الإهمال في العهد (سيارات، معدات، أجهزة، أدوات)</option><option value="23">الأكل في مكان العمل أو خارج أوقات الراحة</option><option value="24">النوم أثناء العمل</option><option value="25">النوم في حالات تستدعي يقظة مستمرة</option><option value="26">التسكع أو التواجد في غير مكان العمل أثناء الدوام</option><option value="27">التلاعب في إثبات الحضور والانصراف</option><option value="28">عدم إطاعة الأوامر العادية أو تنفيذ التعليمات الظاهرة</option><option value="29">التحريض على مخالفة الأوامر والتعليمات الخطية</option><option value="30">التدخين في الأماكن المحظورة والمعلن عنها</option><option value="31">الإهمال المؤدي لضرر بصحة العمال أو المعدات</option></optgroup><optgroup label="سلوك العامل"><option value="32">التشاجر مع الزملاء أو الغير / إحداث مشاغبات</option><option value="33">التمارض أو الادعاء الكاذب بإصابة عمل</option><option value="34">الامتناع عن الكشف الطبي أو رفض تعليمات العلاج</option><option value="35">مخالفة التعليمات الصحية الملصقة بأماكن العمل</option><option value="36">الكتابة على الجدران أو لصق إعلانات غير مصرح بها</option><option value="37">رفض التفتيش الإداري عند الحضور أو الانصراف</option><option value="38">عدم تسليم النقود/الشيكات المحصلة في مواعيدها</option><option value="39">الامتناع عن ارتداء ملابس/أجهزة السلامة المقررة</option><option value="40">تعمد الخلوة مع الجنس الآخر في أماكن العمل</option><option value="41">الإيحاء للآخرين بما يخدش الحياء قولاً أو فعلاً</option><option value="42">الاعتداء بالقول أو التمييز العنصري/العرقي على الزملاء أو العملاء</option><option value="43">تقديم بلاغ أو شكوى كيدية</option><option value="44">عدم الامتثال لطلب لجنة التحقيق بالحضور أو الإدلاء بالشهادة</option><option value="45">عدم الالتزام بالزي الرسمي إلى نهاية الدوام</option></optgroup></select></div>
+        <div class="field"><label for="pOccur">عدد مرات التكرار</label>
+          <select id="pOccur">
+            <option value="0">المرة الأولى</option><option value="1">المرة الثانية</option>
+            <option value="2">المرة الثالثة</option><option value="3">المرة الرابعة فأكثر</option>
+          </select>
+        </div>
+      </div>
+      <div class="result">
+        <h2>الجزاء المطبَّق</h2>
+        <div class="big" style="font-size:1.5rem;"><span id="pResultOut">إنذار كتابي</span></div>
+        <div class="bigunit" id="pResultSub">المرة الأولى</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:20px;">
+      <h2>جدول لائحة الجزاءات الخاص بالمنشأة</h2>
+      <p style="font-size:.82rem;color:var(--ink-soft);margin:-8px 0 14px;">الجدول مبني على فئة "مخالفات مواعيد العمل" من لائحة تنظيم عمل معتمدة رسمياً من الوزارة (نموذج شائع الاستخدام). البنود المستخرجة من مستند ممسوح ضوئياً يُفضَّل التأكد منها من أصل اللائحة. يمكن تعديل أي بند أو استبداله باللائحة الخاصة بالمنشأة — التعديلات تُحفظ في المتصفح فقط. فئتا "تنظيم العمل" و"سلوك العامل" لسه ما انضافتا، أقدر أزيدهما في جولة ثانية.</p>
+      <div style="overflow-x:auto;">
+        <table class="ptable" id="pTable">
+          <thead><tr><th>المخالفة</th><th>الأولى</th><th>الثانية</th><th>الثالثة</th><th>الرابعة+</th><th></th></tr></thead>
+          <tbody id="pTableBody"><tr><td><input type="text" data-i="0" data-f="name" value="تأخر حتى 15 دقيقة (بدون تعطيل عمال آخرين)" style="min-width:160px;"></td><td><input type="text" data-i="0" data-j="0" data-f="p" value="إنذار كتابي" style="min-width:110px;"></td><td><input type="text" data-i="0" data-j="1" data-f="p" value="خصم 5%" style="min-width:110px;"></td><td><input type="text" data-i="0" data-j="2" data-f="p" value="خصم 10%" style="min-width:110px;"></td><td><input type="text" data-i="0" data-j="3" data-f="p" value="خصم 20%" style="min-width:110px;"></td><td><button class="delBtn" data-del="0">✕</button></td></tr><tr><td><input type="text" data-i="1" data-f="name" value="تأخر حتى 15 دقيقة (مع تعطيل عمال آخرين)" style="min-width:160px;"></td><td><input type="text" data-i="1" data-j="0" data-f="p" value="إنذار كتابي" style="min-width:110px;"></td><td><input type="text" data-i="1" data-j="1" data-f="p" value="خصم 15%" style="min-width:110px;"></td><td><input type="text" data-i="1" data-j="2" data-f="p" value="خصم 25%" style="min-width:110px;"></td><td><input type="text" data-i="1" data-j="3" data-f="p" value="خصم 50%" style="min-width:110px;"></td><td><button class="delBtn" data-del="1">✕</button></td></tr><tr><td><input type="text" data-i="2" data-f="name" value="تأخر 15-30 دقيقة (بدون تعطيل)" style="min-width:160px;"></td><td><input type="text" data-i="2" data-j="0" data-f="p" value="خصم 10%" style="min-width:110px;"></td><td><input type="text" data-i="2" data-j="1" data-f="p" value="خصم 15%" style="min-width:110px;"></td><td><input type="text" data-i="2" data-j="2" data-f="p" value="خصم 25%" style="min-width:110px;"></td><td><input type="text" data-i="2" data-j="3" data-f="p" value="خصم 50%" style="min-width:110px;"></td><td><button class="delBtn" data-del="2">✕</button></td></tr><tr><td><input type="text" data-i="3" data-f="name" value="تأخر 15-30 دقيقة (مع تعطيل)" style="min-width:160px;"></td><td><input type="text" data-i="3" data-j="0" data-f="p" value="خصم 25%" style="min-width:110px;"></td><td><input type="text" data-i="3" data-j="1" data-f="p" value="خصم 50%" style="min-width:110px;"></td><td><input type="text" data-i="3" data-j="2" data-f="p" value="خصم 75%" style="min-width:110px;"></td><td><input type="text" data-i="3" data-j="3" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><button class="delBtn" data-del="3">✕</button></td></tr><tr><td><input type="text" data-i="4" data-f="name" value="تأخر 30-60 دقيقة (بدون تعطيل)" style="min-width:160px;"></td><td><input type="text" data-i="4" data-j="0" data-f="p" value="خصم 25%" style="min-width:110px;"></td><td><input type="text" data-i="4" data-j="1" data-f="p" value="خصم 50%" style="min-width:110px;"></td><td><input type="text" data-i="4" data-j="2" data-f="p" value="خصم 75%" style="min-width:110px;"></td><td><input type="text" data-i="4" data-j="3" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><button class="delBtn" data-del="4">✕</button></td></tr><tr><td><input type="text" data-i="5" data-f="name" value="تأخر 30-60 دقيقة (مع تعطيل + حسم دقائق التأخر)" style="min-width:160px;"></td><td><input type="text" data-i="5" data-j="0" data-f="p" value="خصم 30%" style="min-width:110px;"></td><td><input type="text" data-i="5" data-j="1" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><input type="text" data-i="5" data-j="2" data-f="p" value="خصم 50%" style="min-width:110px;"></td><td><input type="text" data-i="5" data-j="3" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><button class="delBtn" data-del="5">✕</button></td></tr><tr><td><input type="text" data-i="6" data-f="name" value="تأخر أكثر من ساعة (+ حسم أجر ساعات التأخر)" style="min-width:160px;"></td><td><input type="text" data-i="6" data-j="0" data-f="p" value="إنذار كتابي" style="min-width:110px;"></td><td><input type="text" data-i="6" data-j="1" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><input type="text" data-i="6" data-j="2" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="6" data-j="3" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><button class="delBtn" data-del="6">✕</button></td></tr><tr><td><input type="text" data-i="7" data-f="name" value="ترك العمل قبل الانصراف ≤15 دقيقة (+ حسم المدة)" style="min-width:160px;"></td><td><input type="text" data-i="7" data-j="0" data-f="p" value="إنذار كتابي" style="min-width:110px;"></td><td><input type="text" data-i="7" data-j="1" data-f="p" value="خصم 10%" style="min-width:110px;"></td><td><input type="text" data-i="7" data-j="2" data-f="p" value="خصم 25%" style="min-width:110px;"></td><td><input type="text" data-i="7" data-j="3" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><button class="delBtn" data-del="7">✕</button></td></tr><tr><td><input type="text" data-i="8" data-f="name" value="ترك العمل قبل الانصراف &gt;15 دقيقة (+ حسم المدة)" style="min-width:160px;"></td><td><input type="text" data-i="8" data-j="0" data-f="p" value="خصم 10%" style="min-width:110px;"></td><td><input type="text" data-i="8" data-j="1" data-f="p" value="خصم 25%" style="min-width:110px;"></td><td><input type="text" data-i="8" data-j="2" data-f="p" value="خصم 50%" style="min-width:110px;"></td><td><input type="text" data-i="8" data-j="3" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><button class="delBtn" data-del="8">✕</button></td></tr><tr><td><input type="text" data-i="9" data-f="name" value="البقاء بمكان العمل بعد الدوام دون إذن مسبق" style="min-width:160px;"></td><td><input type="text" data-i="9" data-j="0" data-f="p" value="إنذار كتابي" style="min-width:110px;"></td><td><input type="text" data-i="9" data-j="1" data-f="p" value="خصم 10%" style="min-width:110px;"></td><td><input type="text" data-i="9" data-j="2" data-f="p" value="خصم 25%" style="min-width:110px;"></td><td><input type="text" data-i="9" data-j="3" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><button class="delBtn" data-del="9">✕</button></td></tr><tr><td><input type="text" data-i="10" data-f="name" value="غياب بدون إذن يوم واحد خلال السنة العقدية" style="min-width:160px;"></td><td><input type="text" data-i="10" data-j="0" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="10" data-j="1" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><input type="text" data-i="10" data-j="2" data-f="p" value="خصم 4 أيام" style="min-width:110px;"></td><td><input type="text" data-i="10" data-j="3" data-f="p" value="حرمان ترقية/علاوة لمرة" style="min-width:110px;"></td><td><button class="delBtn" data-del="10">✕</button></td></tr><tr><td><input type="text" data-i="11" data-f="name" value="غياب متصل 2-6 أيام (+ حسم أجر الغياب)" style="min-width:160px;"></td><td><input type="text" data-i="11" data-j="0" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="11" data-j="1" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><input type="text" data-i="11" data-j="2" data-f="p" value="خصم 4 أيام" style="min-width:110px;"></td><td><input type="text" data-i="11" data-j="3" data-f="p" value="حرمان ترقية/علاوة لمرة" style="min-width:110px;"></td><td><button class="delBtn" data-del="11">✕</button></td></tr><tr><td><input type="text" data-i="12" data-f="name" value="غياب متصل 7-10 أيام (+ حسم أجر الغياب)" style="min-width:160px;"></td><td><input type="text" data-i="12" data-j="0" data-f="p" value="خصم 4 أيام" style="min-width:110px;"></td><td><input type="text" data-i="12" data-j="1" data-f="p" value="خصم 5 أيام" style="min-width:110px;"></td><td><input type="text" data-i="12" data-j="2" data-f="p" value="حرمان ترقية/علاوة لمرة" style="min-width:110px;"></td><td><input type="text" data-i="12" data-j="3" data-f="p" value="فصل مع المكافأة (إن لم يتجاوز 30 يوم غياب)" style="min-width:110px;"></td><td><button class="delBtn" data-del="12">✕</button></td></tr><tr><td><input type="text" data-i="13" data-f="name" value="غياب متصل 11-14 يوم (+ حسم أجر الغياب)" style="min-width:160px;"></td><td><input type="text" data-i="13" data-j="0" data-f="p" value="خصم 5 أيام" style="min-width:110px;"></td><td><input type="text" data-i="13" data-j="1" data-f="p" value="حرمان ترقية/علاوة + إنذار بالفصل (م80)" style="min-width:110px;"></td><td><input type="text" data-i="13" data-j="2" data-f="p" value="—" style="min-width:110px;"></td><td><input type="text" data-i="13" data-j="3" data-f="p" value="فصل طبقاً للمادة (80)" style="min-width:110px;"></td><td><button class="delBtn" data-del="13">✕</button></td></tr><tr><td><input type="text" data-i="14" data-f="name" value="التواجد دون مبرر خارج مكان العمل المخصص" style="min-width:160px;"></td><td><input type="text" data-i="14" data-j="0" data-f="p" value="خصم 10%" style="min-width:110px;"></td><td><input type="text" data-i="14" data-j="1" data-f="p" value="خصم 25%" style="min-width:110px;"></td><td><input type="text" data-i="14" data-j="2" data-f="p" value="خصم 50%" style="min-width:110px;"></td><td><input type="text" data-i="14" data-j="3" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><button class="delBtn" data-del="14">✕</button></td></tr><tr><td><input type="text" data-i="15" data-f="name" value="استقبال زائرين لغير أعمال المنشأة دون إذن" style="min-width:160px;"></td><td><input type="text" data-i="15" data-j="0" data-f="p" value="إنذار كتابي" style="min-width:110px;"></td><td><input type="text" data-i="15" data-j="1" data-f="p" value="خصم 10%" style="min-width:110px;"></td><td><input type="text" data-i="15" data-j="2" data-f="p" value="خصم 15%" style="min-width:110px;"></td><td><input type="text" data-i="15" data-j="3" data-f="p" value="خصم 25%" style="min-width:110px;"></td><td><button class="delBtn" data-del="15">✕</button></td></tr><tr><td><input type="text" data-i="16" data-f="name" value="استعمال آلات/أدوات المنشأة لأغراض خاصة دون إذن" style="min-width:160px;"></td><td><input type="text" data-i="16" data-j="0" data-f="p" value="إنذار كتابي" style="min-width:110px;"></td><td><input type="text" data-i="16" data-j="1" data-f="p" value="خصم 10%" style="min-width:110px;"></td><td><input type="text" data-i="16" data-j="2" data-f="p" value="خصم 25%" style="min-width:110px;"></td><td><input type="text" data-i="16" data-j="3" data-f="p" value="خصم 50%" style="min-width:110px;"></td><td><button class="delBtn" data-del="16">✕</button></td></tr><tr><td><input type="text" data-i="17" data-f="name" value="التدخل في عمل ليس من اختصاصه دون تكليف" style="min-width:160px;"></td><td><input type="text" data-i="17" data-j="0" data-f="p" value="خصم 50%" style="min-width:110px;"></td><td><input type="text" data-i="17" data-j="1" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><input type="text" data-i="17" data-j="2" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="17" data-j="3" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><button class="delBtn" data-del="17">✕</button></td></tr><tr><td><input type="text" data-i="18" data-f="name" value="الخروج أو الدخول من غير الأماكن المخصصة" style="min-width:160px;"></td><td><input type="text" data-i="18" data-j="0" data-f="p" value="إنذار كتابي" style="min-width:110px;"></td><td><input type="text" data-i="18" data-j="1" data-f="p" value="خصم 10%" style="min-width:110px;"></td><td><input type="text" data-i="18" data-j="2" data-f="p" value="خصم 15%" style="min-width:110px;"></td><td><input type="text" data-i="18" data-j="3" data-f="p" value="خصم 25%" style="min-width:110px;"></td><td><button class="delBtn" data-del="18">✕</button></td></tr><tr><td><input type="text" data-i="19" data-f="name" value="الإهمال في تنظيف/صيانة الآلات أو عدم التبليغ عن خلل" style="min-width:160px;"></td><td><input type="text" data-i="19" data-j="0" data-f="p" value="خصم 50%" style="min-width:110px;"></td><td><input type="text" data-i="19" data-j="1" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><input type="text" data-i="19" data-j="2" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="19" data-j="3" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><button class="delBtn" data-del="19">✕</button></td></tr><tr><td><input type="text" data-i="20" data-f="name" value="عدم إعادة أدوات الإصلاح والصيانة لمكانها" style="min-width:160px;"></td><td><input type="text" data-i="20" data-j="0" data-f="p" value="إنذار كتابي" style="min-width:110px;"></td><td><input type="text" data-i="20" data-j="1" data-f="p" value="خصم 25%" style="min-width:110px;"></td><td><input type="text" data-i="20" data-j="2" data-f="p" value="خصم 50%" style="min-width:110px;"></td><td><input type="text" data-i="20" data-j="3" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><button class="delBtn" data-del="20">✕</button></td></tr><tr><td><input type="text" data-i="21" data-f="name" value="تمزيق أو إتلاف إعلانات/بلاغات إدارة المنشأة" style="min-width:160px;"></td><td><input type="text" data-i="21" data-j="0" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="21" data-j="1" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><input type="text" data-i="21" data-j="2" data-f="p" value="خصم 5 أيام" style="min-width:110px;"></td><td><input type="text" data-i="21" data-j="3" data-f="p" value="فصل مع المكافأة" style="min-width:110px;"></td><td><button class="delBtn" data-del="21">✕</button></td></tr><tr><td><input type="text" data-i="22" data-f="name" value="الإهمال في العهد (سيارات، معدات، أجهزة، أدوات)" style="min-width:160px;"></td><td><input type="text" data-i="22" data-j="0" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="22" data-j="1" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><input type="text" data-i="22" data-j="2" data-f="p" value="خصم 5 أيام" style="min-width:110px;"></td><td><input type="text" data-i="22" data-j="3" data-f="p" value="فصل مع المكافأة" style="min-width:110px;"></td><td><button class="delBtn" data-del="22">✕</button></td></tr><tr><td><input type="text" data-i="23" data-f="name" value="الأكل في مكان العمل أو خارج أوقات الراحة" style="min-width:160px;"></td><td><input type="text" data-i="23" data-j="0" data-f="p" value="إنذار كتابي" style="min-width:110px;"></td><td><input type="text" data-i="23" data-j="1" data-f="p" value="خصم 10%" style="min-width:110px;"></td><td><input type="text" data-i="23" data-j="2" data-f="p" value="خصم 15%" style="min-width:110px;"></td><td><input type="text" data-i="23" data-j="3" data-f="p" value="خصم 25%" style="min-width:110px;"></td><td><button class="delBtn" data-del="23">✕</button></td></tr><tr><td><input type="text" data-i="24" data-f="name" value="النوم أثناء العمل" style="min-width:160px;"></td><td><input type="text" data-i="24" data-j="0" data-f="p" value="إنذار كتابي" style="min-width:110px;"></td><td><input type="text" data-i="24" data-j="1" data-f="p" value="خصم 10%" style="min-width:110px;"></td><td><input type="text" data-i="24" data-j="2" data-f="p" value="خصم 25%" style="min-width:110px;"></td><td><input type="text" data-i="24" data-j="3" data-f="p" value="خصم 50%" style="min-width:110px;"></td><td><button class="delBtn" data-del="24">✕</button></td></tr><tr><td><input type="text" data-i="25" data-f="name" value="النوم في حالات تستدعي يقظة مستمرة" style="min-width:160px;"></td><td><input type="text" data-i="25" data-j="0" data-f="p" value="خصم 50%" style="min-width:110px;"></td><td><input type="text" data-i="25" data-j="1" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><input type="text" data-i="25" data-j="2" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="25" data-j="3" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><button class="delBtn" data-del="25">✕</button></td></tr><tr><td><input type="text" data-i="26" data-f="name" value="التسكع أو التواجد في غير مكان العمل أثناء الدوام" style="min-width:160px;"></td><td><input type="text" data-i="26" data-j="0" data-f="p" value="خصم 10%" style="min-width:110px;"></td><td><input type="text" data-i="26" data-j="1" data-f="p" value="خصم 25%" style="min-width:110px;"></td><td><input type="text" data-i="26" data-j="2" data-f="p" value="خصم 50%" style="min-width:110px;"></td><td><input type="text" data-i="26" data-j="3" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><button class="delBtn" data-del="26">✕</button></td></tr><tr><td><input type="text" data-i="27" data-f="name" value="التلاعب في إثبات الحضور والانصراف" style="min-width:160px;"></td><td><input type="text" data-i="27" data-j="0" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><input type="text" data-i="27" data-j="1" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="27" data-j="2" data-f="p" value="حرمان ترقية/علاوة لمرة" style="min-width:110px;"></td><td><input type="text" data-i="27" data-j="3" data-f="p" value="فصل مع المكافأة" style="min-width:110px;"></td><td><button class="delBtn" data-del="27">✕</button></td></tr><tr><td><input type="text" data-i="28" data-f="name" value="عدم إطاعة الأوامر العادية أو تنفيذ التعليمات الظاهرة" style="min-width:160px;"></td><td><input type="text" data-i="28" data-j="0" data-f="p" value="خصم 25%" style="min-width:110px;"></td><td><input type="text" data-i="28" data-j="1" data-f="p" value="خصم 50%" style="min-width:110px;"></td><td><input type="text" data-i="28" data-j="2" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><input type="text" data-i="28" data-j="3" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><button class="delBtn" data-del="28">✕</button></td></tr><tr><td><input type="text" data-i="29" data-f="name" value="التحريض على مخالفة الأوامر والتعليمات الخطية" style="min-width:160px;"></td><td><input type="text" data-i="29" data-j="0" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="29" data-j="1" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><input type="text" data-i="29" data-j="2" data-f="p" value="خصم 5 أيام" style="min-width:110px;"></td><td><input type="text" data-i="29" data-j="3" data-f="p" value="فصل مع المكافأة" style="min-width:110px;"></td><td><button class="delBtn" data-del="29">✕</button></td></tr><tr><td><input type="text" data-i="30" data-f="name" value="التدخين في الأماكن المحظورة والمعلن عنها" style="min-width:160px;"></td><td><input type="text" data-i="30" data-j="0" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="30" data-j="1" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><input type="text" data-i="30" data-j="2" data-f="p" value="خصم 5 أيام" style="min-width:110px;"></td><td><input type="text" data-i="30" data-j="3" data-f="p" value="فصل مع المكافأة" style="min-width:110px;"></td><td><button class="delBtn" data-del="30">✕</button></td></tr><tr><td><input type="text" data-i="31" data-f="name" value="الإهمال المؤدي لضرر بصحة العمال أو المعدات" style="min-width:160px;"></td><td><input type="text" data-i="31" data-j="0" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="31" data-j="1" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><input type="text" data-i="31" data-j="2" data-f="p" value="خصم 5 أيام" style="min-width:110px;"></td><td><input type="text" data-i="31" data-j="3" data-f="p" value="فصل مع المكافأة" style="min-width:110px;"></td><td><button class="delBtn" data-del="31">✕</button></td></tr><tr><td><input type="text" data-i="32" data-f="name" value="التشاجر مع الزملاء أو الغير / إحداث مشاغبات" style="min-width:160px;"></td><td><input type="text" data-i="32" data-j="0" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><input type="text" data-i="32" data-j="1" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="32" data-j="2" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><input type="text" data-i="32" data-j="3" data-f="p" value="خصم 5 أيام" style="min-width:110px;"></td><td><button class="delBtn" data-del="32">✕</button></td></tr><tr><td><input type="text" data-i="33" data-f="name" value="التمارض أو الادعاء الكاذب بإصابة عمل" style="min-width:160px;"></td><td><input type="text" data-i="33" data-j="0" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><input type="text" data-i="33" data-j="1" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="33" data-j="2" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><input type="text" data-i="33" data-j="3" data-f="p" value="خصم 5 أيام" style="min-width:110px;"></td><td><button class="delBtn" data-del="33">✕</button></td></tr><tr><td><input type="text" data-i="34" data-f="name" value="الامتناع عن الكشف الطبي أو رفض تعليمات العلاج" style="min-width:160px;"></td><td><input type="text" data-i="34" data-j="0" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><input type="text" data-i="34" data-j="1" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="34" data-j="2" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><input type="text" data-i="34" data-j="3" data-f="p" value="خصم 5 أيام" style="min-width:110px;"></td><td><button class="delBtn" data-del="34">✕</button></td></tr><tr><td><input type="text" data-i="35" data-f="name" value="مخالفة التعليمات الصحية الملصقة بأماكن العمل" style="min-width:160px;"></td><td><input type="text" data-i="35" data-j="0" data-f="p" value="خصم 50%" style="min-width:110px;"></td><td><input type="text" data-i="35" data-j="1" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><input type="text" data-i="35" data-j="2" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="35" data-j="3" data-f="p" value="خصم 5 أيام" style="min-width:110px;"></td><td><button class="delBtn" data-del="35">✕</button></td></tr><tr><td><input type="text" data-i="36" data-f="name" value="الكتابة على الجدران أو لصق إعلانات غير مصرح بها" style="min-width:160px;"></td><td><input type="text" data-i="36" data-j="0" data-f="p" value="إنذار كتابي" style="min-width:110px;"></td><td><input type="text" data-i="36" data-j="1" data-f="p" value="خصم 10%" style="min-width:110px;"></td><td><input type="text" data-i="36" data-j="2" data-f="p" value="خصم 25%" style="min-width:110px;"></td><td><input type="text" data-i="36" data-j="3" data-f="p" value="خصم 50%" style="min-width:110px;"></td><td><button class="delBtn" data-del="36">✕</button></td></tr><tr><td><input type="text" data-i="37" data-f="name" value="رفض التفتيش الإداري عند الحضور أو الانصراف" style="min-width:160px;"></td><td><input type="text" data-i="37" data-j="0" data-f="p" value="خصم 25%" style="min-width:110px;"></td><td><input type="text" data-i="37" data-j="1" data-f="p" value="خصم 50%" style="min-width:110px;"></td><td><input type="text" data-i="37" data-j="2" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><input type="text" data-i="37" data-j="3" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><button class="delBtn" data-del="37">✕</button></td></tr><tr><td><input type="text" data-i="38" data-f="name" value="عدم تسليم النقود/الشيكات المحصلة في مواعيدها" style="min-width:160px;"></td><td><input type="text" data-i="38" data-j="0" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><input type="text" data-i="38" data-j="1" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="38" data-j="2" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><input type="text" data-i="38" data-j="3" data-f="p" value="خصم 5 أيام" style="min-width:110px;"></td><td><button class="delBtn" data-del="38">✕</button></td></tr><tr><td><input type="text" data-i="39" data-f="name" value="الامتناع عن ارتداء ملابس/أجهزة السلامة المقررة" style="min-width:160px;"></td><td><input type="text" data-i="39" data-j="0" data-f="p" value="إنذار كتابي" style="min-width:110px;"></td><td><input type="text" data-i="39" data-j="1" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><input type="text" data-i="39" data-j="2" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="39" data-j="3" data-f="p" value="خصم 5 أيام" style="min-width:110px;"></td><td><button class="delBtn" data-del="39">✕</button></td></tr><tr><td><input type="text" data-i="40" data-f="name" value="تعمد الخلوة مع الجنس الآخر في أماكن العمل" style="min-width:160px;"></td><td><input type="text" data-i="40" data-j="0" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="40" data-j="1" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><input type="text" data-i="40" data-j="2" data-f="p" value="خصم 5 أيام" style="min-width:110px;"></td><td><input type="text" data-i="40" data-j="3" data-f="p" value="فصل مع المكافأة" style="min-width:110px;"></td><td><button class="delBtn" data-del="40">✕</button></td></tr><tr><td><input type="text" data-i="41" data-f="name" value="الإيحاء للآخرين بما يخدش الحياء قولاً أو فعلاً" style="min-width:160px;"></td><td><input type="text" data-i="41" data-j="0" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="41" data-j="1" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><input type="text" data-i="41" data-j="2" data-f="p" value="خصم 5 أيام" style="min-width:110px;"></td><td><input type="text" data-i="41" data-j="3" data-f="p" value="فصل مع المكافأة" style="min-width:110px;"></td><td><button class="delBtn" data-del="41">✕</button></td></tr><tr><td><input type="text" data-i="42" data-f="name" value="الاعتداء بالقول أو التمييز العنصري/العرقي على الزملاء أو العملاء" style="min-width:160px;"></td><td><input type="text" data-i="42" data-j="0" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="42" data-j="1" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><input type="text" data-i="42" data-j="2" data-f="p" value="خصم 5 أيام" style="min-width:110px;"></td><td><input type="text" data-i="42" data-j="3" data-f="p" value="فصل مع المكافأة" style="min-width:110px;"></td><td><button class="delBtn" data-del="42">✕</button></td></tr><tr><td><input type="text" data-i="43" data-f="name" value="تقديم بلاغ أو شكوى كيدية" style="min-width:160px;"></td><td><input type="text" data-i="43" data-j="0" data-f="p" value="—" style="min-width:110px;"></td><td><input type="text" data-i="43" data-j="1" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><input type="text" data-i="43" data-j="2" data-f="p" value="خصم 5 أيام" style="min-width:110px;"></td><td><input type="text" data-i="43" data-j="3" data-f="p" value="فصل مع المكافأة" style="min-width:110px;"></td><td><button class="delBtn" data-del="43">✕</button></td></tr><tr><td><input type="text" data-i="44" data-f="name" value="عدم الامتثال لطلب لجنة التحقيق بالحضور أو الإدلاء بالشهادة" style="min-width:160px;"></td><td><input type="text" data-i="44" data-j="0" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="44" data-j="1" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><input type="text" data-i="44" data-j="2" data-f="p" value="خصم 5 أيام" style="min-width:110px;"></td><td><input type="text" data-i="44" data-j="3" data-f="p" value="فصل مع المكافأة" style="min-width:110px;"></td><td><button class="delBtn" data-del="44">✕</button></td></tr><tr><td><input type="text" data-i="45" data-f="name" value="عدم الالتزام بالزي الرسمي إلى نهاية الدوام" style="min-width:160px;"></td><td><input type="text" data-i="45" data-j="0" data-f="p" value="إنذار كتابي" style="min-width:110px;"></td><td><input type="text" data-i="45" data-j="1" data-f="p" value="خصم يوم" style="min-width:110px;"></td><td><input type="text" data-i="45" data-j="2" data-f="p" value="خصم يومين" style="min-width:110px;"></td><td><input type="text" data-i="45" data-j="3" data-f="p" value="خصم 3 أيام" style="min-width:110px;"></td><td><button class="delBtn" data-del="45">✕</button></td></tr></tbody>
+        </table>
+      </div>
+      <div style="margin-top:16px;"><button class="miniBtn" id="addRowBtn">+ إضافة مخالفة جديدة</button></div>
+    </div>
+
+    <div class="card" style="margin-top:20px;">
+      <h2>مخالفات جسيمة (نتيجة فورية ثابتة)</h2>
+      <p style="font-size:.82rem;color:var(--ink-soft);margin:-8px 0 14px;">هذه لا تتدرج بعدد مرات التكرار — تطبَّق مباشرة عادة في نطاق المادة (80) من نظام العمل.</p>
+      <ul class="rulelist" id="severeList"><li><span class="num">1</span><span><b>الانقطاع عن العمل دون سبب مشروع أكثر من 15 يوماً متصلة</b><br><span style="color:var(--ink-soft);">فصل دون مكافأة أو تعويض أو إشعار (بعد إنذار كتابي عند بلوغ الغياب 10 أيام) — المادة (80)</span></span></li><li><span class="num">2</span><span><b>الغياب المتقطع دون سبب مشروع بمجموع أكثر من 30 يوماً خلال السنة</b><br><span style="color:var(--ink-soft);">فصل دون مكافأة أو تعويض أو إشعار (بعد إنذار كتابي عند بلوغ الغياب 20 يوماً) — المادة (80)</span></span></li><li><span class="num">3</span><span><b>الاعتداء بالإيذاء الجسدي على زملاء العمل أو العملاء أو غيرهم</b><br><span style="color:var(--ink-soft);">فصل دون مكافأة أو تعويض أو إشعار — المادة (80)</span></span></li><li><span class="num">4</span><span><b>الاعتداء الجسدي أو القولي على صاحب العمل أو المدير المسؤول أو أحد الرؤساء أثناء العمل أو بسببه</b><br><span style="color:var(--ink-soft);">فصل دون مكافأة أو تعويض أو إشعار — المادة (80)</span></span></li></ul>
+    </div>
+
+    <div class="legal"><h3>القواعد الحاكمة لتوقيع أي جزاء</h3>
+      <ul class="rulelist">
+        <li><span class="num">١</span><span>لكل منشأة لائحة تنظيم عمل وجزاءات معتمدة من وزارة الموارد البشرية، ولا يجوز توقيع جزاء عن مخالفة غير واردة فيها.</span></li>
+        <li><span class="num">٢</span><span>لا يجوز توقيع جزاء إلا بعد إبلاغ الموظف كتابةً وسماع أقواله وتحقيق دفاعه.</span></li>
+        <li><span class="num">٣</span><span>يُحظر الجمع بين أكثر من جزاء عن المخالفة الواحدة.</span></li>
+        <li><span class="num">٤</span><span>لا يجوز تشديد الجزاء بحجة التكرار إذا مضى وقت طويل على المخالفة السابقة دون تكرار فعلي.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== نظام العمل ===== -->
+  <section class="panel" id="panel-lawref">
+    <h1 class="hero">نظام العمل السعودي — مرجع شامل قابل للبحث</h1>
+    <p class="lede">أكثر من 130 مادة موزعة على أبواب النظام الستة عشر، بصياغة تلخيصية واضحة مع رقم المادة والباب. البحث بكلمة مفتاحية (مثال: "إجازة"، "إنذار"، "استقالة"، "توظيف") يصفّي النتائج فوراً.</p>
+
+    <div class="card">
+      <div class="inputrow"><input type="text" id="lawSearch" placeholder="بحث بكلمة مفتاحية داخل نظام العمل…" style="padding-left:13px;"></div>
+    </div>
+
+    <div id="lawResults" style="margin-top:20px;"><div style="font-size:.78rem;color:var(--ink-soft);margin-bottom:10px;">141 مادة من أصل 141</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">التعريفات والأحكام العامة</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (1)</b> — يُسمى هذا النظام "نظام العمل".</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (2)</b> — تعريفات أساسية: الوزارة، الوزير، مكتب العمل، صاحب العمل، العامل، الحدث (15-18 سنة)، العمل الأصلي، العمل المؤقت، العمل العرضي، العمل الموسمي، العمل لبعض الوقت، الخدمة المستمرة، الإسناد، الاستقالة، الأجر الأساسي، الأجر الفعلي، المنشأة، الشهر (30 يوماً).</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (3)</b> — العمل حق للمواطن، والمواطنون متساوون في حق العمل دون تمييز على أساس الجنس أو الإعاقة أو السن أو أي شكل من أشكال التمييز.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (4)</b> — يجب مراعاة أحكام الشريعة الإسلامية عند تطبيق أحكام النظام.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (5)</b> — نطاق سريان النظام: كل عقد عمل، عمال الحكومة بالزراعة/الرعي، عمال المؤسسات الخيرية، عقود التأهيل والتدريب، العمال لبعض الوقت.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (6)</b> — تسري على العامل المؤقت والعرضي والموسمي وبعض الوقت أحكام خاصة بالواجبات والتأديب وساعات العمل والراحة والإجازات والعمل الإضافي والسلامة والتعويض.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (7)</b> — استثناءات من تطبيق النظام: أفراد أسرة صاحب العمل، لاعبو ومدربو الأندية الرياضية، العمالة المنزلية، عمال الزراعة والرعي الخاصون، غير السعوديين القادمين لمهمة محددة لا تزيد شهرين.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (8)</b> — يبطل كل شرط يخالف أحكام النظام، ويبطل كل إبراء أو مصالحة عن حقوق العامل الناشئة أثناء سريان العقد ما لم تكن أكثر فائدة له.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (9)</b> — اللغة العربية واجبة الاستعمال في البيانات والسجلات والملفات وعقود العمل؛ وإذا استُعملت لغة أجنبية إلى جانبها فالنص العربي هو المعتمد.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (10)</b> — تُحسب جميع المدد والمواعيد المنصوص عليها في النظام بالتقويم الهجري ما لم يُنص على خلاف ذلك.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (11)</b> — إذا عهد صاحب العمل لشخص آخر بعمل من أعماله الأصلية، وجب أن يعطي هذا الأخير لعماله نفس حقوق ومزايا عمال صاحب العمل الأصلي.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (12)</b> — تضع الوزارة نموذجاً موحداً للائحة تنظيم العمل، وتضع الوزارة ضوابط اعتماد لوائح تنظيم العمل.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (13)</b> — يلتزم كل صاحب عمل بإعداد لائحة تنظيم عمل وفق النموذج المعتمد من الوزارة، ويجب إعلانها في مكان ظاهر بالمنشأة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (15)</b> — على صاحب العمل عند بدء العمل في أي منشأة إبلاغ مكتب العمل المختص كتابة ببيانات المنشأة ونشاطها وعدد عمالها.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (16)</b> — إذا لم يتمكن صاحب العمل من ممارسة العمل بنفسه، يعين مسؤولاً يمثله في مكان العمل ويكون مسؤولاً عن أي مخالفة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (17)</b> — على صاحب العمل الاحتفاظ في مكان العمل بالسجلات والملفات، ووضع جدول بمواعيد العمل وفترات الراحة ويوم الراحة الأسبوعي.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (18)</b> — انتقال ملكية المنشأة لا يُنهي عقود العمل النافذة، وتُعد الخدمة مستمرة، مع تضامن الخلف والسلف بالحقوق السابقة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (19)</b> — المبالغ المستحقة للعامل أو ورثته تُعد ديوناً ممتازة من الدرجة الأولى على أموال صاحب العمل.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (20)</b> — حظر إساءة استعمال أحكام النظام من صاحب العمل أو العامل للضغط على حرية الطرف الآخر أو أطراف أخرى.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">تنظيم عمليات التوظيف</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (22)</b> — توفر الوزارة قنوات توظيف دون مقابل لمساعدة العمال وأصحاب الأعمال، وجمع بيانات سوق العمل.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (23)</b> — لكل مواطن قادر على العمل وراغب فيه حق تسجيل اسمه في قنوات التوظيف.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (25)</b> — التزامات صاحب العمل بإرسال بيانات للوزارة: الأعمال الشاغرة، نتيجة التوظيف، بيانات العمال، تقرير سنوي عن حالة العمل.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (26)</b> — التزام المنشآت باستقطاب السعوديين وتوظيفهم وتدريبهم؛ ويجب ألا تقل نسبة العمالة السعودية عن 75% من إجمالي العمال إلا لعدم توافر الكفاءات، بقرار من الوزير.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">توظيف ذوي الإعاقة</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (28)</b> — كل صاحب عمل يستخدم 25 عاملاً فأكثر ملزم بتشغيل 4% على الأقل من ذوي الإعاقة المؤهلين مهنياً من إجمالي عماله.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (29)</b> — إذا أصيب عامل بإصابة عمل نتج عنها نقص في قدراته، يُلزَم صاحب العمل بتوظيفه في عمل مناسب بنفس الأجر المحدد لذلك العمل.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">شركات ومكاتب التوظيف</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (30)</b> — لا يجوز ممارسة نشاط توظيف السعوديين أو الاستقدام أو الإسناد إلا بترخيص من الوزارة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (31)</b> — العمال الذين وظفتهم مكاتب أو شركات التوظيف يُعدون عمالاً لدى صاحب العمل مباشرة، ترتبط بهم علاقة عقدية مباشرة.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">توظيف غير السعوديين</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (32)</b> — لا يجوز الاستقدام بقصد العمل إلا بعد موافقة الوزارة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (33)</b> — لا يجوز لغير السعودي ممارسة عمل إلا بعد الحصول على رخصة عمل، وتشترط لمنحها: دخول مشروع، توافر الكفاءة المطلوبة، والتعاقد مع صاحب عمل.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (34)</b> — رخصة العمل لا تغني عنها أي تصريح آخر مطلوب من جهة أخرى لممارسة العمل أو المهنة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (35)</b> — للوزارة الامتناع عن تجديد رخصة عمل غير السعودي متى خالف صاحب العمل معايير التوطين.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (36)</b> — للوزير بقرار منه تحديد المهن والأعمال التي يُحظر على غير السعودي الاشتغال بها.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (37)</b> — يجب أن يكون عقد عمل غير السعودي مكتوباً ومحدد المدة؛ فإن خلا من بيان مدته تُعد مدته سنة من تاريخ المباشرة، ويتجدد لمدة مماثلة إن استمر العمل.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (38)</b> — لا يجوز لصاحب العمل تشغيل العامل في مهنة غير المهنة المدونة في رخصة عمله، ويحظر على العامل الاشتغال في غير مهنته.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (39)</b> — حظر ترك صاحب العمل عامله يعمل لدى الغير أو لحسابه الخاص، وحظر عمل العامل لدى صاحب عمل آخر أو لحسابه الخاص دون إجراءات نظامية.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (40)</b> — يتحمل صاحب العمل رسوم الاستقدام والإقامة ورسوم تغيير المهنة، وتذكرة عودة العامل لموطنه، وتجهيز جثمانه ونقله عند الوفاة.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">التدريب والتأهيل</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (42)</b> — على كل صاحب عمل وضع سياسة لتدريب عماله السعوديين وتأهيلهم لرفع مهاراتهم في الأعمال الفنية والإدارية والمهنية.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (43)</b> — يجب على صاحب العمل أن يؤهل أو يدرب من عماله السعوديين نسبة يحددها الوزير بقرار منه.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (45)</b> — عقد التأهيل أو التدريب: عقد يلتزم صاحب العمل بموجبه بتأهيل أو تدريب شخص لإعداده في مهنة معينة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (46)</b> — يجب أن يكون عقد التأهيل أو التدريب مكتوباً، محدداً المهنة ومدة التدريب ومراحله والمكافأة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (48)</b> — لصاحب العمل إنهاء عقد التدريب أو التأهيل إذا ثبتت عدم قابلية أو قدرة المتدرب، وللمتدرب حق إنهاء العقد بإشعار أسبوع مسبق دون حق أي طرف في التعويض.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">عقد العمل</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (50)</b> — عقد العمل: عقد مبرم بين صاحب عمل وعامل، يتعهد بموجبه العامل بالعمل تحت إدارة صاحب العمل أو إشرافه لقاء أجر.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (51)</b> — يُكتب عقد العمل من نسختين، ويُعد العقد قائماً ولو كان غير مكتوب؛ وفي هذه الحالة يجوز للعامل وحده إثبات العقد بجميع طرق الإثبات.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (52)</b> — تضع الوزارة نموذجاً موحداً لعقد العمل يتضمن: اسم الطرفين ومكانهما، الأجر، نوع العمل ومكانه، تاريخ الالتحاق، مدة العقد إن وجدت، والحقوق والالتزامات الأساسية.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (53)</b> — فترة التجربة تُذكر صراحة في العقد بمدة واضحة، على ألا يزيد مجموعها في جميع الأحوال على 180 يوماً.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (54)</b> — لا يجوز إخضاع العامل للتجربة أكثر من مرة لدى صاحب عمل واحد، إلا باتفاق كتابي على تجربة لمهنة أو عمل آخر.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (55)</b> — العقد محدد المدة يتجدد لمدة غير محددة إذا استمر الطرفان في تنفيذه بعد انتهاء مدته؛ ويتحول لغير محدد المدة إذا تكرر التجديد 3 مرات متتالية أو بلغت مدته مع التجديد 4 سنوات.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (56)</b> — في جميع حالات التجديد لمدة محددة، تُعد مدة التجديد امتداداً للمدة الأصلية في حساب حقوق العامل ومدة الخدمة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (57)</b> — العقد المبرم لأجل عمل معين ينتهي بإنجاز العمل المتفق عليه.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (58)</b> — لا يجوز نقل العامل من مكان عمله الأصلي لمكان آخر يقتضي تغيير محل إقامته دون موافقته الكتابية، إلا لظروف طارئة ولمدة لا تتجاوز 30 يوماً في السنة، مع تحمل صاحب العمل تكاليف النقل.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (59)</b> — لا يجوز نقل العامل ذي الأجر الشهري إلى فئة العمال اليوميين أو المعينين بالأسبوع أو القطعة أو الساعة إلا بموافقته الكتابية.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (60)</b> — لا يجوز تكليف العامل بعمل يختلف اختلافاً جوهرياً عن العمل المتفق عليه دون موافقته الكتابية، إلا لظروف طارئة ولمدة لا تتجاوز 30 يوماً في السنة.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">واجبات أصحاب العمل</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (61)</b> — يجب على صاحب العمل: الامتناع عن تشغيل العامل سخرة، عدم حجز أجره دون سند قضائي، معاملته باحترام، إتاحة الوقت لممارسة حقوقه دون تنزيل من أجره، تسهيل مهام الجهات المختصة، عدم التمييز، توفير السكن أو بدل، وتوفير المواصلات أو بدل.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (62)</b> — إذا حضر العامل لأداء عمله ولم يُمنَع إلا لسبب راجع لصاحب العمل، فله الحق في أجر المدة التي لم يؤدِّ فيها العمل.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (63)</b> — على صاحب العمل أو من يمثله منع دخول أي مادة محرمة شرعاً لأماكن العمل، وتطبيق العقوبات النظامية على من يحوزها أو يتعاطاها.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (64)</b> — عند انتهاء عقد العمل، يجب على صاحب العمل إعطاء العامل شهادة خدمة دون مقابل توضح تاريخ الالتحاق والانتهاء والمهنة والأجر الأخير، دون الإساءة لسمعته، وإعادة ما أودعه من وثائق.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">واجبات العمال</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (65)</b> — يجب على العامل: إنجاز العمل وفق الأصول والتعليمات المشروعة، العناية بالآلات والأدوات، الالتزام بحسن السلوك، تقديم العون في الكوارث، الخضوع للفحص الطبي عند الطلب، وحفظ الأسرار الفنية والتجارية والصناعية.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">قواعد التأديب</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (66)</b> — الجزاءات التأديبية التي يجوز لصاحب العمل توقيعها على العامل: الإنذار، الغرامة، الحرمان من العلاوة أو تأجيلها حتى سنة، تأجيل الترقية حتى سنة، الإيقاف عن العمل مع الحرمان من الأجر، الفصل من العمل في الحالات المقررة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (67)</b> — لا يجوز لصاحب العمل توقيع جزاء غير وارد في هذا النظام أو في لائحة تنظيم العمل.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (68)</b> — لا يجوز تشديد الجزاء في حالة تكرار المخالفة إذا كان قد انقضى على المخالفة السابقة 180 يوماً من تاريخ إبلاغ العامل بتوقيع الجزاء عنها.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (69)</b> — لا يجوز اتهام العامل بمخالفة مضى على كشفها أكثر من 30 يوماً، ولا توقيع جزاء تأديبي بعد أكثر من 30 يوماً من تاريخ ثبوتها في حقه.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (70)</b> — لا يجوز توقيع جزاء على أمر ارتكبه العامل خارج مكان العمل إلا إذا اتصل بالعمل أو بصاحبه، ولا يجوز أن تزيد الغرامة عن الواحدة على أجر 5 أيام، ولا توقيع أكثر من جزاء واحد على المخالفة الواحدة، ولا اقتطاع أكثر من أجر 5 أيام شهرياً وفاء للغرامات، ولا إيقاف العامل أكثر من 5 أيام في الشهر.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (71)</b> — لا يجوز توقيع جزاء تأديبي إلا بعد إبلاغ العامل كتابة بالمخالفة وسماع أقواله وتحقيق دفاعه، وتوثيق ذلك في محضر يودع في ملفه.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (72)</b> — يجب إبلاغ العامل كتابة بقرار توقيع الجزاء، وله التظلم كتابة للجهة المختصة لدى صاحب العمل خلال 30 يوماً، ثم الاعتراض أمام المحاكم العمالية خلال 30 يوماً من رفض التظلم أو انتهاء مدة البت فيه.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (73)</b> — يجب على صاحب العمل قيد الغرامات الموقعة على العامل في سجل خاص، ولا يجوز التصرف فيها إلا بما يعود بالنفع على عمال المنشأة، بموافقة اللجنة العمالية أو الوزارة عند عدم وجودها.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">انتهاء عقد العمل</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (74)</b> — حالات انتهاء عقد العمل: اتفاق الطرفين كتابة، انتهاء المدة المحددة، إرادة أحد الطرفين في العقد غير محدد المدة، الاستقالة، بلوغ سن التقاعد، القوة القاهرة، إغلاق المنشأة نهائياً، إنهاء النشاط، إجراءات الإفلاس، وحالات أخرى ينص عليها نظام آخر.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (75)</b> — في العقد غير محدد المدة، يجوز لأي طرف إنهاءه بسبب مشروع بإشعار مسبق: 30 يوماً من العامل و60 يوماً من صاحب العمل إذا كان الأجر يُدفع شهرياً، أو 30 يوماً من الطرفين في غير ذلك.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (76)</b> — إذا لم يراعِ الطرف الذي أنهى العقد مهلة الإشعار، التزم بأن يدفع للطرف الآخر مبلغاً مساوياً لأجره عن مهلة الإشعار.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (77)</b> — عند الإنهاء لسبب غير مشروع، يستحق الطرف المتضرر تعويضاً قدره أجر 15 يوماً عن كل سنة خدمة (للعقد غير محدد المدة) أو أجر المدة الباقية (للعقد محدد المدة)، بحد أدنى أجر شهرين.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (78)</b> — إذا كان الإشعار من جانب صاحب العمل، يحق للعامل التغيب يوماً كاملاً أو 8 ساعات في الأسبوع أثناء مهلة الإشعار للبحث عن عمل آخر مع استحقاق أجر ذلك اليوم.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (79)</b> — لا ينقضي عقد العمل بوفاة صاحب العمل ما لم تكن شخصيته قد رُوعيت عند التعاقد، لكنه ينقضي بوفاة العامل أو عجزه عن أداء عمله بشهادة طبية معتمدة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (79 مكرر)</b> — يُعد طلب الاستقالة مقبولاً تلقائياً بعد مضي 30 يوماً دون رد من صاحب العمل، وله تأجيل القبول لمدة لا تزيد على 60 يوماً بإيضاح مسبب، وللعامل العدول عن طلبه خلال 7 أيام ما لم يُقبل قبل ذلك.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (80)</b> — حالات جواز فصل العامل دون مكافأة أو إشعار أو تعويض: الاعتداء على صاحب العمل أو المدير أو الرؤساء، عدم أداء الالتزامات الجوهرية رغم الإنذار الكتابي، السلوك المخل بالشرف أو الأمانة، الإضرار المتعمد بصاحب العمل، التزوير، أثناء فترة التجربة، الغياب دون عذر أكثر من 30 يوماً متقطعاً أو 15 يوماً متصلاً بعد الإنذار، استغلال المنصب الوظيفي بطريقة غير مشروعة، وإفشاء الأسرار الصناعية أو التجارية.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (81)</b> — يحق للعامل ترك العمل دون إشعار مع احتفاظه بكامل حقوقه النظامية في حالات: عدم وفاء صاحب العمل بالتزاماته الجوهرية، الغش وقت التعاقد، التكليف بعمل مختلف جوهرياً دون رضاه، الاعتداء أو سوء المعاملة، الخطر الجسيم في مكان العمل مع علم صاحب العمل وعدم إزالته، وإجبار العامل ظاهرياً على إنهاء العقد.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (82)</b> — لا يجوز لصاحب العمل إنهاء خدمة العامل بسبب المرض قبل استنفاد المدد المحددة لإجازته المرضية.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (83)</b> — يجوز لصاحب العمل اشتراط عدم منافسة العامل له بعد انتهاء العقد لحماية مصالحه المشروعة، بشرط أن يكون الشرط محدداً بالزمان والمكان ونوع العمل، وألا تزيد مدته على سنتين.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">مكافأة نهاية الخدمة</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (84)</b> — عند انتهاء علاقة العمل، يدفع صاحب العمل للعامل مكافأة: نصف أجر شهر عن كل سنة من السنوات الخمس الأولى، وأجر شهر كامل عن كل سنة تالية، وتُحسب كسور السنة بنسبتها، ويُتخذ الأجر الأخير أساساً للحساب.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (85)</b> — إذا انتهت العلاقة باستقالة العامل: لا استحقاق قبل سنتين متصلتين، ثلث المكافأة من سنتين إلى أقل من 5 سنوات، ثلثاها من 5 إلى أقل من 10 سنوات، وكاملة إذا بلغت 10 سنوات فأكثر.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (86)</b> — يجوز الاتفاق على ألا تُحسب ضمن الأجر الذي تُسوّى على أساسه مكافأة نهاية الخدمة مبالغ العمولات أو النسب المئوية من ثمن المبيعات ونحوها من عناصر الأجر القابلة بطبيعتها للزيادة والنقصان.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (87)</b> — تُستحق المكافأة كاملة إذا ترك العامل العمل نتيجة قوة قاهرة خارجة عن إرادته، وكذلك للعاملة إذا أنهت عقدها خلال 6 أشهر من تاريخ زواجها أو 3 أشهر من تاريخ وضعها.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (88)</b> — عند انتهاء الخدمة، على صاحب العمل تصفية حقوق العامل خلال أسبوع (إن كان الإنهاء من صاحب العمل) أو أسبوعين (إن كان الإنهاء من العامل) من تاريخ انتهاء العلاقة.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">الأجور</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (89)</b> — لمجلس الوزراء عند الاقتضاء، بناءً على اقتراح الوزير، وضع حد أدنى للأجور.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (90)</b> — يجب دفع الأجر بالعملة الرسمية وفي مواعيده: أسبوعياً للعمال اليوميين، شهرياً لأصحاب الأجر الشهري، وتُلزَم المنشآت بدفع الأجور عبر البنوك المعتمدة (حماية الأجور).</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (91)</b> — إذا تسبب العامل بخطئه في فقد أو إتلاف ممتلكات صاحب العمل، جاز اقتطاع المبلغ اللازم للإصلاح من أجره، على ألا يزيد المقتطع شهرياً عن أجر 5 أيام، مع حق العامل في التظلم.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (92)</b> — لا يجوز الخصم من أجر العامل دون موافقته الكتابية إلا في حالات: استرداد القروض، اشتراكات التأمينات الاجتماعية، اشتراكات صندوق الادخار، أقساط مشاريع الإسكان، والغرامات التأديبية.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (93)</b> — لا يجوز في جميع الأحوال أن تزيد نسبة المبالغ المحسومة على نصف أجر العامل المستحق، إلا بإثبات إمكانية الزيادة أو حاجة العامل لأكثر من نصف أجره.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (94)</b> — عند تأخر صاحب العمل عن أداء الأجر في موعده دون مسوغ مشروع، للعامل أو من يمثله التقدم للمحكمة العمالية لإلزامه برد ما حُسم دون وجه حق أو دفع الأجور المتأخرة.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">ساعات العمل</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (98)</b> — لا يجوز تشغيل العامل فعلياً أكثر من 8 ساعات في اليوم أو 48 ساعة في الأسبوع، وتُخفَّض ساعات العمل في رمضان للمسلمين إلى 6 ساعات يومياً (36 أسبوعياً).</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (99)</b> — يجوز زيادة ساعات العمل إلى 9 ساعات يومياً لبعض فئات العمال أو الصناعات غير المستمرة، ويجوز تخفيضها إلى 7 ساعات للأعمال الخطرة أو الضارة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (100)</b> — يجوز لصاحب العمل بموافقة الوزارة، في المنشآت التي تقتضي طبيعة عملها العمل بالتناوب، زيادة ساعات العمل حتى 8 يومياً/48 أسبوعياً بشرط ألا يزيد المتوسط عند احتسابه لمدة 3 أسابيع أو أقل على ذلك.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">فترات الراحة</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (101)</b> — لا يجوز تشغيل العامل أكثر من 5 ساعات متصلة دون فترة راحة لا تقل عن نصف ساعة، ولا يبقى العامل في مكان العمل أكثر من 12 ساعة في اليوم.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (102)</b> — فترات الراحة والصلاة والطعام لا تدخل ضمن ساعات العمل الفعلية، ولا يكون العامل خلالها تحت سلطة صاحب العمل.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">الراحة الأسبوعية</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (104)</b> — يوم الجمعة هو يوم الراحة الأسبوعية بأجر كامل لجميع العمال، ويجوز لصاحب العمل استبداله بيوم آخر بعد إبلاغ مكتب العمل، ولا يجوز تعويضه بمقابل نقدي.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (105)</b> — استثناءً في الأماكن البعيدة عن العمران، يجوز تجميع أيام الراحة الأسبوعية عن مدة لا تتجاوز 8 أسابيع باتفاق الطرفين وموافقة الوزارة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (106)</b> — استثناءات لعدم التقيد بساعات العمل والراحة الأسبوعية (الجرد السنوي، منع الحوادث، المواسم) بحد أقصى 30 يوماً سنوياً، وبحد أقصى 10 ساعات عمل فعلي يومياً أو 60 أسبوعياً.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">العمل الإضافي</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (107)</b> — يجب على صاحب العمل أن يدفع للعامل أجراً إضافياً عن ساعات العمل الإضافية يوازي أجر الساعة مضافاً إليه 50% من الأجر الأساسي (150% إجمالاً)، ويجوز الاتفاق على إجازة تعويضية مدفوعة الأجر بدلاً من ذلك. تُعد جميع ساعات العمل في أيام العطل والأعياد ساعات إضافية.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">ساعات العمل</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (108)</b> — لا تسري أحكام ساعات العمل الاعتيادية على: أصحاب المناصب العليا ذات السلطة الإشرافية، الأعمال التحضيرية أو التكميلية، العمل المتقطع بالضرورة، وعمال الحراسة والنظافة (عدا الحراسة الأمنية المدنية).</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">الإجازات</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (109)</b> — يستحق العامل عن كل عام إجازة سنوية لا تقل عن 21 يوماً، تُزاد إلى 30 يوماً إذا أمضى 5 سنوات متصلة لدى صاحب العمل نفسه، وتكون بأجر يُدفع مقدماً.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (110)</b> — يجوز للعامل بموافقة صاحب العمل تأجيل إجازته السنوية أو أيام منها للسنة التالية، ولصاحب العمل تأجيلها بعد نهاية سنة الاستحقاق لمدة لا تزيد على 90 يوماً لمقتضيات العمل، وبموافقة العامل الكتابية إن استمر التأجيل.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (111)</b> — للعامل الحق في أجر أيام الإجازة المستحقة إذا ترك العمل قبل استعمالها، بنسبة ما قضاه من السنة في العمل.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (112)</b> — لكل عامل الحق في إجازة بأجر كامل في الأعياد والمناسبات التي تحددها اللائحة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (113)</b> — للعامل الحق في إجازة بأجر كامل: 5 أيام عند الزواج أو وفاة أحد أصوله أو فروعه، 3 أيام عند وفاة الأخ أو الأخت، و3 أيام عند ولادة مولود له خلال 7 أيام من تاريخ الولادة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (114)</b> — للعامل الحق في إجازة بأجر لا تقل عن 10 أيام ولا تزيد على 15 يوماً لأداء فريضة الحج مرة واحدة طوال مدة الخدمة، بشرط أن يكون قد أمضى لدى صاحب العمل سنتين متصلتين على الأقل.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (115)</b> — للعامل المنتسب لمؤسسة تعليمية بموافقة صاحب العمل الحق في إجازة بأجر كامل لأداء الامتحان غير المعاد بعدد أيام الامتحان الفعلية، أما الامتحان المعاد فبإجازة دون أجر.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (116)</b> — يجوز للعامل بموافقة صاحب العمل الحصول على إجازة دون أجر يتفق الطرفان على مدتها، ويُعد عقد العمل موقوفاً خلال المدة الزائدة على 20 يوماً ما لم يتفق الطرفان على خلاف ذلك.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (117)</b> — للعامل الذي يثبت مرضه إجازة مرضية بأجر كامل عن الثلاثين يوماً الأولى، وبثلاثة أرباع الأجر عن الستين التالية، ودون أجر عن الثلاثين التي تليها، خلال السنة المرضية الواحدة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (118)</b> — لا يجوز للعامل أثناء تمتعه بأي من إجازاته أن يعمل لدى صاحب عمل آخر، وإلا جاز حرمانه من أجر تلك الإجازة أو استرداده.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">العمل لبعض الوقت</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (119)</b> — لا يُعد العمال الذين يتأثرون بتخفيض جماعي مؤقت لساعات عملهم لأسباب اقتصادية أو تقنية أو هيكلية عمالاً لبعض الوقت.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (120)</b> — يُصدر الوزير القواعد والضوابط اللازمة لتنظيم العمل لبعض الوقت، وتسري أحكام النظام في حدود ما يقرره الوزير، مع حماية موازية للعمال المتفرغين من ناحية السلامة والصحة المهنية وإصابات العمل.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">الوقاية من مخاطر العمل</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (121)</b> — على صاحب العمل حفظ حالة صحية ونظيفة بالمنشأة، وتأمين إنارتها ومياهها الصالحة للشرب وقواعد الحماية والسلامة والصحة المهنية.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (122)</b> — على صاحب العمل اتخاذ الاحتياطات اللازمة لحماية العمال من الأخطار والأمراض الناجمة عن العمل، وإعلان تعليمات السلامة في مكان ظاهر بالعربية وأي لغة أخرى عند الاقتضاء دون تحميل العمال أي تكلفة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (123)</b> — على صاحب العمل إحاطة العامل قبل مزاولة عمله بمخاطر مهنته، وتوفير أدوات الوقاية الشخصية وتدريب العمال على استخدامها.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (124)</b> — على العامل استعمال وسائل الوقاية المخصصة، والمحافظة عليها، وتنفيذ تعليمات السلامة، والامتناع عن أي تصرف يعطل تنفيذها أو يسيء استخدام وسائل الحماية.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (125)</b> — على صاحب العمل اتخاذ الاحتياطات اللازمة للوقاية من الحريق وتأمين منافذ النجاة وتعليق تعليمات مفصلة بشأن وسائل منع الحريق.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">إصابات العمل</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (133)</b> — إذا أُصيب العامل بإصابة عمل أو مرض مهني، التزم صاحب العمل بعلاجه وتحمّل جميع نفقات العلاج المباشرة وغير المباشرة (إقامة، فحوصات، أشعة، أجهزة تعويضية، نقل).</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (134)</b> — تُعد الإصابة "إصابة عمل" وفق ما هو منصوص عليه في نظام التأمينات الاجتماعية، وتُعد الأمراض المهنية في حكم إصابات العمل.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (137)</b> — يستحق المصاب بعجز مؤقت عن العمل ناتج عن إصابة عمل معونة مالية تعادل أجره كاملاً لمدة 60 يوماً، ثم 75% من أجره طوال مدة العلاج؛ فإن بلغت مدة العلاج سنة أو تقرر طبياً عدم احتمال شفائه، عُدت الإصابة عجزاً كلياً وأُنهي العقد وعُوّض عن الإصابة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (138)</b> — إذا نتج عن الإصابة عجز دائم كلي أو وفاة، يُقدَّر التعويض بما يعادل أجر 3 سنوات بحد أدنى 54,000 ريال؛ وفي العجز الدائم الجزئي يستحق المصاب تعويضاً بنسبة العجز المقدرة وفق جدول دليل نسب العجز.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">الخدمات الصحية والاجتماعية</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (142)</b> — على كل صاحب عمل إعداد خزانة أو أكثر للإسعافات الطبية الأولية، مزودة بالأدوية ووسائل الإسعاف اللازمة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (143)</b> — على صاحب العمل إجراء فحص دوري لعماله المعرضين لأمراض مهنية مرة كل سنة على الأقل، وإثبات نتيجة الفحص في سجلاته وملفات العمال.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">تشغيل النساء</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (149)</b> — للمرأة العاملة الحق في إجازة وضع بأجر كامل لمدة 12 أسبوعاً، منها 6 أسابيع وجوبية تالية للوضع، ولها توزيع الباقي كما تراه ابتداءً من 4 أسابيع قبل التاريخ المرجح للوضع.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (153)</b> — على صاحب العمل توفير الرعاية الطبية للمرأة العاملة أثناء الحمل والولادة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (154)</b> — يحق للمرأة العاملة بعد عودتها من إجازة الوضع أخذ فترة أو فترات راحة للإرضاع لا تزيد في مجموعها على ساعة في اليوم، بأجر كامل، وتُحسب من ساعات العمل الفعلية.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (155)</b> — لا يجوز لصاحب العمل فصل المرأة العاملة أو إنذارها بالفصل أثناء حملها أو تمتعها بإجازة الوضع أو مرضها الناشئ عن أيٍّ منهما، بشرط ألا تتجاوز مدة غيابها 180 يوماً.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (159)</b> — على كل صاحب عمل يشغّل 50 عاملة فأكثر تهيئة مكان مناسب لرعاية أطفال العاملات الأقل أعمارهم عن 6 سنوات إذا بلغ عدد الأطفال 10 فأكثر.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">تشغيل الأحداث</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (161)</b> — لا يجوز تشغيل الأحداث في الأعمال الخطرة أو الصناعات الضارة أو المهن التي يُحتمل أن تعرض صحتهم أو سلامتهم أو أخلاقهم للخطر.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (162)</b> — لا يجوز تشغيل من لم يتم الخامسة عشرة من عمره، ويجوز استثناءً تشغيل من تتراوح أعمارهم بين 13-15 سنة في أعمال خفيفة لا تضر بصحتهم أو نموهم أو تعليمهم.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (164)</b> — لا يجوز تشغيل الأحداث أكثر من 6 ساعات في اليوم (4 ساعات في رمضان)، ولا تشغيلهم في أيام الراحة الأسبوعية أو الأعياد أو العطل الرسمية.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">تفتيش العمل</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (194)</b> — يتولى تفتيش العمل مفتشون من موظفي الوزارة، أو من غيرهم من السعوديين يحددهم الوزير أو من يفوضه.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (196)</b> — يختص مفتش العمل بمراقبة تنفيذ أحكام النظام، تزويد أصحاب العمل والعمال بالإرشادات الفنية، إبلاغ المخالفات وضبطها، واقتراح الغرامة المناسبة وفق جدول المخالفات والعقوبات.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (198)</b> — لمفتش العمل دخول أي منشأة خاضعة لأحكام النظام في أي وقت دون إشعار مسبق، وله سؤال صاحب العمل والعمال، والاطلاع على السجلات والوثائق، وأخذ عينات من المواد للتحليل.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">العقوبات</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (229)</b> — مع عدم الإخلال بأي عقوبة أشد ينص عليها نظام آخر، يُعاقَب كل من يخل بأي حكم من أحكام النظام أو لائحته أو القرارات الصادرة تنفيذاً له بغرامة مالية لا تتجاوز 100,000 ريال، أو إغلاق المنشأة لمدة لا تزيد على 30 يوماً، أو إغلاقها نهائياً؛ ويجوز مضاعفة العقوبة عند التكرار.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (229 مكرر)</b> — يُعاقَب بغرامة لا تقل عن 200,000 ريال ولا تزيد على 500,000 ريال كل من يخالف أحكام المادة (الثلاثين) الخاصة بترخيص أنشطة التوظيف والاستقدام والإسناد.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (230)</b> — للوزارة بقرار من الوزير أو من ينيبه إيقاع الغرامة أو الإغلاق المؤقت، ويُصدر الوزير جدولاً بالمخالفات وعقوباتها المتدرجة، ويجوز التظلم من القرار أمام المحكمة الإدارية المختصة.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (232)</b> — تُحصَّل الغرامات المقررة وفقاً لإجراءات تحصيل الأموال العامة، وتؤول المبالغ المحصلة إلى صندوق تنمية الموارد البشرية.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (233)</b> — للوزير منح مكافأة مالية لا تزيد على 25% من مبلغ الغرامة المحصلة لمن يساعد في الكشف عن أي مخالفة لأحكام النظام ولائحته.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (234)</b> — لا تُقبل أمام المحاكم العمالية أي دعوى تتعلق بالمطالبة بحق من الحقوق المقررة في النظام بعد مضي 12 شهراً من تاريخ انتهاء علاقة العمل، ما لم يقدم المدعي عذراً تقبله المحكمة. وتُنظر الدعاوى العمالية على وجه الاستعجال.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (235)</b> — لا يجوز لصاحب العمل أثناء نظر الدعوى أمام المحاكم العمالية تغيير شروط التشغيل التي كانت سارية قبل بدء الإجراءات، تغييراً يترتب عليه الإضرار بموقف العامل في الدعوى.</div><h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">أحكام ختامية</h3><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (243)</b> — يُصدر الوزير القرارات واللوائح اللازمة لتنفيذ أحكام النظام خلال 180 يوماً من تاريخ العمل به.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (244)</b> — يحل هذا النظام محل نظام العمل والعمال السابق الصادر بالمرسوم الملكي رقم (م/21) وتاريخ 1389/9/6هـ.</div><div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة (245)</b> — يُنشر هذا النظام في الجريدة الرسمية، ويُعمل به بعد 180 يوماً من تاريخ نشره.</div></div>
+
+    <div class="legal">
+      <h3>ملاحظة مهمة</h3>
+      <p>هذا المرجع يغطي أكثر من 130 مادة من أصل مواد نظام العمل، بصياغة تلخيصية بلغة واضحة وليست النص الحرفي الرسمي. استُبعدت منه المواد التي أُلغيت لاحقاً (مثل مواد لجان تسوية الخلافات العمالية التي حلّت محلها المحاكم العمالية)، وبعض التفاصيل الدقيقة لعقد العمل البحري والعمل في المناجم لتخصصها الشديد. للنص النظامي الكامل والملزم قانونياً، يُرجى الرجوع لموقع وزارة الموارد البشرية والتنمية الاجتماعية مباشرة.</p>
+    </div>
+  </section>
+
+  </div><!-- /allPanels -->
+</main>
+
+<footer>أداة مِعيار — تجميعة مرجعية لمختصي الموارد البشرية · المحتوى استرشادي ويُحدَّث دورياً<br>
+<span style="opacity:.8;">إعداد: <a href="https://www.linkedin.com/in/moath-alqadan-shrm-cp-scp-on-progress-731607121" target="_blank" rel="noopener" style="color:var(--pine);font-weight:600;">معاذ القدان</a> — <a href="https://www.linkedin.com/in/moath-alqadan-shrm-cp-scp-on-progress-731607121" target="_blank" rel="noopener" style="color:var(--pine);">لينكدإن</a></span>
+</footer>
+
+<script>
+  function showTab(name){
+    document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active', x.dataset.tab===name));
+    document.querySelectorAll('.panel').forEach(x=>x.classList.toggle('active', x.id==='panel-'+name));
+    document.getElementById('allPanels').style.display='block';
+    document.getElementById('searchResults').classList.remove('active');
+    document.getElementById('globalSearch').value='';
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+  document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>showTab(t.dataset.tab)));
+  const fmt = n => (isFinite(n)?n:0).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+
+  // ---------- الأوفر تايم ----------
+  function calcOvertime(){
+    const basic = parseFloat(document.getElementById('basic').value) || 0;
+    const hours = parseFloat(document.getElementById('hours').value) || 0;
+    const daysmonth = parseFloat(document.getElementById('daysmonth').value) || 30;
+    const dailyhours = parseFloat(document.getElementById('dailyhours').value) || 8;
+    const rate = parseFloat(document.getElementById('rate').value) || 150;
+    const hourly = basic / daysmonth / dailyhours;
+    const ohourly = hourly * (rate/100);
+    const total = ohourly * hours;
+    document.getElementById('hourlyOut').textContent = fmt(hourly) + ' ريال';
+    document.getElementById('ohourlyOut').textContent = fmt(ohourly) + ' ريال';
+    document.getElementById('hoursOut').textContent = hours.toLocaleString('ar-SA');
+    document.getElementById('rateOut').textContent = rate;
+    document.getElementById('totalOut').textContent = fmt(total);
+    document.getElementById('capWarn').style.display = (hours*12 > 720) ? 'block' : 'none';
+  }
+  document.querySelectorAll('#panel-overtime input').forEach(el=>el.addEventListener('input',calcOvertime));
+
+  // ---------- نهاية الخدمة ----------
+  function calcEOS(){
+    const wage = parseFloat(document.getElementById('eosWage').value) || 0;
+    const y = parseFloat(document.getElementById('eosY').value) || 0;
+    const m = parseFloat(document.getElementById('eosM').value) || 0;
+    const d = parseFloat(document.getElementById('eosD').value) || 0;
+    const years = y + (m/12) + (d/365);
+    const type = document.getElementById('eosType').value;
+
+    const first5 = Math.min(years,5);
+    const rest = Math.max(years-5,0);
+    const base = (first5*0.5*wage) + (rest*1*wage);
+
+    let pct = 1, note = '';
+    if(type==='resign'){
+      if(years < 2){ pct = 0; note = 'أقل من سنتين خدمة: لا تستحق مكافأة عند الاستقالة وفق المادة (85).'; }
+      else if(years < 5){ pct = 1/3; note = 'من سنتين إلى أقل من 5 سنوات: يستحق ثُلث المكافأة عند الاستقالة.'; }
+      else if(years < 10){ pct = 2/3; note = 'من 5 إلى أقل من 10 سنوات: يستحق ثُلثي المكافأة عند الاستقالة.'; }
+      else { pct = 1; note = '10 سنوات فأكثر: يستحق المكافأة كاملة رغم الاستقالة.'; }
+    } else { pct = 1; note = 'إنهاء العقد من صاحب العمل أو انتهاء مدته: تُصرف المكافأة كاملة وفق المادة (84).'; }
+
+    const total = base * pct;
+    document.getElementById('eosYearsOut').textContent = years.toLocaleString('ar-SA',{maximumFractionDigits:2}) + ' سنة';
+    document.getElementById('eosBaseOut').textContent = fmt(base) + ' ريال';
+    document.getElementById('eosPctOut').textContent = (pct*100).toLocaleString('ar-SA',{maximumFractionDigits:1}) + '%';
+    document.getElementById('eosTotalOut').textContent = fmt(total);
+    const noteEl = document.getElementById('eosNote'); noteEl.style.display='block'; noteEl.textContent = note;
+  }
+  document.querySelectorAll('#panel-eos input, #panel-eos select').forEach(el=>el.addEventListener('input',calcEOS));
+
+  // ---------- راتب الإجازة ----------
+  function calcLeaveEntitlement(){
+    const years = parseFloat(document.getElementById('leaveYears').value) || 0;
+    document.getElementById('leaveDays').value = years >= 5 ? 30 : 21;
+    calcLeave();
+  }
+  function calcLeave(){
+    const wage = parseFloat(document.getElementById('leaveWage').value) || 0;
+    const days = parseFloat(document.getElementById('leaveDays').value) || 0;
+    const years = parseFloat(document.getElementById('leaveYears').value) || 0;
+    const daily = wage/30;
+    document.getElementById('leaveDailyOut').textContent = fmt(daily) + ' ريال';
+    document.getElementById('leaveEntitleOut').textContent = (years>=5?30:21) + ' يوماً';
+    document.getElementById('leaveTotalOut').textContent = fmt(daily*days);
+  }
+  document.getElementById('leaveYears').addEventListener('input',calcLeaveEntitlement);
+  document.getElementById('leaveWage').addEventListener('input',calcLeave);
+  document.getElementById('leaveDays').addEventListener('input',calcLeave);
+
+  // ---------- نطاقات ----------
+  function calcNitaqat(){
+    const total = parseFloat(document.getElementById('nitTotal').value) || 0;
+    const saudi = parseFloat(document.getElementById('nitSaudi').value) || 0;
+    const required = parseFloat(document.getElementById('nitRequired').value) || 0;
+    const current = total>0 ? (saudi/total*100) : 0;
+    const gap = required - current;
+    document.getElementById('nitCurrentOut').textContent = current.toLocaleString('ar-SA',{maximumFractionDigits:1});
+    document.getElementById('nitReqLabel').textContent = 'المطلوب ' + required + '%';
+    document.getElementById('nitBar').style.width = Math.min(current,100) + '%';
+    document.getElementById('nitGapOut').textContent = (gap>=0? gap.toLocaleString('ar-SA',{maximumFractionDigits:1})+'%' : '0% (متجاوَزة)');
+    const warn = document.getElementById('nitWarn'), good = document.getElementById('nitGood');
+    if(gap > 0){
+      const req = required/100;
+      const x = (req*total - saudi) / (1-req);
+      warn.style.display='block'; good.style.display='none';
+      warn.textContent = 'تحتاجين لإضافة حوالي ' + Math.ceil(x) + ' موظف سعودي للوصول للنسبة المطلوبة.';
+    } else { good.style.display='block'; warn.style.display='none'; good.textContent='المنشأة تحقق النسبة المطلوبة حالياً أو تتجاوزها.'; }
+  }
+  document.querySelectorAll('#panel-nitaqat input').forEach(el=>el.addEventListener('input',calcNitaqat));
+
+  // ---------- محرك الجزاءات ----------
+  // مستخرج بصرياً (قراءة مباشرة لصور الصفحات) من لائحة تنظيم عمل معتمدة رسمياً من وزارة الموارد البشرية
+  // ثلاث فئات كاملة: مواعيد العمل / تنظيم العمل / سلوك العامل — راجعتها خانة خانة على الصور الأصلية
+  const defaultPenalties = [
+    // ١) مخالفات مواعيد العمل
+    {cat:'مواعيد العمل', name:'تأخر حتى 15 دقيقة (بدون تعطيل عمال آخرين)', p:['إنذار كتابي','خصم 5%','خصم 10%','خصم 20%']},
+    {cat:'مواعيد العمل', name:'تأخر حتى 15 دقيقة (مع تعطيل عمال آخرين)', p:['إنذار كتابي','خصم 15%','خصم 25%','خصم 50%']},
+    {cat:'مواعيد العمل', name:'تأخر 15-30 دقيقة (بدون تعطيل)', p:['خصم 10%','خصم 15%','خصم 25%','خصم 50%']},
+    {cat:'مواعيد العمل', name:'تأخر 15-30 دقيقة (مع تعطيل)', p:['خصم 25%','خصم 50%','خصم 75%','خصم يوم']},
+    {cat:'مواعيد العمل', name:'تأخر 30-60 دقيقة (بدون تعطيل)', p:['خصم 25%','خصم 50%','خصم 75%','خصم يوم']},
+    {cat:'مواعيد العمل', name:'تأخر 30-60 دقيقة (مع تعطيل + حسم دقائق التأخر)', p:['خصم 30%','خصم يوم','خصم 50%','خصم يومين']},
+    {cat:'مواعيد العمل', name:'تأخر أكثر من ساعة (+ حسم أجر ساعات التأخر)', p:['إنذار كتابي','خصم يوم','خصم يومين','خصم 3 أيام']},
+    {cat:'مواعيد العمل', name:'ترك العمل قبل الانصراف ≤15 دقيقة (+ حسم المدة)', p:['إنذار كتابي','خصم 10%','خصم 25%','خصم يوم']},
+    {cat:'مواعيد العمل', name:'ترك العمل قبل الانصراف >15 دقيقة (+ حسم المدة)', p:['خصم 10%','خصم 25%','خصم 50%','خصم يوم']},
+    {cat:'مواعيد العمل', name:'البقاء بمكان العمل بعد الدوام دون إذن مسبق', p:['إنذار كتابي','خصم 10%','خصم 25%','خصم يوم']},
+    {cat:'مواعيد العمل', name:'غياب بدون إذن يوم واحد خلال السنة العقدية', p:['خصم يومين','خصم 3 أيام','خصم 4 أيام','حرمان ترقية/علاوة لمرة']},
+    {cat:'مواعيد العمل', name:'غياب متصل 2-6 أيام (+ حسم أجر الغياب)', p:['خصم يومين','خصم 3 أيام','خصم 4 أيام','حرمان ترقية/علاوة لمرة']},
+    {cat:'مواعيد العمل', name:'غياب متصل 7-10 أيام (+ حسم أجر الغياب)', p:['خصم 4 أيام','خصم 5 أيام','حرمان ترقية/علاوة لمرة','فصل مع المكافأة (إن لم يتجاوز 30 يوم غياب)']},
+    {cat:'مواعيد العمل', name:'غياب متصل 11-14 يوم (+ حسم أجر الغياب)', p:['خصم 5 أيام','حرمان ترقية/علاوة + إنذار بالفصل (م80)','—','فصل طبقاً للمادة (80)']},
+    // ٢) مخالفات تنظيم العمل
+    {cat:'تنظيم العمل', name:'التواجد دون مبرر خارج مكان العمل المخصص', p:['خصم 10%','خصم 25%','خصم 50%','خصم يوم']},
+    {cat:'تنظيم العمل', name:'استقبال زائرين لغير أعمال المنشأة دون إذن', p:['إنذار كتابي','خصم 10%','خصم 15%','خصم 25%']},
+    {cat:'تنظيم العمل', name:'استعمال آلات/أدوات المنشأة لأغراض خاصة دون إذن', p:['إنذار كتابي','خصم 10%','خصم 25%','خصم 50%']},
+    {cat:'تنظيم العمل', name:'التدخل في عمل ليس من اختصاصه دون تكليف', p:['خصم 50%','خصم يوم','خصم يومين','خصم 3 أيام']},
+    {cat:'تنظيم العمل', name:'الخروج أو الدخول من غير الأماكن المخصصة', p:['إنذار كتابي','خصم 10%','خصم 15%','خصم 25%']},
+    {cat:'تنظيم العمل', name:'الإهمال في تنظيف/صيانة الآلات أو عدم التبليغ عن خلل', p:['خصم 50%','خصم يوم','خصم يومين','خصم 3 أيام']},
+    {cat:'تنظيم العمل', name:'عدم إعادة أدوات الإصلاح والصيانة لمكانها', p:['إنذار كتابي','خصم 25%','خصم 50%','خصم يوم']},
+    {cat:'تنظيم العمل', name:'تمزيق أو إتلاف إعلانات/بلاغات إدارة المنشأة', p:['خصم يومين','خصم 3 أيام','خصم 5 أيام','فصل مع المكافأة']},
+    {cat:'تنظيم العمل', name:'الإهمال في العهد (سيارات، معدات، أجهزة، أدوات)', p:['خصم يومين','خصم 3 أيام','خصم 5 أيام','فصل مع المكافأة']},
+    {cat:'تنظيم العمل', name:'الأكل في مكان العمل أو خارج أوقات الراحة', p:['إنذار كتابي','خصم 10%','خصم 15%','خصم 25%']},
+    {cat:'تنظيم العمل', name:'النوم أثناء العمل', p:['إنذار كتابي','خصم 10%','خصم 25%','خصم 50%']},
+    {cat:'تنظيم العمل', name:'النوم في حالات تستدعي يقظة مستمرة', p:['خصم 50%','خصم يوم','خصم يومين','خصم 3 أيام']},
+    {cat:'تنظيم العمل', name:'التسكع أو التواجد في غير مكان العمل أثناء الدوام', p:['خصم 10%','خصم 25%','خصم 50%','خصم يوم']},
+    {cat:'تنظيم العمل', name:'التلاعب في إثبات الحضور والانصراف', p:['خصم يوم','خصم يومين','حرمان ترقية/علاوة لمرة','فصل مع المكافأة']},
+    {cat:'تنظيم العمل', name:'عدم إطاعة الأوامر العادية أو تنفيذ التعليمات الظاهرة', p:['خصم 25%','خصم 50%','خصم يوم','خصم يومين']},
+    {cat:'تنظيم العمل', name:'التحريض على مخالفة الأوامر والتعليمات الخطية', p:['خصم يومين','خصم 3 أيام','خصم 5 أيام','فصل مع المكافأة']},
+    {cat:'تنظيم العمل', name:'التدخين في الأماكن المحظورة والمعلن عنها', p:['خصم يومين','خصم 3 أيام','خصم 5 أيام','فصل مع المكافأة']},
+    {cat:'تنظيم العمل', name:'الإهمال المؤدي لضرر بصحة العمال أو المعدات', p:['خصم يومين','خصم 3 أيام','خصم 5 أيام','فصل مع المكافأة']},
+    // ٣) مخالفات سلوك العامل
+    {cat:'سلوك العامل', name:'التشاجر مع الزملاء أو الغير / إحداث مشاغبات', p:['خصم يوم','خصم يومين','خصم 3 أيام','خصم 5 أيام']},
+    {cat:'سلوك العامل', name:'التمارض أو الادعاء الكاذب بإصابة عمل', p:['خصم يوم','خصم يومين','خصم 3 أيام','خصم 5 أيام']},
+    {cat:'سلوك العامل', name:'الامتناع عن الكشف الطبي أو رفض تعليمات العلاج', p:['خصم يوم','خصم يومين','خصم 3 أيام','خصم 5 أيام']},
+    {cat:'سلوك العامل', name:'مخالفة التعليمات الصحية الملصقة بأماكن العمل', p:['خصم 50%','خصم يوم','خصم يومين','خصم 5 أيام']},
+    {cat:'سلوك العامل', name:'الكتابة على الجدران أو لصق إعلانات غير مصرح بها', p:['إنذار كتابي','خصم 10%','خصم 25%','خصم 50%']},
+    {cat:'سلوك العامل', name:'رفض التفتيش الإداري عند الحضور أو الانصراف', p:['خصم 25%','خصم 50%','خصم يوم','خصم يومين']},
+    {cat:'سلوك العامل', name:'عدم تسليم النقود/الشيكات المحصلة في مواعيدها', p:['خصم يوم','خصم يومين','خصم 3 أيام','خصم 5 أيام']},
+    {cat:'سلوك العامل', name:'الامتناع عن ارتداء ملابس/أجهزة السلامة المقررة', p:['إنذار كتابي','خصم يوم','خصم يومين','خصم 5 أيام']},
+    {cat:'سلوك العامل', name:'تعمد الخلوة مع الجنس الآخر في أماكن العمل', p:['خصم يومين','خصم 3 أيام','خصم 5 أيام','فصل مع المكافأة']},
+    {cat:'سلوك العامل', name:'الإيحاء للآخرين بما يخدش الحياء قولاً أو فعلاً', p:['خصم يومين','خصم 3 أيام','خصم 5 أيام','فصل مع المكافأة']},
+    {cat:'سلوك العامل', name:'الاعتداء بالقول أو التمييز العنصري/العرقي على الزملاء أو العملاء', p:['خصم يومين','خصم 3 أيام','خصم 5 أيام','فصل مع المكافأة']},
+    {cat:'سلوك العامل', name:'تقديم بلاغ أو شكوى كيدية', p:['—','خصم 3 أيام','خصم 5 أيام','فصل مع المكافأة']},
+    {cat:'سلوك العامل', name:'عدم الامتثال لطلب لجنة التحقيق بالحضور أو الإدلاء بالشهادة', p:['خصم يومين','خصم 3 أيام','خصم 5 أيام','فصل مع المكافأة']},
+    {cat:'سلوك العامل', name:'عدم الالتزام بالزي الرسمي إلى نهاية الدوام', p:['إنذار كتابي','خصم يوم','خصم يومين','خصم 3 أيام']},
+  ];
+  // مخالفات جسيمة ذات نتيجة فورية ثابتة (لا تتدرج بعدد المرات) — تطبَّق مباشرة عادة في نطاق المادة (80)
+  const severePenalties = [
+    {name:'الانقطاع عن العمل دون سبب مشروع أكثر من 15 يوماً متصلة', outcome:'فصل دون مكافأة أو تعويض أو إشعار (بعد إنذار كتابي عند بلوغ الغياب 10 أيام) — المادة (80)'},
+    {name:'الغياب المتقطع دون سبب مشروع بمجموع أكثر من 30 يوماً خلال السنة', outcome:'فصل دون مكافأة أو تعويض أو إشعار (بعد إنذار كتابي عند بلوغ الغياب 20 يوماً) — المادة (80)'},
+    {name:'الاعتداء بالإيذاء الجسدي على زملاء العمل أو العملاء أو غيرهم', outcome:'فصل دون مكافأة أو تعويض أو إشعار — المادة (80)'},
+    {name:'الاعتداء الجسدي أو القولي على صاحب العمل أو المدير المسؤول أو أحد الرؤساء أثناء العمل أو بسببه', outcome:'فصل دون مكافأة أو تعويض أو إشعار — المادة (80)'},
+  ];
+  function loadPenalties(){
+    try{ const raw = localStorage.getItem('meayar_penalties'); if(raw) return JSON.parse(raw); }catch(e){}
+    return defaultPenalties;
+  }
+  function savePenalties(data){ try{ localStorage.setItem('meayar_penalties', JSON.stringify(data)); }catch(e){} }
+  let penalties = loadPenalties();
+
+  function renderPenaltyTable(){
+    const body = document.getElementById('pTableBody');
+    body.innerHTML = penalties.map((row,i)=>
+      '<tr>'+
+      '<td><input type="text" data-i="'+i+'" data-f="name" value="'+row.name.replace(/"/g,'&quot;')+'" style="min-width:160px;"></td>'+
+      row.p.map((val,j)=>'<td><input type="text" data-i="'+i+'" data-j="'+j+'" data-f="p" value="'+val.replace(/"/g,'&quot;')+'" style="min-width:110px;"></td>').join('')+
+      '<td><button class="delBtn" data-del="'+i+'">✕</button></td>'+
+      '</tr>'
+    ).join('');
+    body.querySelectorAll('input').forEach(inp=>{
+      inp.addEventListener('input',()=>{
+        const i = +inp.dataset.i;
+        if(inp.dataset.f==='name'){ penalties[i].name = inp.value; }
+        else { penalties[i].p[+inp.dataset.j] = inp.value; }
+        savePenalties(penalties);
+        renderViolationSelect(); calcPenalty();
+      });
+    });
+    body.querySelectorAll('[data-del]').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        penalties.splice(+btn.dataset.del,1); savePenalties(penalties);
+        renderPenaltyTable(); renderViolationSelect(); calcPenalty();
+      });
+    });
+  }
+  function renderViolationSelect(){
+    const sel = document.getElementById('pViolation');
+    const prev = sel.value;
+    const cats = {};
+    penalties.forEach((row,i)=>{ (cats[row.cat||'أخرى'] = cats[row.cat||'أخرى']||[]).push(i); });
+    sel.innerHTML = Object.keys(cats).map(cat =>
+      '<optgroup label="'+cat+'">' + cats[cat].map(i=>'<option value="'+i+'">'+penalties[i].name+'</option>').join('') + '</optgroup>'
+    ).join('');
+    if(prev && +prev < penalties.length) sel.value = prev;
+  }
+  function calcPenalty(){
+    const i = +document.getElementById('pViolation').value || 0;
+    const occ = +document.getElementById('pOccur').value || 0;
+    const row = penalties[i];
+    if(!row){ return; }
+    document.getElementById('pResultOut').textContent = row.p[occ] || row.p[row.p.length-1] || '—';
+    const labels = ['المرة الأولى','المرة الثانية','المرة الثالثة','المرة الرابعة فأكثر'];
+    document.getElementById('pResultSub').textContent = labels[occ];
+  }
+  document.getElementById('addRowBtn').addEventListener('click',()=>{
+    penalties.push({name:'مخالفة جديدة', p:['إنذار كتابي','خصم يوم','خصم يومين','إيقاف بدون أجر']});
+    savePenalties(penalties); renderPenaltyTable(); renderViolationSelect(); calcPenalty();
+  });
+  document.getElementById('pViolation').addEventListener('change',calcPenalty);
+  document.getElementById('pOccur').addEventListener('change',calcPenalty);
+
+  // ---------- قرارات توطين المهن ----------
+  function calcProfession(){
+    const required = parseFloat(document.getElementById('profSelect').value) || 0;
+    const total = parseFloat(document.getElementById('profTotal').value) || 0;
+    const saudi = parseFloat(document.getElementById('profSaudi').value) || 0;
+    const current = total>0 ? (saudi/total*100) : 0;
+    const box = document.getElementById('profResult');
+    if(current >= required){
+      box.textContent = 'ممتاز — نسبتكم الحالية ' + current.toLocaleString('ar-SA',{maximumFractionDigits:1}) + '% تحقق أو تتجاوز المطلوب (' + required + '%).';
+    } else {
+      const req = required/100;
+      const x = (req*total - saudi) / (1-req);
+      box.textContent = 'نسبتكم الحالية ' + current.toLocaleString('ar-SA',{maximumFractionDigits:1}) + '% — تحتاجين لإضافة حوالي ' + Math.ceil(x) + ' موظف سعودي بهذي المهنة للوصول لـ' + required + '%.';
+    }
+  }
+  document.querySelectorAll('#profSelect, #profTotal, #profSaudi').forEach(el=>el.addEventListener('input',calcProfession));
+
+  document.getElementById('profSearchBtn').addEventListener('click', ()=>{
+    const q = document.getElementById('profSearchInput').value.trim();
+    if(!q) return;
+    window.open('https://www.google.com/search?q=' + encodeURIComponent('site:hrsd.gov.sa توطين مهنة ' + q), '_blank', 'noopener');
+  });
+
+  // ---------- نظام العمل — مرجع سريع ----------
+  const lawArticles = [
+    {num:'1', chap:'التعريفات والأحكام العامة', text:'يُسمى هذا النظام "نظام العمل".'},
+    {num:'2', chap:'التعريفات والأحكام العامة', text:'تعريفات أساسية: الوزارة، الوزير، مكتب العمل، صاحب العمل، العامل، الحدث (15-18 سنة)، العمل الأصلي، العمل المؤقت، العمل العرضي، العمل الموسمي، العمل لبعض الوقت، الخدمة المستمرة، الإسناد، الاستقالة، الأجر الأساسي، الأجر الفعلي، المنشأة، الشهر (30 يوماً).'},
+    {num:'3', chap:'التعريفات والأحكام العامة', text:'العمل حق للمواطن، والمواطنون متساوون في حق العمل دون تمييز على أساس الجنس أو الإعاقة أو السن أو أي شكل من أشكال التمييز.'},
+    {num:'4', chap:'التعريفات والأحكام العامة', text:'يجب مراعاة أحكام الشريعة الإسلامية عند تطبيق أحكام النظام.'},
+    {num:'5', chap:'التعريفات والأحكام العامة', text:'نطاق سريان النظام: كل عقد عمل، عمال الحكومة بالزراعة/الرعي، عمال المؤسسات الخيرية، عقود التأهيل والتدريب، العمال لبعض الوقت.'},
+    {num:'6', chap:'التعريفات والأحكام العامة', text:'تسري على العامل المؤقت والعرضي والموسمي وبعض الوقت أحكام خاصة بالواجبات والتأديب وساعات العمل والراحة والإجازات والعمل الإضافي والسلامة والتعويض.'},
+    {num:'7', chap:'التعريفات والأحكام العامة', text:'استثناءات من تطبيق النظام: أفراد أسرة صاحب العمل، لاعبو ومدربو الأندية الرياضية، العمالة المنزلية، عمال الزراعة والرعي الخاصون، غير السعوديين القادمين لمهمة محددة لا تزيد شهرين.'},
+    {num:'8', chap:'التعريفات والأحكام العامة', text:'يبطل كل شرط يخالف أحكام النظام، ويبطل كل إبراء أو مصالحة عن حقوق العامل الناشئة أثناء سريان العقد ما لم تكن أكثر فائدة له.'},
+    {num:'9', chap:'التعريفات والأحكام العامة', text:'اللغة العربية واجبة الاستعمال في البيانات والسجلات والملفات وعقود العمل؛ وإذا استُعملت لغة أجنبية إلى جانبها فالنص العربي هو المعتمد.'},
+    {num:'10', chap:'التعريفات والأحكام العامة', text:'تُحسب جميع المدد والمواعيد المنصوص عليها في النظام بالتقويم الهجري ما لم يُنص على خلاف ذلك.'},
+    {num:'11', chap:'التعريفات والأحكام العامة', text:'إذا عهد صاحب العمل لشخص آخر بعمل من أعماله الأصلية، وجب أن يعطي هذا الأخير لعماله نفس حقوق ومزايا عمال صاحب العمل الأصلي.'},
+    {num:'12', chap:'التعريفات والأحكام العامة', text:'تضع الوزارة نموذجاً موحداً للائحة تنظيم العمل، وتضع الوزارة ضوابط اعتماد لوائح تنظيم العمل.'},
+    {num:'13', chap:'التعريفات والأحكام العامة', text:'يلتزم كل صاحب عمل بإعداد لائحة تنظيم عمل وفق النموذج المعتمد من الوزارة، ويجب إعلانها في مكان ظاهر بالمنشأة.'},
+    {num:'15', chap:'التعريفات والأحكام العامة', text:'على صاحب العمل عند بدء العمل في أي منشأة إبلاغ مكتب العمل المختص كتابة ببيانات المنشأة ونشاطها وعدد عمالها.'},
+    {num:'16', chap:'التعريفات والأحكام العامة', text:'إذا لم يتمكن صاحب العمل من ممارسة العمل بنفسه، يعين مسؤولاً يمثله في مكان العمل ويكون مسؤولاً عن أي مخالفة.'},
+    {num:'17', chap:'التعريفات والأحكام العامة', text:'على صاحب العمل الاحتفاظ في مكان العمل بالسجلات والملفات، ووضع جدول بمواعيد العمل وفترات الراحة ويوم الراحة الأسبوعي.'},
+    {num:'18', chap:'التعريفات والأحكام العامة', text:'انتقال ملكية المنشأة لا يُنهي عقود العمل النافذة، وتُعد الخدمة مستمرة، مع تضامن الخلف والسلف بالحقوق السابقة.'},
+    {num:'19', chap:'التعريفات والأحكام العامة', text:'المبالغ المستحقة للعامل أو ورثته تُعد ديوناً ممتازة من الدرجة الأولى على أموال صاحب العمل.'},
+    {num:'20', chap:'التعريفات والأحكام العامة', text:'حظر إساءة استعمال أحكام النظام من صاحب العمل أو العامل للضغط على حرية الطرف الآخر أو أطراف أخرى.'},
+    {num:'22', chap:'تنظيم عمليات التوظيف', text:'توفر الوزارة قنوات توظيف دون مقابل لمساعدة العمال وأصحاب الأعمال، وجمع بيانات سوق العمل.'},
+    {num:'23', chap:'تنظيم عمليات التوظيف', text:'لكل مواطن قادر على العمل وراغب فيه حق تسجيل اسمه في قنوات التوظيف.'},
+    {num:'25', chap:'تنظيم عمليات التوظيف', text:'التزامات صاحب العمل بإرسال بيانات للوزارة: الأعمال الشاغرة، نتيجة التوظيف، بيانات العمال، تقرير سنوي عن حالة العمل.'},
+    {num:'26', chap:'تنظيم عمليات التوظيف', text:'التزام المنشآت باستقطاب السعوديين وتوظيفهم وتدريبهم؛ ويجب ألا تقل نسبة العمالة السعودية عن 75% من إجمالي العمال إلا لعدم توافر الكفاءات، بقرار من الوزير.'},
+    {num:'28', chap:'توظيف ذوي الإعاقة', text:'كل صاحب عمل يستخدم 25 عاملاً فأكثر ملزم بتشغيل 4% على الأقل من ذوي الإعاقة المؤهلين مهنياً من إجمالي عماله.'},
+    {num:'29', chap:'توظيف ذوي الإعاقة', text:'إذا أصيب عامل بإصابة عمل نتج عنها نقص في قدراته، يُلزَم صاحب العمل بتوظيفه في عمل مناسب بنفس الأجر المحدد لذلك العمل.'},
+    {num:'30', chap:'شركات ومكاتب التوظيف', text:'لا يجوز ممارسة نشاط توظيف السعوديين أو الاستقدام أو الإسناد إلا بترخيص من الوزارة.'},
+    {num:'31', chap:'شركات ومكاتب التوظيف', text:'العمال الذين وظفتهم مكاتب أو شركات التوظيف يُعدون عمالاً لدى صاحب العمل مباشرة، ترتبط بهم علاقة عقدية مباشرة.'},
+    {num:'32', chap:'توظيف غير السعوديين', text:'لا يجوز الاستقدام بقصد العمل إلا بعد موافقة الوزارة.'},
+    {num:'33', chap:'توظيف غير السعوديين', text:'لا يجوز لغير السعودي ممارسة عمل إلا بعد الحصول على رخصة عمل، وتشترط لمنحها: دخول مشروع، توافر الكفاءة المطلوبة، والتعاقد مع صاحب عمل.'},
+    {num:'34', chap:'توظيف غير السعوديين', text:'رخصة العمل لا تغني عنها أي تصريح آخر مطلوب من جهة أخرى لممارسة العمل أو المهنة.'},
+    {num:'35', chap:'توظيف غير السعوديين', text:'للوزارة الامتناع عن تجديد رخصة عمل غير السعودي متى خالف صاحب العمل معايير التوطين.'},
+    {num:'36', chap:'توظيف غير السعوديين', text:'للوزير بقرار منه تحديد المهن والأعمال التي يُحظر على غير السعودي الاشتغال بها.'},
+    {num:'37', chap:'توظيف غير السعوديين', text:'يجب أن يكون عقد عمل غير السعودي مكتوباً ومحدد المدة؛ فإن خلا من بيان مدته تُعد مدته سنة من تاريخ المباشرة، ويتجدد لمدة مماثلة إن استمر العمل.'},
+    {num:'38', chap:'توظيف غير السعوديين', text:'لا يجوز لصاحب العمل تشغيل العامل في مهنة غير المهنة المدونة في رخصة عمله، ويحظر على العامل الاشتغال في غير مهنته.'},
+    {num:'39', chap:'توظيف غير السعوديين', text:'حظر ترك صاحب العمل عامله يعمل لدى الغير أو لحسابه الخاص، وحظر عمل العامل لدى صاحب عمل آخر أو لحسابه الخاص دون إجراءات نظامية.'},
+    {num:'40', chap:'توظيف غير السعوديين', text:'يتحمل صاحب العمل رسوم الاستقدام والإقامة ورسوم تغيير المهنة، وتذكرة عودة العامل لموطنه، وتجهيز جثمانه ونقله عند الوفاة.'},
+    {num:'42', chap:'التدريب والتأهيل', text:'على كل صاحب عمل وضع سياسة لتدريب عماله السعوديين وتأهيلهم لرفع مهاراتهم في الأعمال الفنية والإدارية والمهنية.'},
+    {num:'43', chap:'التدريب والتأهيل', text:'يجب على صاحب العمل أن يؤهل أو يدرب من عماله السعوديين نسبة يحددها الوزير بقرار منه.'},
+    {num:'45', chap:'التدريب والتأهيل', text:'عقد التأهيل أو التدريب: عقد يلتزم صاحب العمل بموجبه بتأهيل أو تدريب شخص لإعداده في مهنة معينة.'},
+    {num:'46', chap:'التدريب والتأهيل', text:'يجب أن يكون عقد التأهيل أو التدريب مكتوباً، محدداً المهنة ومدة التدريب ومراحله والمكافأة.'},
+    {num:'48', chap:'التدريب والتأهيل', text:'لصاحب العمل إنهاء عقد التدريب أو التأهيل إذا ثبتت عدم قابلية أو قدرة المتدرب، وللمتدرب حق إنهاء العقد بإشعار أسبوع مسبق دون حق أي طرف في التعويض.'},
+    {num:'50', chap:'عقد العمل', text:'عقد العمل: عقد مبرم بين صاحب عمل وعامل، يتعهد بموجبه العامل بالعمل تحت إدارة صاحب العمل أو إشرافه لقاء أجر.'},
+    {num:'51', chap:'عقد العمل', text:'يُكتب عقد العمل من نسختين، ويُعد العقد قائماً ولو كان غير مكتوب؛ وفي هذه الحالة يجوز للعامل وحده إثبات العقد بجميع طرق الإثبات.'},
+    {num:'52', chap:'عقد العمل', text:'تضع الوزارة نموذجاً موحداً لعقد العمل يتضمن: اسم الطرفين ومكانهما، الأجر، نوع العمل ومكانه، تاريخ الالتحاق، مدة العقد إن وجدت، والحقوق والالتزامات الأساسية.'},
+    {num:'53', chap:'عقد العمل', text:'فترة التجربة تُذكر صراحة في العقد بمدة واضحة، على ألا يزيد مجموعها في جميع الأحوال على 180 يوماً.'},
+    {num:'54', chap:'عقد العمل', text:'لا يجوز إخضاع العامل للتجربة أكثر من مرة لدى صاحب عمل واحد، إلا باتفاق كتابي على تجربة لمهنة أو عمل آخر.'},
+    {num:'55', chap:'عقد العمل', text:'العقد محدد المدة يتجدد لمدة غير محددة إذا استمر الطرفان في تنفيذه بعد انتهاء مدته؛ ويتحول لغير محدد المدة إذا تكرر التجديد 3 مرات متتالية أو بلغت مدته مع التجديد 4 سنوات.'},
+    {num:'56', chap:'عقد العمل', text:'في جميع حالات التجديد لمدة محددة، تُعد مدة التجديد امتداداً للمدة الأصلية في حساب حقوق العامل ومدة الخدمة.'},
+    {num:'57', chap:'عقد العمل', text:'العقد المبرم لأجل عمل معين ينتهي بإنجاز العمل المتفق عليه.'},
+    {num:'58', chap:'عقد العمل', text:'لا يجوز نقل العامل من مكان عمله الأصلي لمكان آخر يقتضي تغيير محل إقامته دون موافقته الكتابية، إلا لظروف طارئة ولمدة لا تتجاوز 30 يوماً في السنة، مع تحمل صاحب العمل تكاليف النقل.'},
+    {num:'59', chap:'عقد العمل', text:'لا يجوز نقل العامل ذي الأجر الشهري إلى فئة العمال اليوميين أو المعينين بالأسبوع أو القطعة أو الساعة إلا بموافقته الكتابية.'},
+    {num:'60', chap:'عقد العمل', text:'لا يجوز تكليف العامل بعمل يختلف اختلافاً جوهرياً عن العمل المتفق عليه دون موافقته الكتابية، إلا لظروف طارئة ولمدة لا تتجاوز 30 يوماً في السنة.'},
+    {num:'61', chap:'واجبات أصحاب العمل', text:'يجب على صاحب العمل: الامتناع عن تشغيل العامل سخرة، عدم حجز أجره دون سند قضائي، معاملته باحترام، إتاحة الوقت لممارسة حقوقه دون تنزيل من أجره، تسهيل مهام الجهات المختصة، عدم التمييز، توفير السكن أو بدل، وتوفير المواصلات أو بدل.'},
+    {num:'62', chap:'واجبات أصحاب العمل', text:'إذا حضر العامل لأداء عمله ولم يُمنَع إلا لسبب راجع لصاحب العمل، فله الحق في أجر المدة التي لم يؤدِّ فيها العمل.'},
+    {num:'63', chap:'واجبات أصحاب العمل', text:'على صاحب العمل أو من يمثله منع دخول أي مادة محرمة شرعاً لأماكن العمل، وتطبيق العقوبات النظامية على من يحوزها أو يتعاطاها.'},
+    {num:'64', chap:'واجبات أصحاب العمل', text:'عند انتهاء عقد العمل، يجب على صاحب العمل إعطاء العامل شهادة خدمة دون مقابل توضح تاريخ الالتحاق والانتهاء والمهنة والأجر الأخير، دون الإساءة لسمعته، وإعادة ما أودعه من وثائق.'},
+    {num:'65', chap:'واجبات العمال', text:'يجب على العامل: إنجاز العمل وفق الأصول والتعليمات المشروعة، العناية بالآلات والأدوات، الالتزام بحسن السلوك، تقديم العون في الكوارث، الخضوع للفحص الطبي عند الطلب، وحفظ الأسرار الفنية والتجارية والصناعية.'},
+    {num:'66', chap:'قواعد التأديب', text:'الجزاءات التأديبية التي يجوز لصاحب العمل توقيعها على العامل: الإنذار، الغرامة، الحرمان من العلاوة أو تأجيلها حتى سنة، تأجيل الترقية حتى سنة، الإيقاف عن العمل مع الحرمان من الأجر، الفصل من العمل في الحالات المقررة.'},
+    {num:'67', chap:'قواعد التأديب', text:'لا يجوز لصاحب العمل توقيع جزاء غير وارد في هذا النظام أو في لائحة تنظيم العمل.'},
+    {num:'68', chap:'قواعد التأديب', text:'لا يجوز تشديد الجزاء في حالة تكرار المخالفة إذا كان قد انقضى على المخالفة السابقة 180 يوماً من تاريخ إبلاغ العامل بتوقيع الجزاء عنها.'},
+    {num:'69', chap:'قواعد التأديب', text:'لا يجوز اتهام العامل بمخالفة مضى على كشفها أكثر من 30 يوماً، ولا توقيع جزاء تأديبي بعد أكثر من 30 يوماً من تاريخ ثبوتها في حقه.'},
+    {num:'70', chap:'قواعد التأديب', text:'لا يجوز توقيع جزاء على أمر ارتكبه العامل خارج مكان العمل إلا إذا اتصل بالعمل أو بصاحبه، ولا يجوز أن تزيد الغرامة عن الواحدة على أجر 5 أيام، ولا توقيع أكثر من جزاء واحد على المخالفة الواحدة، ولا اقتطاع أكثر من أجر 5 أيام شهرياً وفاء للغرامات، ولا إيقاف العامل أكثر من 5 أيام في الشهر.'},
+    {num:'71', chap:'قواعد التأديب', text:'لا يجوز توقيع جزاء تأديبي إلا بعد إبلاغ العامل كتابة بالمخالفة وسماع أقواله وتحقيق دفاعه، وتوثيق ذلك في محضر يودع في ملفه.'},
+    {num:'72', chap:'قواعد التأديب', text:'يجب إبلاغ العامل كتابة بقرار توقيع الجزاء، وله التظلم كتابة للجهة المختصة لدى صاحب العمل خلال 30 يوماً، ثم الاعتراض أمام المحاكم العمالية خلال 30 يوماً من رفض التظلم أو انتهاء مدة البت فيه.'},
+    {num:'73', chap:'قواعد التأديب', text:'يجب على صاحب العمل قيد الغرامات الموقعة على العامل في سجل خاص، ولا يجوز التصرف فيها إلا بما يعود بالنفع على عمال المنشأة، بموافقة اللجنة العمالية أو الوزارة عند عدم وجودها.'},
+    {num:'74', chap:'انتهاء عقد العمل', text:'حالات انتهاء عقد العمل: اتفاق الطرفين كتابة، انتهاء المدة المحددة، إرادة أحد الطرفين في العقد غير محدد المدة، الاستقالة، بلوغ سن التقاعد، القوة القاهرة، إغلاق المنشأة نهائياً، إنهاء النشاط، إجراءات الإفلاس، وحالات أخرى ينص عليها نظام آخر.'},
+    {num:'75', chap:'انتهاء عقد العمل', text:'في العقد غير محدد المدة، يجوز لأي طرف إنهاءه بسبب مشروع بإشعار مسبق: 30 يوماً من العامل و60 يوماً من صاحب العمل إذا كان الأجر يُدفع شهرياً، أو 30 يوماً من الطرفين في غير ذلك.'},
+    {num:'76', chap:'انتهاء عقد العمل', text:'إذا لم يراعِ الطرف الذي أنهى العقد مهلة الإشعار، التزم بأن يدفع للطرف الآخر مبلغاً مساوياً لأجره عن مهلة الإشعار.'},
+    {num:'77', chap:'انتهاء عقد العمل', text:'عند الإنهاء لسبب غير مشروع، يستحق الطرف المتضرر تعويضاً قدره أجر 15 يوماً عن كل سنة خدمة (للعقد غير محدد المدة) أو أجر المدة الباقية (للعقد محدد المدة)، بحد أدنى أجر شهرين.'},
+    {num:'78', chap:'انتهاء عقد العمل', text:'إذا كان الإشعار من جانب صاحب العمل، يحق للعامل التغيب يوماً كاملاً أو 8 ساعات في الأسبوع أثناء مهلة الإشعار للبحث عن عمل آخر مع استحقاق أجر ذلك اليوم.'},
+    {num:'79', chap:'انتهاء عقد العمل', text:'لا ينقضي عقد العمل بوفاة صاحب العمل ما لم تكن شخصيته قد رُوعيت عند التعاقد، لكنه ينقضي بوفاة العامل أو عجزه عن أداء عمله بشهادة طبية معتمدة.'},
+    {num:'79 مكرر', chap:'انتهاء عقد العمل', text:'يُعد طلب الاستقالة مقبولاً تلقائياً بعد مضي 30 يوماً دون رد من صاحب العمل، وله تأجيل القبول لمدة لا تزيد على 60 يوماً بإيضاح مسبب، وللعامل العدول عن طلبه خلال 7 أيام ما لم يُقبل قبل ذلك.'},
+    {num:'80', chap:'انتهاء عقد العمل', text:'حالات جواز فصل العامل دون مكافأة أو إشعار أو تعويض: الاعتداء على صاحب العمل أو المدير أو الرؤساء، عدم أداء الالتزامات الجوهرية رغم الإنذار الكتابي، السلوك المخل بالشرف أو الأمانة، الإضرار المتعمد بصاحب العمل، التزوير، أثناء فترة التجربة، الغياب دون عذر أكثر من 30 يوماً متقطعاً أو 15 يوماً متصلاً بعد الإنذار، استغلال المنصب الوظيفي بطريقة غير مشروعة، وإفشاء الأسرار الصناعية أو التجارية.'},
+    {num:'81', chap:'انتهاء عقد العمل', text:'يحق للعامل ترك العمل دون إشعار مع احتفاظه بكامل حقوقه النظامية في حالات: عدم وفاء صاحب العمل بالتزاماته الجوهرية، الغش وقت التعاقد، التكليف بعمل مختلف جوهرياً دون رضاه، الاعتداء أو سوء المعاملة، الخطر الجسيم في مكان العمل مع علم صاحب العمل وعدم إزالته، وإجبار العامل ظاهرياً على إنهاء العقد.'},
+    {num:'82', chap:'انتهاء عقد العمل', text:'لا يجوز لصاحب العمل إنهاء خدمة العامل بسبب المرض قبل استنفاد المدد المحددة لإجازته المرضية.'},
+    {num:'83', chap:'انتهاء عقد العمل', text:'يجوز لصاحب العمل اشتراط عدم منافسة العامل له بعد انتهاء العقد لحماية مصالحه المشروعة، بشرط أن يكون الشرط محدداً بالزمان والمكان ونوع العمل، وألا تزيد مدته على سنتين.'},
+    {num:'84', chap:'مكافأة نهاية الخدمة', text:'عند انتهاء علاقة العمل، يدفع صاحب العمل للعامل مكافأة: نصف أجر شهر عن كل سنة من السنوات الخمس الأولى، وأجر شهر كامل عن كل سنة تالية، وتُحسب كسور السنة بنسبتها، ويُتخذ الأجر الأخير أساساً للحساب.'},
+    {num:'85', chap:'مكافأة نهاية الخدمة', text:'إذا انتهت العلاقة باستقالة العامل: لا استحقاق قبل سنتين متصلتين، ثلث المكافأة من سنتين إلى أقل من 5 سنوات، ثلثاها من 5 إلى أقل من 10 سنوات، وكاملة إذا بلغت 10 سنوات فأكثر.'},
+    {num:'86', chap:'مكافأة نهاية الخدمة', text:'يجوز الاتفاق على ألا تُحسب ضمن الأجر الذي تُسوّى على أساسه مكافأة نهاية الخدمة مبالغ العمولات أو النسب المئوية من ثمن المبيعات ونحوها من عناصر الأجر القابلة بطبيعتها للزيادة والنقصان.'},
+    {num:'87', chap:'مكافأة نهاية الخدمة', text:'تُستحق المكافأة كاملة إذا ترك العامل العمل نتيجة قوة قاهرة خارجة عن إرادته، وكذلك للعاملة إذا أنهت عقدها خلال 6 أشهر من تاريخ زواجها أو 3 أشهر من تاريخ وضعها.'},
+    {num:'88', chap:'مكافأة نهاية الخدمة', text:'عند انتهاء الخدمة، على صاحب العمل تصفية حقوق العامل خلال أسبوع (إن كان الإنهاء من صاحب العمل) أو أسبوعين (إن كان الإنهاء من العامل) من تاريخ انتهاء العلاقة.'},
+    {num:'89', chap:'الأجور', text:'لمجلس الوزراء عند الاقتضاء، بناءً على اقتراح الوزير، وضع حد أدنى للأجور.'},
+    {num:'90', chap:'الأجور', text:'يجب دفع الأجر بالعملة الرسمية وفي مواعيده: أسبوعياً للعمال اليوميين، شهرياً لأصحاب الأجر الشهري، وتُلزَم المنشآت بدفع الأجور عبر البنوك المعتمدة (حماية الأجور).'},
+    {num:'91', chap:'الأجور', text:'إذا تسبب العامل بخطئه في فقد أو إتلاف ممتلكات صاحب العمل، جاز اقتطاع المبلغ اللازم للإصلاح من أجره، على ألا يزيد المقتطع شهرياً عن أجر 5 أيام، مع حق العامل في التظلم.'},
+    {num:'92', chap:'الأجور', text:'لا يجوز الخصم من أجر العامل دون موافقته الكتابية إلا في حالات: استرداد القروض، اشتراكات التأمينات الاجتماعية، اشتراكات صندوق الادخار، أقساط مشاريع الإسكان، والغرامات التأديبية.'},
+    {num:'93', chap:'الأجور', text:'لا يجوز في جميع الأحوال أن تزيد نسبة المبالغ المحسومة على نصف أجر العامل المستحق، إلا بإثبات إمكانية الزيادة أو حاجة العامل لأكثر من نصف أجره.'},
+    {num:'94', chap:'الأجور', text:'عند تأخر صاحب العمل عن أداء الأجر في موعده دون مسوغ مشروع، للعامل أو من يمثله التقدم للمحكمة العمالية لإلزامه برد ما حُسم دون وجه حق أو دفع الأجور المتأخرة.'},
+    {num:'98', chap:'ساعات العمل', text:'لا يجوز تشغيل العامل فعلياً أكثر من 8 ساعات في اليوم أو 48 ساعة في الأسبوع، وتُخفَّض ساعات العمل في رمضان للمسلمين إلى 6 ساعات يومياً (36 أسبوعياً).'},
+    {num:'99', chap:'ساعات العمل', text:'يجوز زيادة ساعات العمل إلى 9 ساعات يومياً لبعض فئات العمال أو الصناعات غير المستمرة، ويجوز تخفيضها إلى 7 ساعات للأعمال الخطرة أو الضارة.'},
+    {num:'100', chap:'ساعات العمل', text:'يجوز لصاحب العمل بموافقة الوزارة، في المنشآت التي تقتضي طبيعة عملها العمل بالتناوب، زيادة ساعات العمل حتى 8 يومياً/48 أسبوعياً بشرط ألا يزيد المتوسط عند احتسابه لمدة 3 أسابيع أو أقل على ذلك.'},
+    {num:'101', chap:'فترات الراحة', text:'لا يجوز تشغيل العامل أكثر من 5 ساعات متصلة دون فترة راحة لا تقل عن نصف ساعة، ولا يبقى العامل في مكان العمل أكثر من 12 ساعة في اليوم.'},
+    {num:'102', chap:'فترات الراحة', text:'فترات الراحة والصلاة والطعام لا تدخل ضمن ساعات العمل الفعلية، ولا يكون العامل خلالها تحت سلطة صاحب العمل.'},
+    {num:'104', chap:'الراحة الأسبوعية', text:'يوم الجمعة هو يوم الراحة الأسبوعية بأجر كامل لجميع العمال، ويجوز لصاحب العمل استبداله بيوم آخر بعد إبلاغ مكتب العمل، ولا يجوز تعويضه بمقابل نقدي.'},
+    {num:'105', chap:'الراحة الأسبوعية', text:'استثناءً في الأماكن البعيدة عن العمران، يجوز تجميع أيام الراحة الأسبوعية عن مدة لا تتجاوز 8 أسابيع باتفاق الطرفين وموافقة الوزارة.'},
+    {num:'106', chap:'الراحة الأسبوعية', text:'استثناءات لعدم التقيد بساعات العمل والراحة الأسبوعية (الجرد السنوي، منع الحوادث، المواسم) بحد أقصى 30 يوماً سنوياً، وبحد أقصى 10 ساعات عمل فعلي يومياً أو 60 أسبوعياً.'},
+    {num:'107', chap:'العمل الإضافي', text:'يجب على صاحب العمل أن يدفع للعامل أجراً إضافياً عن ساعات العمل الإضافية يوازي أجر الساعة مضافاً إليه 50% من الأجر الأساسي (150% إجمالاً)، ويجوز الاتفاق على إجازة تعويضية مدفوعة الأجر بدلاً من ذلك. تُعد جميع ساعات العمل في أيام العطل والأعياد ساعات إضافية.'},
+    {num:'108', chap:'ساعات العمل', text:'لا تسري أحكام ساعات العمل الاعتيادية على: أصحاب المناصب العليا ذات السلطة الإشرافية، الأعمال التحضيرية أو التكميلية، العمل المتقطع بالضرورة، وعمال الحراسة والنظافة (عدا الحراسة الأمنية المدنية).'},
+    {num:'109', chap:'الإجازات', text:'يستحق العامل عن كل عام إجازة سنوية لا تقل عن 21 يوماً، تُزاد إلى 30 يوماً إذا أمضى 5 سنوات متصلة لدى صاحب العمل نفسه، وتكون بأجر يُدفع مقدماً.'},
+    {num:'110', chap:'الإجازات', text:'يجوز للعامل بموافقة صاحب العمل تأجيل إجازته السنوية أو أيام منها للسنة التالية، ولصاحب العمل تأجيلها بعد نهاية سنة الاستحقاق لمدة لا تزيد على 90 يوماً لمقتضيات العمل، وبموافقة العامل الكتابية إن استمر التأجيل.'},
+    {num:'111', chap:'الإجازات', text:'للعامل الحق في أجر أيام الإجازة المستحقة إذا ترك العمل قبل استعمالها، بنسبة ما قضاه من السنة في العمل.'},
+    {num:'112', chap:'الإجازات', text:'لكل عامل الحق في إجازة بأجر كامل في الأعياد والمناسبات التي تحددها اللائحة.'},
+    {num:'113', chap:'الإجازات', text:'للعامل الحق في إجازة بأجر كامل: 5 أيام عند الزواج أو وفاة أحد أصوله أو فروعه، 3 أيام عند وفاة الأخ أو الأخت، و3 أيام عند ولادة مولود له خلال 7 أيام من تاريخ الولادة.'},
+    {num:'114', chap:'الإجازات', text:'للعامل الحق في إجازة بأجر لا تقل عن 10 أيام ولا تزيد على 15 يوماً لأداء فريضة الحج مرة واحدة طوال مدة الخدمة، بشرط أن يكون قد أمضى لدى صاحب العمل سنتين متصلتين على الأقل.'},
+    {num:'115', chap:'الإجازات', text:'للعامل المنتسب لمؤسسة تعليمية بموافقة صاحب العمل الحق في إجازة بأجر كامل لأداء الامتحان غير المعاد بعدد أيام الامتحان الفعلية، أما الامتحان المعاد فبإجازة دون أجر.'},
+    {num:'116', chap:'الإجازات', text:'يجوز للعامل بموافقة صاحب العمل الحصول على إجازة دون أجر يتفق الطرفان على مدتها، ويُعد عقد العمل موقوفاً خلال المدة الزائدة على 20 يوماً ما لم يتفق الطرفان على خلاف ذلك.'},
+    {num:'117', chap:'الإجازات', text:'للعامل الذي يثبت مرضه إجازة مرضية بأجر كامل عن الثلاثين يوماً الأولى، وبثلاثة أرباع الأجر عن الستين التالية، ودون أجر عن الثلاثين التي تليها، خلال السنة المرضية الواحدة.'},
+    {num:'118', chap:'الإجازات', text:'لا يجوز للعامل أثناء تمتعه بأي من إجازاته أن يعمل لدى صاحب عمل آخر، وإلا جاز حرمانه من أجر تلك الإجازة أو استرداده.'},
+    {num:'119', chap:'العمل لبعض الوقت', text:'لا يُعد العمال الذين يتأثرون بتخفيض جماعي مؤقت لساعات عملهم لأسباب اقتصادية أو تقنية أو هيكلية عمالاً لبعض الوقت.'},
+    {num:'120', chap:'العمل لبعض الوقت', text:'يُصدر الوزير القواعد والضوابط اللازمة لتنظيم العمل لبعض الوقت، وتسري أحكام النظام في حدود ما يقرره الوزير، مع حماية موازية للعمال المتفرغين من ناحية السلامة والصحة المهنية وإصابات العمل.'},
+    {num:'121', chap:'الوقاية من مخاطر العمل', text:'على صاحب العمل حفظ حالة صحية ونظيفة بالمنشأة، وتأمين إنارتها ومياهها الصالحة للشرب وقواعد الحماية والسلامة والصحة المهنية.'},
+    {num:'122', chap:'الوقاية من مخاطر العمل', text:'على صاحب العمل اتخاذ الاحتياطات اللازمة لحماية العمال من الأخطار والأمراض الناجمة عن العمل، وإعلان تعليمات السلامة في مكان ظاهر بالعربية وأي لغة أخرى عند الاقتضاء دون تحميل العمال أي تكلفة.'},
+    {num:'123', chap:'الوقاية من مخاطر العمل', text:'على صاحب العمل إحاطة العامل قبل مزاولة عمله بمخاطر مهنته، وتوفير أدوات الوقاية الشخصية وتدريب العمال على استخدامها.'},
+    {num:'124', chap:'الوقاية من مخاطر العمل', text:'على العامل استعمال وسائل الوقاية المخصصة، والمحافظة عليها، وتنفيذ تعليمات السلامة، والامتناع عن أي تصرف يعطل تنفيذها أو يسيء استخدام وسائل الحماية.'},
+    {num:'125', chap:'الوقاية من مخاطر العمل', text:'على صاحب العمل اتخاذ الاحتياطات اللازمة للوقاية من الحريق وتأمين منافذ النجاة وتعليق تعليمات مفصلة بشأن وسائل منع الحريق.'},
+    {num:'133', chap:'إصابات العمل', text:'إذا أُصيب العامل بإصابة عمل أو مرض مهني، التزم صاحب العمل بعلاجه وتحمّل جميع نفقات العلاج المباشرة وغير المباشرة (إقامة، فحوصات، أشعة، أجهزة تعويضية، نقل).'},
+    {num:'134', chap:'إصابات العمل', text:'تُعد الإصابة "إصابة عمل" وفق ما هو منصوص عليه في نظام التأمينات الاجتماعية، وتُعد الأمراض المهنية في حكم إصابات العمل.'},
+    {num:'137', chap:'إصابات العمل', text:'يستحق المصاب بعجز مؤقت عن العمل ناتج عن إصابة عمل معونة مالية تعادل أجره كاملاً لمدة 60 يوماً، ثم 75% من أجره طوال مدة العلاج؛ فإن بلغت مدة العلاج سنة أو تقرر طبياً عدم احتمال شفائه، عُدت الإصابة عجزاً كلياً وأُنهي العقد وعُوّض عن الإصابة.'},
+    {num:'138', chap:'إصابات العمل', text:'إذا نتج عن الإصابة عجز دائم كلي أو وفاة، يُقدَّر التعويض بما يعادل أجر 3 سنوات بحد أدنى 54,000 ريال؛ وفي العجز الدائم الجزئي يستحق المصاب تعويضاً بنسبة العجز المقدرة وفق جدول دليل نسب العجز.'},
+    {num:'142', chap:'الخدمات الصحية والاجتماعية', text:'على كل صاحب عمل إعداد خزانة أو أكثر للإسعافات الطبية الأولية، مزودة بالأدوية ووسائل الإسعاف اللازمة.'},
+    {num:'143', chap:'الخدمات الصحية والاجتماعية', text:'على صاحب العمل إجراء فحص دوري لعماله المعرضين لأمراض مهنية مرة كل سنة على الأقل، وإثبات نتيجة الفحص في سجلاته وملفات العمال.'},
+    {num:'149', chap:'تشغيل النساء', text:'للمرأة العاملة الحق في إجازة وضع بأجر كامل لمدة 12 أسبوعاً، منها 6 أسابيع وجوبية تالية للوضع، ولها توزيع الباقي كما تراه ابتداءً من 4 أسابيع قبل التاريخ المرجح للوضع.'},
+    {num:'153', chap:'تشغيل النساء', text:'على صاحب العمل توفير الرعاية الطبية للمرأة العاملة أثناء الحمل والولادة.'},
+    {num:'154', chap:'تشغيل النساء', text:'يحق للمرأة العاملة بعد عودتها من إجازة الوضع أخذ فترة أو فترات راحة للإرضاع لا تزيد في مجموعها على ساعة في اليوم، بأجر كامل، وتُحسب من ساعات العمل الفعلية.'},
+    {num:'155', chap:'تشغيل النساء', text:'لا يجوز لصاحب العمل فصل المرأة العاملة أو إنذارها بالفصل أثناء حملها أو تمتعها بإجازة الوضع أو مرضها الناشئ عن أيٍّ منهما، بشرط ألا تتجاوز مدة غيابها 180 يوماً.'},
+    {num:'159', chap:'تشغيل النساء', text:'على كل صاحب عمل يشغّل 50 عاملة فأكثر تهيئة مكان مناسب لرعاية أطفال العاملات الأقل أعمارهم عن 6 سنوات إذا بلغ عدد الأطفال 10 فأكثر.'},
+    {num:'161', chap:'تشغيل الأحداث', text:'لا يجوز تشغيل الأحداث في الأعمال الخطرة أو الصناعات الضارة أو المهن التي يُحتمل أن تعرض صحتهم أو سلامتهم أو أخلاقهم للخطر.'},
+    {num:'162', chap:'تشغيل الأحداث', text:'لا يجوز تشغيل من لم يتم الخامسة عشرة من عمره، ويجوز استثناءً تشغيل من تتراوح أعمارهم بين 13-15 سنة في أعمال خفيفة لا تضر بصحتهم أو نموهم أو تعليمهم.'},
+    {num:'164', chap:'تشغيل الأحداث', text:'لا يجوز تشغيل الأحداث أكثر من 6 ساعات في اليوم (4 ساعات في رمضان)، ولا تشغيلهم في أيام الراحة الأسبوعية أو الأعياد أو العطل الرسمية.'},
+    {num:'194', chap:'تفتيش العمل', text:'يتولى تفتيش العمل مفتشون من موظفي الوزارة، أو من غيرهم من السعوديين يحددهم الوزير أو من يفوضه.'},
+    {num:'196', chap:'تفتيش العمل', text:'يختص مفتش العمل بمراقبة تنفيذ أحكام النظام، تزويد أصحاب العمل والعمال بالإرشادات الفنية، إبلاغ المخالفات وضبطها، واقتراح الغرامة المناسبة وفق جدول المخالفات والعقوبات.'},
+    {num:'198', chap:'تفتيش العمل', text:'لمفتش العمل دخول أي منشأة خاضعة لأحكام النظام في أي وقت دون إشعار مسبق، وله سؤال صاحب العمل والعمال، والاطلاع على السجلات والوثائق، وأخذ عينات من المواد للتحليل.'},
+    {num:'229', chap:'العقوبات', text:'مع عدم الإخلال بأي عقوبة أشد ينص عليها نظام آخر، يُعاقَب كل من يخل بأي حكم من أحكام النظام أو لائحته أو القرارات الصادرة تنفيذاً له بغرامة مالية لا تتجاوز 100,000 ريال، أو إغلاق المنشأة لمدة لا تزيد على 30 يوماً، أو إغلاقها نهائياً؛ ويجوز مضاعفة العقوبة عند التكرار.'},
+    {num:'229 مكرر', chap:'العقوبات', text:'يُعاقَب بغرامة لا تقل عن 200,000 ريال ولا تزيد على 500,000 ريال كل من يخالف أحكام المادة (الثلاثين) الخاصة بترخيص أنشطة التوظيف والاستقدام والإسناد.'},
+    {num:'230', chap:'العقوبات', text:'للوزارة بقرار من الوزير أو من ينيبه إيقاع الغرامة أو الإغلاق المؤقت، ويُصدر الوزير جدولاً بالمخالفات وعقوباتها المتدرجة، ويجوز التظلم من القرار أمام المحكمة الإدارية المختصة.'},
+    {num:'232', chap:'العقوبات', text:'تُحصَّل الغرامات المقررة وفقاً لإجراءات تحصيل الأموال العامة، وتؤول المبالغ المحصلة إلى صندوق تنمية الموارد البشرية.'},
+    {num:'233', chap:'العقوبات', text:'للوزير منح مكافأة مالية لا تزيد على 25% من مبلغ الغرامة المحصلة لمن يساعد في الكشف عن أي مخالفة لأحكام النظام ولائحته.'},
+    {num:'234', chap:'العقوبات', text:'لا تُقبل أمام المحاكم العمالية أي دعوى تتعلق بالمطالبة بحق من الحقوق المقررة في النظام بعد مضي 12 شهراً من تاريخ انتهاء علاقة العمل، ما لم يقدم المدعي عذراً تقبله المحكمة. وتُنظر الدعاوى العمالية على وجه الاستعجال.'},
+    {num:'235', chap:'العقوبات', text:'لا يجوز لصاحب العمل أثناء نظر الدعوى أمام المحاكم العمالية تغيير شروط التشغيل التي كانت سارية قبل بدء الإجراءات، تغييراً يترتب عليه الإضرار بموقف العامل في الدعوى.'},
+    {num:'243', chap:'أحكام ختامية', text:'يُصدر الوزير القرارات واللوائح اللازمة لتنفيذ أحكام النظام خلال 180 يوماً من تاريخ العمل به.'},
+    {num:'244', chap:'أحكام ختامية', text:'يحل هذا النظام محل نظام العمل والعمال السابق الصادر بالمرسوم الملكي رقم (م/21) وتاريخ 1389/9/6هـ.'},
+    {num:'245', chap:'أحكام ختامية', text:'يُنشر هذا النظام في الجريدة الرسمية، ويُعمل به بعد 180 يوماً من تاريخ نشره.'},
+  ];
+  function renderLawArticles(filter){
+    const box = document.getElementById('lawResults');
+    const f = (filter||'').trim().toLowerCase();
+    const list = f ? lawArticles.filter(a => a.text.toLowerCase().includes(f) || a.num.includes(f) || (a.chap||'').toLowerCase().includes(f)) : lawArticles;
+    if(list.length===0){ box.innerHTML = '<div class="noresults">ما فيه مادة تطابق «'+filter+'» في هذا المرجع.</div>'; return; }
+    let lastChap = null;
+    let html = '<div style="font-size:.78rem;color:var(--ink-soft);margin-bottom:10px;">'+list.length+' مادة'+(f?' مطابقة':(' من أصل '+lawArticles.length))+'</div>';
+    list.forEach(a=>{
+      if(a.chap !== lastChap){ html += '<h3 style="font-size:.85rem;color:var(--gold);margin:18px 0 8px;">'+a.chap+'</h3>'; lastChap = a.chap; }
+      html += '<div class="art" style="margin:0 0 10px;"><b style="color:var(--pine-deep);">المادة ('+a.num+')</b> — '+a.text+'</div>';
+    });
+    box.innerHTML = html;
+  }
+  document.getElementById('lawSearch').addEventListener('input', e => renderLawArticles(e.target.value));
+
+  function renderSevere(){
+    document.getElementById('severeList').innerHTML = severePenalties.map((s,i)=>
+      '<li><span class="num">'+(i+1)+'</span><span><b>'+s.name+'</b><br><span style="color:var(--ink-soft);">'+s.outcome+'</span></span></li>'
+    ).join('');
+  }
+
+  // ---------- init ----------
+  calcOvertime(); calcEOS(); calcLeaveEntitlement(); calcNitaqat(); calcProfession();
+  renderPenaltyTable(); renderViolationSelect(); calcPenalty(); renderSevere(); renderLawArticles('');
+
+  // ---------- البحث الشامل ----------
+  const KB = [
+    {q:'حساب الأوفر تايم / العمل الإضافي', a:'أجر الساعة الإضافية = أجر الساعة العادية + 50% منه (150% إجمالاً)، وفق المادة 107.', tab:'overtime'},
+    {q:'الحد الأقصى لساعات العمل الإضافي', a:'720 ساعة سنوياً كحد أقصى إلا بموافقة العامل، وفق المادة 22 من اللائحة التنفيذية.', tab:'overtime'},
+    {q:'مكافأة نهاية الخدمة عند الفصل', a:'نصف شهر عن كل سنة من أول 5 سنوات، وشهر كامل عن كل سنة تالية — المادة 84.', tab:'eos'},
+    {q:'مكافأة نهاية الخدمة عند الاستقالة', a:'لا شيء قبل سنتين، ثُلث من 2-5 سنوات، ثُلثين من 5-10 سنوات، وكاملة بعد 10 سنوات — المادة 85.', tab:'eos'},
+    {q:'راتب الإجازة السنوية', a:'21 يوماً كحد أدنى، تصبح 30 يوماً بعد 5 سنوات خدمة متصلة — المادة 109.', tab:'leave'},
+    {q:'توطين مهن المبيعات والتسويق', a:'60% نسبة توطين لمهن التسويق والمبيعات، على منشآت 3 عاملين فأكثر بهذه المهن.', tab:'professions'},
+    {q:'توطين المحاسبة أو المشتريات أو غيرها', a:'قاعدة قرارات المهن في توسّع — أرسلي مصدر القرار الرسمي وسنضيفه موثّقاً.', tab:'professions'},
+    {q:'قرارات توطين المهن الهندسية', a:'46 مهنة هندسية مستهدفة، مع اشتراط الاعتماد المهني من الهيئة السعودية للمهندسين.', tab:'professions'},
+    {q:'نطاقات التوطين ونسبة السعودة', a:'احتساب النسبة الحالية والفجوة حتى النسبة المطلوبة وعدد الموظفين اللازم إضافتهم.', tab:'nitaqat'},
+    {q:'جزاء التأخير أو الغياب', a:'يُدخَل نوع المخالفة وعدد مرات التكرار، ومحرك الجزاءات يحسب الجزاء المطبَّق تلقائياً من اللائحة.', tab:'penalties'},
+    {q:'قواعد توقيع الجزاءات التأديبية', a:'لا جزاء بدون لائحة معتمدة، ولا بدون سماع أقوال الموظف، ولا أكثر من جزاء عن مخالفة واحدة.', tab:'penalties'},
+  ];
+  const searchInput = document.getElementById('globalSearch');
+  const resultsBox = document.getElementById('searchResults');
+  const allPanels = document.getElementById('allPanels');
+  searchInput.addEventListener('input', ()=>{
+    const term = searchInput.value.trim();
+    if(term.length < 2){ resultsBox.classList.remove('active'); allPanels.style.display='block'; return; }
+    const matches = KB.filter(item => (item.q+item.a).toLowerCase().includes(term.toLowerCase()));
+    allPanels.style.display='none'; resultsBox.classList.add('active');
+    if(matches.length===0){ resultsBox.innerHTML = '<div class="noresults">ما لقيت نتائج مطابقة لـ«'+term+'».</div>'; return; }
+    resultsBox.innerHTML = matches.map(m => '<div class="sresult" data-tab="'+m.tab+'"><div class="q">'+m.q+'</div><div class="a">'+m.a+'</div><div class="go">اذهب إلى القسم ←</div></div>').join('');
+    resultsBox.querySelectorAll('.sresult').forEach(el=> el.addEventListener('click', ()=> showTab(el.dataset.tab)));
+  });
+</script>
+
+
+<span id="PING_CONTENT_PUSH_NOTIFICATION" style="display: none;"></span><span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
